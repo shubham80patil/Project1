@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Map</title>
+  <link rel="stylesheet" href="about-us.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"> <!-- AOS Library -->
+  
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="./about-us.html">About Us</a></li>
+      <li><a href="#">Manufacturer</a></li>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Content Sections -->
+  <div id="home" class="section">
+    <div class="image-container" data-aos="fade-right" data-aos-duration="1000">
+      <img src="./assets/doc1.png" alt="Image 1">
+    </div>
+    <div class="content-container" data-aos="fade-left" data-aos-duration="1000">
+      <h2>Harshal Redkar</h2>
+      <p>Name: Dr. Harshal Redkar, MBBS<br>
+        Specialization: General Medicine<br>
+        Years of Experience: 15 years<br>
+        Location: Kudal, Maharashtra, India</p>
+    </div>
+  </div>
+
+  <div id="about" class="section">
+    <div class="image-container" data-aos="fade-left" data-aos-duration="1000">
+      <img src="./assets/doc2.png" alt="Image 2">
+    </div>
+    <div class="content-container" data-aos="fade-right" data-aos-duration="1000">
+      <h2>Nikhil Shukla</h2>
+      <p>Name: Dr. Nikhil Shukla, DBMS<br>
+        Specialization: General Medicine<br>
+        Years of Experience: 8 years<br>
+        Location: Bandra, Maharashtra, India</p>
+    </div>
+    <!-- Add Enhanced Map Below Section -->
+    
+  </div>
+
+  <div id="manufacturer" class="section">
+    <div class="image-container" data-aos="fade-right" data-aos-duration="1000">
+      <img src="./assets/doc3.png" alt="Image 3">
+    </div>
+    <div class="content-container" data-aos="fade-left" data-aos-duration="1000">
+      <h2>Shubham Patil</h2>
+      <p>Name: Dr. Shubham Patil, SMS<br>
+        Specialization: General Medicine<br>
+        Years of Experience: 2 years<br>
+        Location: Indore, Madhya Pradesh, India</p>
+    </div>
+  </div>
+
+  <div id="map">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV4cQWaXdUY37vxSXPrE5XgsFzaU9EcJ8&callback=initMap" async defer></script>
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // Map options
+      var mapOptions = {
+        center: { lat: 20.5937, lng: 78.9629 }, 
+        zoom: 2, 
+        minZoom: 1, 
+        maxZoom: 6, 
+        mapTypeId: 'terrain',
+        
+        styles: [
+          {
+            "elementType": "geometry",
+            "stylers": [{ "color": "#fefefe" }] // Lighten map background
+          },
+          {
+            "elementType": "labels.text.stroke",
+            "stylers": [{ "color": "#ffffff" }] // Highlight text strokes
+          },
+          {
+            "elementType": "labels.text.fill",
+            "stylers": [{ "color": "#616161" }] // Darker text
+          },
+          {
+            "featureType": "administrative",
+            "elementType": "geometry",
+            "stylers": [{ "visibility": "off" }] // Simplify borders
+          },
+          {
+            "featureType": "road",
+            "stylers": [{ "visibility": "off" }] // Hide roads for clarity
+          },
+          {
+            "featureType": "water",
+            "stylers": [{ "color": "#c9e7f4" }] // Light blue water
+          },
+        ]
+      };
+
+     
+      var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+      
+      var indiaCircle = new google.maps.Circle({
+        strokeColor: '#FFD700', 
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: '#FFFF00', 
+        fillOpacity: 0.5,
+        map: map,
+        center: { lat: 20.5937, lng: 78.9629 },
+        radius: 1500000, 
+      });
+    }
+  </script>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  </script>
+</body>
+</html>
