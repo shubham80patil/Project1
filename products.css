@@ -1,14 +1,144 @@
 *{
-    /* background-color: #f8e6e0; */
-    background-color: black;
-
+    background-color: #f8e6e0;
+    
 }
 .injectionimg1{
-    width: 300px;             /* Adjust the width to 300px */
-    height: 200px;            /* Adjust the height to 200px */
-    border: 5px solid rgb(131, 131, 244);  /* Add a solid black border with 5px thickness */
+    width: 500px;             /* Adjust the width to 300px */
+    height: 400px;            /* Adjust the height to 200px */
+    border: 3px  ;  /* Add a solid black border with 5px thickness */
         /* Make the corners slightly rounded */
     object-fit: cover; 
-    margin: 10px;
-    padding: 10px;
+    margin: 30px;
+    padding: 30px;
+    /* background-color: rgb(237, 172, 181) ; */
+    background-color: #f8e6e0;
+   
+
 }
+.overagepremiersoapdiv{
+    background-color: rgb(246, 212, 216) ;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+border-color: black;
+
+margin-top: 8%;
+
+
+   
+}
+
+
+*{
+    
+   
+}
+
+.SHOPALL{
+    color: black;
+position: absolute;
+font-size: 22px;
+top: 40%;
+left: 5%;
+background-color: rgb(246, 212, 216) ;
+display: flex;
+flex-direction: row;
+
+} 
+
+#SHOPALL{
+    background-color: rgb(246, 212, 216) ;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    word-spacing:10px;
+
+
+}
+.bestsellerdiv{
+    color: black;
+    position: absolute;
+    font-size: 18px;
+    top:50%;
+    left: 5%;
+    word-spacing:5px;
+    display: flex;
+flex-direction: row;
+    background-color: rgb(246, 212, 216) ;
+    clear: both;
+}  
+#bestseller{
+    color: black;
+    font-size: 25px;
+    background-color: rgb(246, 212, 216) ;
+
+}
+
+  .shoplotiondiv{
+    font-size: 18px;
+    position: absolute;
+    top:50%;
+   left: 20%;
+   color: black;
+   display: flex;
+flex-direction: row;
+   word-spacing:5px;
+   clear: both;
+
+
+  }
+  #shoplotion{
+
+    background-color: rgb(246, 212, 216) ;
+  color: black;
+  font-size: 25px;
+  }
+
+  .shoptabletdiv{
+
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    word-spacing:5px;
+    font-size: 25px;
+    display: flex;
+flex-direction: row;
+clear: both;
+
+
+  }
+  #shoptablet{
+    font-size: 25px;
+   color: black;
+   background-color: rgb(246, 212, 216) ;
+
+  }
+  .shopdripdiv{
+    color: black;
+    position: absolute ;
+    top: 50%;
+    font-size: 25px;
+    left: 40%;
+    word-spacing:5px;
+    display: flex;
+flex-direction: row;
+clear: both;
+   
+  }
+  #shopdrip{
+    color: black;
+    background-color: rgb(246, 212, 216) ;
+
+  }
+  #ULTRASPECIAL{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 40px;
+  text-transform: capitalize;
+  font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+  }
+  
+  
