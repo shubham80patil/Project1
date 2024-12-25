@@ -1,7 +1,7 @@
-*{
+/* *{
     background-color: #f8e6e0;
     
-}
+} */
 .injectionimg1{
     width: 500px;             /* Adjust the width to 300px */
     height: 400px;            /* Adjust the height to 200px */
@@ -38,7 +38,7 @@ margin-top: 8%;
     color: black;
 position: absolute;
 font-size: 22px;
-top: 40%;
+top: 35%;
 left: 5%;
 background-color: rgb(246, 212, 216) ;
 display: flex;
@@ -52,8 +52,82 @@ flex-direction: row;
     text-decoration: none;
     color: black;
     word-spacing:10px;
+    
 
+}
 
+.injectionimg1 {
+  width: 300px;
+  height: 200px;
+  border: 5px solid black;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 30px;
+  padding: 30px;
+  background-color: #f8e6e0;
+}
+
+.overagepremiersoapdiv {
+  background-color: rgb(246, 212, 216);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-color: black;
+  margin-top: 8%;
+}
+
+/* Navigation Styles */
+
+.SHOPALL {
+  color: black;
+  position: absolute;
+  font-size: 22px;
+  top: 35%;
+  left: 5%;
+  background-color: rgb(246, 212, 216);
+  display: flex;
+  flex-direction: row;
+}
+
+#SHOPALL {
+  background-color: rgb(246, 212, 216);
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  word-spacing: 10px;
+}
+
+.bestsellerdiv {
+  color: black;
+  position: absolute;
+  font-size: 18px;
+  top: 50%;
+  left: 5%;
+  word-spacing: 5px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(246, 212, 216);
+  clear: both;
+}
+
+#bestseller {
+  color: black;
+  font-size: 25px;
+  background-color: rgb(246, 212, 216);
+}
+
+/* Product Styles */
+
+.product-category {
+  color: black;
+  font-size: 18px;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+
+#product-categories {
+  color: black;
+  box-sizing: border-box;
 }
 .bestsellerdiv{
     color: black;
@@ -140,5 +214,530 @@ clear: both;
     font-size: 30px;
     letter-spacing: 1.5px;
   }
+  .bestsellercontainer{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: rgb(246, 212, 216) ;
+  }
+  .bestseller{
+    border: 5px solid  #f8ad94;
+    margin: 5px;
+    width: 30%;
+    text-align: center;
+
+    box-shadow: 0 4px 8px rgba(214, 208, 208, 0.1);
+    transition: transform 0.2s;
+  }
+
+  .bestseller:hover{
+    transform: scale(1.05);
+  }
+
+  #ultralighttab , #ultralightivdrip , #ultralightlotion
+  {  width: 33%;
+height: auto;
+border-radius: 8px;
+object-fit: cover;
+border: #f8ad94;
+padding: 5px;
+width: 150px;
+height: 200px;
+margin-top:30px;
+  }
+
+  ul {
+    display: flex; /* Display list items in a row */
+    justify-content: space-around; /* Space items evenly */
+    list-style: inside; /* Remove default bullets */
+    padding: 0; /* Remove padding */
+    
+  }
   
+  ul li {
+    margin: 0px; /* Add space between items */
+  }
+  .know-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+
+    color: black;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
   
+  .know-more-btn:hover {
+    background-color: white;
+  }
+  h3{
+    font-weight: 400;
+    font-size: 20px;
+    font-family: monospace;
+  }
+  #typesofdrip{
+    font-size: 15px;
+    text-transform: capitalize;
+    color: black;
+
+  }
+  #typesofdrip:hover{
+    color: blue;
+
+  }
+  
+  .hairgain-container {
+ clear: both;
+    background-color: rgb(248, 237,235);     
+    
+    display: flex; /* Use flexbox to align items side by side */
+    /* align-items: center; Center items vertically */
+    
+    /* margin-left: 10% ; */
+    /* margin-top: 3%;
+    margin-right: 10%; Add some margin around the container */
+    /* width: 80%; Make the container full width */ ---------------recent1
+    /* max-width: 1000%; Set a maximum width for the container */
+    padding: 10px; /* Add padding for inner spacing */
+    /* border: 3px solid #d8ab08d7;  */
+    /* Optional: Add a border */
+    position: absolute;
+    z-index: 0;
+
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+}
+
+.hairgain-image {
+  
+    width: 30%; /* Set the width of the image as a percentage */
+    height: 0%; /* Maintain aspect ratio */
+    margin-left: 10px; /* Add space between the image and text */
+    margin-top: 8%;
+    margin-bottom: 0;
+    border: 2px solid red;
+    
+}
+
+.hairgain-text {
+     /* Allow the text container to grow and fill available space */
+}
+
+
+
+.hairgain-description {
+    font-size: 1em; /* Set the font size for the description */
+    color: #555; /* Set a color for the description text */
+}
+.product-category{
+  color: black;
+  font-size: 18px;
+  margin-left: 5%;
+  margin-top: 1%;
+
+
+}
+#product-categories{
+
+  color: black;
+  box-sizing: border-box;
+  
+}
+.hairgain-name{
+  
+  font-weight: bold;
+  object-fit: fill;
+  margin-left: -33.33%;
+  margin-top: 8%;
+  font-size: x-large;
+  text-transform: capitalize;
+  text-align: center;
+
+}
+
+.hairgainbenefits{
+  margin-left:5.3%;    
+      
+
+
+}
+h4{
+  font: 20px !important;
+  color: brown;
+}
+.hairgainbenefits h4{
+  margin-left: 6%;
+  letter-spacing: 2px;
+  font: 20px;
+  margin-bottom: 0%;
+  font-style: italic;
+  color: rgb(184, 41, 41);
+}
+
+#hairgainbenefitslist{
+ display: flex;
+  flex-direction: column;
+  margin-left: 5.3%;
+
+}
+
+
+#hairgainbenefitslist li{
+  margin-bottom: 2px;
+  list-style-type: circle;
+}
+hr {
+  border: 0;
+  height: 0.2%;
+opacity: 0.5;
+width: 50%;
+
+
+  background-color: brown; 
+
+}
+.hairgainkey{
+  margin-left: 5.3%;
+  margin-top: 3%
+}
+.hairgainkey h4{
+  margin-left: 5%;
+  letter-spacing: 2px;
+  font-style: italic;
+  font: 20px;
+  color: brown;
+  margin-bottom: 3%;
+
+  
+}
+#hairgainkeylist{
+ list-style-type: circle;
+  margin-left: 5.3%;
+ display: flex;
+  flex-direction: column;
+
+}
+#whychoosehairgain{
+  
+/* margin-left: 10%; */
+}
+
+ #whychoosehairgain h4{
+    margin-left:10%;
+  letter-spacing: 2px;
+  font-style: italic;
+  font-size: 20px;
+  color: brown;
+  font: 12px;
+  margin-bottom: 1%;
+ }
+
+ .whychoosepara{
+  margin-left: 10%;
+  overflow: auto;
+ }
+
+#packaging  {
+
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+#packaging h5{
+
+  margin-left:5.3%;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-style: italic;
+  color: brown;
+  margin-bottom: 100%;
+}
+/* #hairgaintagline{
+  margin-top: 1%;
+  margin-left: 15%;
+  margin-bottom: 2%;
+  font-size: 18px;
+    font-size: 18px;
+  align-items: center;
+  text-transform: capitalize;
+ 
+} */
+
+
+/* Header Styles */
+
+
+.hairgain-name {
+  text-align: center;
+}
+
+.hairgainbenefits {
+  margin-left: 5.3%;
+}
+
+.hairgainbenefits h4 {
+  margin-left: 6%;
+  letter-spacing: 2px;
+  font: 20px;
+  margin-bottom: 0%;
+  font-style: italic;
+  color: rgb(184, 41, 41);
+}
+
+#hairgainbenefitslist {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5.3%;
+}
+
+#hairgainbenefitslist li {
+  margin-bottom: 2px;
+  list-style-type: circle;
+}
+
+hr {
+  border: 0;
+  height: 0.2%;
+  opacity: 0.5;
+  width: 50%;
+  background-color: brown;
+}
+
+.hairgainkey {
+  margin-left: 5.3%;
+  margin-top: 3%;
+}
+
+.hairgainkey h4 {
+  margin-left: 5%;
+  letter-spacing: 2px;
+  font-style: italic;
+  font: 20px;
+  color: brown;
+  margin-bottom: 3%;
+}
+
+#hairgainkeylist {
+  list-style-type: circle;
+  margin-left: 5.3%;
+  display: flex;
+  flex-direction: column;
+}
+
+#whychoosehairgain {
+  margin-left: 12%;
+}
+
+#whychoosehairgain h4 {
+  margin-left: 0%;
+  letter-spacing: 2px;
+  font-style: italic;
+  font-size: 20px;
+  color: brown;
+  font: 12px;
+  margin-bottom: 1%;
+}
+
+.whychoosepara {
+  margin-left: 0%;
+  padding: 0;
+}
+#packaging p{
+  margin-left: 2px;
+}
+
+#packaging {
+ /* margin-left: 10%; */
+ 
+}
+
+#packaging h5 {
+  margin-left: 2.3%;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-style: italic;
+  color: brown;
+  margin-bottom: 1%;
+}
+
+/* Footer Styles */
+
+ /* .ultrabrightlotion {
+  
+  background-color: rgb(248, 237, 235);
+  display: flex;
+
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#ultrabrightlotionimage {
+  width: 50%;
+  height: 20%;
+  margin-left: 10px;
+  margin-top: 8%;
+  
+  margin-bottom: 0-px;
+  border: solid red;
+  justify-content: center;
+}
+
+.ultrabrightlotionname {
+  flex-grow: 1;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.benefits {
+  margin-left: 5.3%;
+}
+
+.benefits h4 {
+  margin-left: 6%;
+  letter-spacing: 2px;
+  font: 20px;
+  margin-bottom: 0%;
+  font-style: italic;
+  color: rgb(184, 41, 41);
+}
+
+#ultrabrightbenefitlist {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5.3%;
+}
+
+#ultrabrightbenefitlist li {
+  margin-bottom: 2px;
+  list-style-type: circle;
+}
+
+hr {
+  border: 0;
+  height: 0.2%;
+  opacity: 0.5;
+  width: 50%;
+  background-color: brown;
+}
+
+.ultrabrightlotioningredients {
+  margin-left: 5.3%;
+  margin-top: 3%;
+}
+
+.ultrabrightlotioningredients h4 {
+  margin-left: 5%;
+  letter-spacing: 2px;
+  font-style: italic;
+  font: 20px;
+  color: brown;
+  margin-bottom: 3%;
+}
+
+#ultrabrightingredientslist li {
+  margin-left: 5.3%;
+  color: red;
+  display: flex;
+  flex-direction: column;
+}  */
+.ultrabrightlotion {
+flex-direction: row;
+margin-top: 10%;
+margin: auto;
+width: 1000px;
+padding: 50px;
+float: inline-start;
+box-sizing: border-box;
+
+
+
+}
+
+.ultrabrightlotionimage{
+padding: 0%;;
+margin-left: -48%;
+ display: float;
+ float: left;
+     border: 2px solid red;
+ 
+}
+
+
+.ultrabrightlotionname{
+
+margin-top: -5%;
+margin-left: -20%;
+
+}
+
+.ultrabrightbenefits{
+  float: left;
+  list-style-type: circle;
+  margin-left: 5.3%;
+ display: flex;
+  flex-direction: column;
+  
+ 
+ list-style-type: circle;
+margin-left: 12px;
+}
+.ultrabrightbenefits h4{
+ margin-left: 22px;
+  text-align: left;
+  font-style: italic;
+}
+
+#ultrabrightbenefitlist {
+text-align: left;
+
+display: inline;
+width: 100%;
+margin-right: 15px;
+list-style-type: circle;
+  flex-direction: column;
+  margin-left: 5.3%;
+ 
+}
+#ultrabrightbenefitlist li{
+
+}
+.ultrabrightlotioningredients h4{
+
+  margin-left: 25px;
+  font-style: italic;
+
+}
+#ultrabrightbenefitlist {
+  display: inline;
+margin-right: 15px;
+}
+
+.ultrabrightlotioningredients {
+  float: left;
+  text-align: left;
+  display: inline;
+  
+}
+
+.ultrabrightlotioningredients h4{
+
+
+}
+#ultrabrightingredientslist {
+list-style-type: circle;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+  width: 100%;
+  margin-left: 5.3%;
+}
+
+hr{
+  max-width: fit-content;
+}
+*li{
+  padding: 5px;
+}
