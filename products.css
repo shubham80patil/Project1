@@ -286,458 +286,127 @@ margin-top:30px;
 
   }
   
-  .hairgain-container {
- clear: both;
-    background-color: rgb(248, 237,235);     
-    
-    display: flex; /* Use flexbox to align items side by side */
-    /* align-items: center; Center items vertically */
-    
-    /* margin-left: 10% ; */
-    /* margin-top: 3%;
-    margin-right: 10%; Add some margin around the container */
-    /* width: 80%; Make the container full width */ ---------------recent1
-    /* max-width: 1000%; Set a maximum width for the container */
-    padding: 10px; /* Add padding for inner spacing */
-    /* border: 3px solid #d8ab08d7;  */
-    /* Optional: Add a border */
-    position: absolute;
-    z-index: 0;
-
-    border-radius: 8px; /* Optional: Add rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
-}
-
-.hairgain-image {
-  
-    width: 30%; /* Set the width of the image as a percentage */
-    height: 0%; /* Maintain aspect ratio */
-    margin-left: 10px; /* Add space between the image and text */
-    margin-top: 8%;
-    margin-bottom: 0;
-    border: 2px solid red;
-    
-}
-
-.hairgain-text {
-     /* Allow the text container to grow and fill available space */
-}
-
-
-
-.hairgain-description {
-    font-size: 1em; /* Set the font size for the description */
-    color: #555; /* Set a color for the description text */
-}
-.product-category{
-  color: black;
-  font-size: 18px;
-  margin-left: 5%;
-  margin-top: 1%;
-
-
-}
-#product-categories{
-
-  color: black;
-  box-sizing: border-box;
-  
-}
-.hairgain-name{
-  
-  font-weight: bold;
-  object-fit: fill;
-  margin-left: -33.33%;
-  margin-top: 8%;
-  font-size: x-large;
-  text-transform: capitalize;
-  text-align: center;
-
-}
-
-.hairgainbenefits{
-  margin-left:5.3%;    
-      
-
-
-}
-h4{
-  font: 20px !important;
-  color: brown;
-}
-.hairgainbenefits h4{
-  margin-left: 6%;
-  letter-spacing: 2px;
-  font: 20px;
-  margin-bottom: 0%;
-  font-style: italic;
-  color: rgb(184, 41, 41);
-}
-
-#hairgainbenefitslist{
- display: flex;
-  flex-direction: column;
-  margin-left: 5.3%;
-
-}
-
-
-#hairgainbenefitslist li{
-  margin-bottom: 2px;
-  list-style-type: circle;
-}
-hr {
-  border: 0;
-  height: 0.2%;
-opacity: 0.5;
-width: 50%;
-
-
-  background-color: brown; 
-
-}
-.hairgainkey{
-  margin-left: 5.3%;
-  margin-top: 3%
-}
-.hairgainkey h4{
-  margin-left: 5%;
-  letter-spacing: 2px;
-  font-style: italic;
-  font: 20px;
-  color: brown;
-  margin-bottom: 3%;
-
-  
-}
-#hairgainkeylist{
- list-style-type: circle;
-  margin-left: 5.3%;
- display: flex;
-  flex-direction: column;
-
-}
-#whychoosehairgain{
-  
-/* margin-left: 10%; */
-}
-
- #whychoosehairgain h4{
-    margin-left:10%;
-  letter-spacing: 2px;
-  font-style: italic;
-  font-size: 20px;
-  color: brown;
-  font: 12px;
-  margin-bottom: 1%;
- }
-
- .whychoosepara{
-  margin-left: 10%;
-  overflow: auto;
- }
-
-#packaging  {
-
-  margin-left: 10%;
-  margin-bottom: 10%;
-}
-
-#packaging h5{
-
-  margin-left:5.3%;
-  letter-spacing: 2px;
-  font-size: 20px;
-  font-style: italic;
-  color: brown;
-  margin-bottom: 100%;
-}
-/* #hairgaintagline{
-  margin-top: 1%;
-  margin-left: 15%;
-  margin-bottom: 2%;
-  font-size: 18px;
-    font-size: 18px;
-  align-items: center;
-  text-transform: capitalize;
- 
-} */
-
-
-/* Header Styles */
-
-
-.hairgain-name {
-  text-align: center;
-}
-
-.hairgainbenefits {
-  margin-left: 5.3%;
-}
-
-.hairgainbenefits h4 {
-  margin-left: 6%;
-  letter-spacing: 2px;
-  font: 20px;
-  margin-bottom: 0%;
-  font-style: italic;
-  color: rgb(184, 41, 41);
-}
-
-#hairgainbenefitslist {
-  display: flex;
-  flex-direction: column;
-  margin-left: 5.3%;
-}
-
-#hairgainbenefitslist li {
-  margin-bottom: 2px;
-  list-style-type: circle;
-}
-
-hr {
-  border: 0;
-  height: 0.2%;
-  opacity: 0.5;
-  width: 50%;
-  background-color: brown;
-}
-
-.hairgainkey {
-  margin-left: 5.3%;
-  margin-top: 3%;
-}
-
-.hairgainkey h4 {
-  margin-left: 5%;
-  letter-spacing: 2px;
-  font-style: italic;
-  font: 20px;
-  color: brown;
-  margin-bottom: 3%;
-}
-
-#hairgainkeylist {
-  list-style-type: circle;
-  margin-left: 5.3%;
-  display: flex;
-  flex-direction: column;
-}
-
-#whychoosehairgain {
-  margin-left: 12%;
-}
-
-#whychoosehairgain h4 {
-  margin-left: 0%;
-  letter-spacing: 2px;
-  font-style: italic;
-  font-size: 20px;
-  color: brown;
-  font: 12px;
-  margin-bottom: 1%;
-}
-
-.whychoosepara {
-  margin-left: 0%;
-  padding: 0;
-}
-#packaging p{
-  margin-left: 2px;
-}
-
-#packaging {
- /* margin-left: 10%; */
- 
-}
-
-#packaging h5 {
-  margin-left: 2.3%;
-  letter-spacing: 2px;
-  font-size: 20px;
-  font-style: italic;
-  color: brown;
-  margin-bottom: 1%;
-}
-
-/* Footer Styles */
-
- /* .ultrabrightlotion {
-  
-  background-color: rgb(248, 237, 235);
-  display: flex;
-
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-#ultrabrightlotionimage {
-  width: 50%;
-  height: 20%;
-  margin-left: 10px;
-  margin-top: 8%;
-  
-  margin-bottom: 0-px;
-  border: solid red;
-  justify-content: center;
-}
-
-.ultrabrightlotionname {
-  flex-grow: 1;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.benefits {
-  margin-left: 5.3%;
-}
-
-.benefits h4 {
-  margin-left: 6%;
-  letter-spacing: 2px;
-  font: 20px;
-  margin-bottom: 0%;
-  font-style: italic;
-  color: rgb(184, 41, 41);
-}
-
-#ultrabrightbenefitlist {
-  display: flex;
-  flex-direction: column;
-  margin-left: 5.3%;
-}
-
-#ultrabrightbenefitlist li {
-  margin-bottom: 2px;
-  list-style-type: circle;
-}
-
-hr {
-  border: 0;
-  height: 0.2%;
-  opacity: 0.5;
-  width: 50%;
-  background-color: brown;
-}
-
-.ultrabrightlotioningredients {
-  margin-left: 5.3%;
-  margin-top: 3%;
-}
-
-.ultrabrightlotioningredients h4 {
-  margin-left: 5%;
-  letter-spacing: 2px;
-  font-style: italic;
-  font: 20px;
-  color: brown;
-  margin-bottom: 3%;
-}
-
-#ultrabrightingredientslist li {
-  margin-left: 5.3%;
-  color: red;
-  display: flex;
-  flex-direction: column;
-}  */
-.ultrabrightlotion {
-flex-direction: row;
-margin-top: 10%;
-margin: auto;
-width: 1000px;
-padding: 50px;
-float: inline-start;
-box-sizing: border-box;
-
-
-
-}
-
-.ultrabrightlotionimage{
-padding: 0%;;
-margin-left: -48%;
- display: float;
- float: left;
-     border: 2px solid red;
- 
-}
-
-
-.ultrabrightlotionname{
-
-margin-top: -5%;
-margin-left: -20%;
-
-}
-
-.ultrabrightbenefits{
-  float: left;
-  list-style-type: circle;
-  margin-left: 5.3%;
- display: flex;
-  flex-direction: column;
-  
- 
- list-style-type: circle;
-margin-left: 12px;
-}
-.ultrabrightbenefits h4{
- margin-left: 22px;
-  text-align: left;
-  font-style: italic;
-}
-
-#ultrabrightbenefitlist {
-text-align: left;
-
-display: inline;
+.hairgainadvance-container{
 width: 100%;
-margin-right: 15px;
-list-style-type: circle;
-  flex-direction: column;
-  margin-left: 5.3%;
+  display: flex;
+flex-direction: row;
+margin: 0%;
+
+
+}
+
+
+
+#hairgainadvance-image{
+  display: flex;
+  flex-direction: row;
+  
+  margin: 0%;
+width:40%;
+}
+
+
+#hairgainimage{
+ width: 90%;
+ height: auto;
  
 }
-#ultrabrightbenefitlist li{
 
-}
-.ultrabrightlotioningredients h4{
-
-  margin-left: 25px;
-  font-style: italic;
-
-}
-#ultrabrightbenefitlist {
-  display: inline;
-margin-right: 15px;
-}
-
-.ultrabrightlotioningredients {
-  float: left;
-  text-align: left;
-  display: inline;
+#hairgainadvance-text{
+  margin: 0%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
   
 }
 
-.ultrabrightlotioningredients h4{
+#hairgainadvancebenefits  , #hairgainadvancekey {
 
-
-}
-#ultrabrightingredientslist {
-list-style-type: circle;
-  text-align: left;
   display: flex;
   flex-direction: column;
-  display: inline-block;
-  width: 100%;
-  margin-left: 5.3%;
+
 }
 
-hr{
-  max-width: fit-content;
+#hairgainbenefitslist , #hairgainadvancekeylist {
+
+  display: flex;
+  flex-direction: column;
 }
-*li{
-  padding: 5px;
+
+
+
+.ultrabrightlotion-section{
+  width: 100%;
+display: flex;
+flex-direction: row;
+margin: 0%;
+
+
+}
+
+
+
+#ultrabrightlotion-img{
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+
+}
+
+#ultrabrightimage{
+width: 90%;
+
+}
+
+
+#ultrabrightlotion-text{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+ 
+}
+
+#ultralotionbenefits , #ultrabrightkey {
+  display: flex;
+  flex-direction: column;
+}
+
+#ultrabrightbenefitslist , #ultrabrightingredientslist {
+  display: flex;
+  flex-direction: column;
+  
+
+  
+}
+
+.overagecleanser-container{
+width: 100%;
+display: flex;
+flex-direction: row;
+}
+
+#cleanserimage-section{
+  width: 40%;
+
+}
+
+#cleanserimg{
+  width: 90%;
+}
+#overagedetailstexts {
+
+  width: 60%;
+}
+
+#overagecleanserbenefits , #overagecleanseringredients {
+
+  display: flex;
+    flex-direction: column;
+
+}
+
+
+#overagecleanseringredientslist , #overagecleanserbenefitslist {
+  display: flex;
+  flex-direction: column;
 }
