@@ -29,10 +29,6 @@ margin-top: 8%;
 }
 
 
-*{
-    
-   
-}
 
 .SHOPALL{
     color: black;
@@ -409,4 +405,95 @@ flex-direction: row;
 #overagecleanseringredientslist , #overagecleanserbenefitslist {
   display: flex;
   flex-direction: column;
+}    
+
+
+
+
+.ultralightadvance-container{
+  width: 100%;
+display: flex;
+flex-direction: row;
+}
+
+#ultraadvanceimg-section{
+width: 40%;
+
+}
+
+#ultraadvanceimg{
+  width: 90%;
+}
+
+#ultralighttext{
+
+  width: 60%;
+
+}
+
+#ultralightbenefits, #ultralightingredients {
+  display: flex;
+  flex-direction: column;
+}
+
+#ultralightbenefitslist , #ultralightingredientslist{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden
+}
+
+.frostwhite-container{
+width: 100%;
+display: flex;
+flex-direction: row;
+margin-top: 5%;
+
+
+}
+
+#frostwhite-imgcontainer{
+
+  width: 40%;
+border-radius: 10px;
+
+ 
+}
+
+#frostwhiteimg{
+
+width: 90%;
+
+}
+
+#frostwhitedetailstexts{
+  width: 50%;
+
+  display: block;
+  
+}
+
+#frostwhitebenefits , #frostwhiteingredients{
+
+  display: flex;
+  flex-direction: column;
+
+  white-space: nowrap;
+
+
+
+}
+
+#frostwhitebenefitslist , #frostwhiteingredientslist {
+
+  display: flex;
+  flex-direction: column;
+}
+  
+
+.IVDRIPSHEADING{
+  color: red;
+  text-align: center;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+  display:block;
 }
