@@ -439,7 +439,7 @@ width: 40%;
 #ultralightbenefitslist , #ultralightingredientslist{
   display: flex;
   flex-direction: column;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .frostwhite-container{
@@ -476,7 +476,7 @@ width: 90%;
 
   display: flex;
   flex-direction: column;
-
+ 
   white-space: nowrap;
 
 
@@ -487,6 +487,8 @@ width: 90%;
 
   display: flex;
   flex-direction: column;
+  width: 1%;
+ 
 }
   
 
@@ -496,4 +498,172 @@ width: 90%;
   word-spacing: 10px;
   letter-spacing: 5px;
   display:block;
+}
+
+.celestialdrip-container{
+
+width: 100%;
+display: flex;
+flex-direction: row;
+border: 2px solid red;
+}
+
+#celestialdripimg-container{
+width: 40%;
+border: 2px solid black;
+}
+
+#celestialdripimg{
+  border: 2px solid blue;
+  width: 90%;
+  
+}
+
+
+#celestialdriptexts{
+  display: flex;
+flex-direction: column;
+width: 50%;
+}
+
+#celestialdripbenefitslist , #celestialdripingredientslist{
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.eternaldrip-container{
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#eternaldripimg-container{
+width: 40%;
+
+}
+
+#eternaldripimg{
+width: 90%;
+
+}
+
+#eternaldriptexts{
+width: 50%;
+border: 2px solid black;
+}
+
+#eternaldripbenefitslist , #eternaldripingredientslist{
+display: flex;
+flex-direction: column;
+
+}
+
+.revitaglow-container{
+
+  width: 100%;
+display: flex;
+flex-direction: row;
+}
+
+#revitaglowimg-container{
+width: 40%;
+margin-top: 10px;
+
+}
+#revitaglowimg{
+width: 90%;
+
+}
+
+#revitaglowtexts{
+width: 50%;
+display: flex;
+flex-direction: column;
+border: 2px solid red;
+
+
+
+}
+#revitaglowbenefits , #revitaglowingredients {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+} 
+
+#revitaglowbenefitslist , #revitaglowingredientslist{
+
+  width: max-content;
+  display: flex;
+flex-direction: column;
+}
+
+#tresatonicdrip-container , #nadboost-container , #recoverydrip-container , #gymfusiondrip-container , 
+#fortiftydrip-container , #fortiftydrip-container , #relaxfusiondrip-container {
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid green;
+
+}
+
+
+
+#tresatonicdripimg-container , #nadboostimg-container , #recoverdripimg-container ,
+#gymfusiondripimg-container , #fortiftydripimg-container , #relaxfusiondripimg-cotainer
+
+{
+
+width: 40%;
+margin-top: 10px;
+
+
+}
+
+
+
+
+
+#tresatonicdripimg , #nadboostimg , #recoverdripimg , #gymfusiondripimg , 
+#fortiftydripimg , #relaxfusiondripimg {
+ 
+width: 90%;
+}
+
+
+
+#tresatonicdriptexts , #nadboosttexts , #recoverydriptexts , #gymfusiontexts 
+ , #fortiftydriptexts  #relaxfusiondriptexts {
+
+
+  width: 50%;
+  display: flex;
+flex-direction: column;
+
+
+
+}
+
+
+
+#tresatonicdripsbenefitslist , #nadboostbenefitslist , #recoverydripbenefitslist  , 
+#gymfusionbenefitslist, #fortiftydripbenefitslist , #relaxfusiondripbenefitslist {
+
+display: flex;
+flex-direction: column;
+
+
+}
+
+
+#tresatonicingredientslist , #nadboostingredientslist , #recoverydripingredientslist ,
+#gymfusioningredientslist , #fortiftydripingredientslist , #relaxfusioningredientslist{
+
+
+  display: flex;
+  flex-direction: column;
+
+
 }
