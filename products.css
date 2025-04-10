@@ -667,3 +667,39 @@ flex-direction: column;
 
 
 }
+
+
+.overagesoap-container{
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid green;
+}
+
+#overagesoapimg-container {
+  width: 40%;
+  margin-top: 10px;
+
+}
+
+#overagesoapimg{
+
+   
+width: 90%;
+}
+
+
+#overagesoaptexts{
+
+  width: 50%;
+  display: flex;
+flex-direction: column;
+
+}
+
+#overagesoapbenefitslist , #overagesoapingredientslist {
+
+  display: flex;
+flex-direction: column;
+}
