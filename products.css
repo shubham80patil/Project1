@@ -202,7 +202,7 @@ clear: both;
 
   }
   #ULTRASPECIAL{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; 
   margin-top: 40px;
   text-transform: capitalize;
   font-weight: bold;
@@ -210,6 +210,7 @@ clear: both;
     font-size: 30px;
     letter-spacing: 1.5px;
   }
+
   .bestsellercontainer{
   display: flex;
   justify-content: space-around;
@@ -217,7 +218,7 @@ clear: both;
   background-color: rgb(246, 212, 216) ;
   }
   .bestseller{
-    border: 5px solid  #f8ad94;
+    border: 5px solid  hsla(98, 80%, 2%, 0.842);
     margin: 5px;
     width: 30%;
     text-align: center;
@@ -235,32 +236,55 @@ clear: both;
 height: auto;
 border-radius: 8px;
 object-fit: cover;
-border: #f8ad94;
+border: #0b030102; 
 padding: 5px;
 width: 150px;
 height: 200px;
 margin-top:30px;
   }
 
-  ul {
-    display: flex; /* Display list items in a row */
-    justify-content: space-around; /* Space items evenly */
-    list-style: inside; /* Remove default bullets */
-    padding: 0; /* Remove padding */
-    
-  }
+
+#bestseller1text{
+
+  border: 2px solid rgb(79, 6, 140);
+
+
+}
+
+#bestsellerbenefits1{
+
+  border: 2px solid rgb(53, 176, 23);
   
-  ul li {
-    margin: 0px; /* Add space between items */
-  }
+   text-align: center;
+
+}
+ #listofbestseller1  {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+
+ }
+
+
+  /* ul {
+    display: flex; 
+    flex-direction: column;
+    list-style: inside; 
+    padding: 0; 
+  
+    
+  }  */
+  
+ 
   .know-more-btn {
     display: inline-block;
     margin-top: 10px;
     padding: 10px;
-
+    text-transform: capitalize;
     color: black;
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: 14px;
   }
   
   .know-more-btn:hover {
@@ -269,7 +293,7 @@ margin-top:30px;
   h3{
     font-weight: 400;
     font-size: 20px;
-    font-family: monospace;
+    /* font-family: monospace;  */
   }
   #typesofdrip{
     font-size: 15px;
@@ -281,16 +305,26 @@ margin-top:30px;
     color: blue;
 
   }
+
+  #productname{
+    margin-top: 5%;
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+  }
+
+  #productnamehr{
+    width: 15%;
+    
+  }
   
 .hairgainadvance-container{
 width: 100%;
   display: flex;
 flex-direction: row;
-margin: 0%;
-
+margin: 3%;
 
 }
-
 
 
 #hairgainadvance-image{
@@ -327,6 +361,7 @@ width:40%;
 
   display: flex;
   flex-direction: column;
+  width: max-content;
 }
 
 
@@ -414,6 +449,7 @@ flex-direction: row;
   width: 100%;
 display: flex;
 flex-direction: row;
+margin-bottom: 10%;
 }
 
 #ultraadvanceimg-section{
@@ -446,7 +482,7 @@ width: 40%;
 width: 100%;
 display: flex;
 flex-direction: row;
-margin-top: 5%;
+
 
 
 }
@@ -484,25 +520,38 @@ width: 90%;
 }
 
 #frostwhitebenefitslist , #frostwhiteingredientslist {
-
+                                                                                                                                
   display: flex;
   flex-direction: column;
   width: 1%;
- 
+                                           
 }
   
 
-.IVDRIPSHEADING{
-  color: red;
+#ivdripproductname{
+  margin-top: 5%;
   text-align: center;
-  word-spacing: 10px;
-  letter-spacing: 5px;
-  display:block;
+  word-spacing: 4px;
+  letter-spacing: 3px;
 }
 
-.celestialdrip-container{
+#ivdripproductnamehr{
+  width: 5%;
+  
+}
 
-width: 100%;
+
+.IVDRIPSHEADING{
+  color: red;
+  text-align: center;                                         
+  word-spacing: 10px;                   
+  letter-spacing: 5px;                                   
+  display:block;
+}                     
+
+.celestialdrip-container{
+                         
+width: 100%                ;
 display: flex;
 flex-direction: row;
 border: 2px solid red;
