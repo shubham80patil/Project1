@@ -1,48 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauty Products</title>
+    <title>Ultraceutics</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="slider-styles.css">
+    <link rel="stylesheet" href="trending-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logo.jpeg" alt="">
+    <header>
+        <div class="top-bar">
+            <p>Welcome to Ultraceutics</p>
         </div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Manufacturer</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </nav>
-<br><br>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/Logo.jpeg" alt="Multiplex Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Manufacturer</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact us</a></li>
+
+            </ul>
+            <div class="search-and-enquiry">
+                <button class="enquiry-button">Quick Enquiry</button>
+            </div>
+        </nav>
+    </header>
     <div class="slider">
-        <div class="slides">
-          
-          <div class="slide" id="slide1">
-            <img src="img1.png" alt="Beauty Product 1">
-            <div class="caption">Radiance for Every Glow</div>
-          </div>
-          
-          <div class="slide" id="slide2">
-            <img src="img3.png" alt="Beauty Product 2">
-            <div class="caption">Elegance in Every Shade</div>
-          </div>
-          
-          <div class="slide" id="slide3">
-            <img src="image3.jpg" alt="Beauty Product 3">
-            <div class="caption">Timeless Beauty Starts Here</div>
-          </div>
+        <div class="slider-container">
+            <div class="slide">
+                <img src="img/k1.png" alt="Slide Image" id="k1">
+
+            </div>
+            <div class="slide">
+                <img src="img/P4.png" alt="Slide Image" id="k2">
+                <div class="slide-content">
+                    <h2>ULTRALIGHT ULTRAFUSION</h2>
+                    <p>Revolutionary IV infusion therapy delivering superior nutrients and hydration directly into your
+                        bloodstream for immediate and lasting benefits</p>
+                    <button onclick="alert('Learn More clicked!')">Learn More</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/P2.png" alt="Slide Image">
+                <div class="slide-content">
+                    <h2>ULTRALIGHT ADVANCE TABLET</h2>
+                    <p>Experience melanin synthesis inhibition 8 times faster</p>
+                    <button onclick="alert('Learn More clicked!')">Learn More</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/P3.jpeg" alt="Slide Image">
+                <div class="slide-content">
+                    <h2>A LUXURIOUS SOAP</h2>
+                    <p>Crafted with a blend of natural and scientifically -proven ingredients designed to nourish,
+                        brighten, and rejuvenate the skin.</p>
+                    <button onclick="alert('Learn More clicked!')">Learn More</button>
+                </div>
+            </div>
         </div>
-        
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
-      </div>
-      <script src="script.js"></script>
+        <div class="controls">
+            <button onclick="prevSlide()">&#10094;</button>
+            <button onclick="nextSlide()">&#10095;</button>
+        </div>
+        <div class="slider-dots"></div>
+    </div>
+    <script src="javascript.js"></script>
+    <div class="vid">
+        <div class="vid1">
+            <img src="img/M2.png" alt="">
+        </div>
+        <div class="vid2">
+            <video autoplay muted loop controls width="100%" height="100%">
+                <source src="vid/V1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="trending">
+        <h2 class="trending-h2">TRENDING</h2>
+
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="badge">Trending</div>
+                <img class="product-img" src="img/r1.jpg" alt="Product 1">
+                <div class="info">
+                    <div class="tag">No White Cast</div>
+                    <div class="title">Swiss Beauty Protect Maxx Sunscreen Air Mist</div>
+                    <div class="rating">⭐ 4.07 | 30 Reviews</div>
+                    <!--<div class="price">₹399</div> -->
+                    <button class="btn">View Product</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="badge">Trending</div>
+                <img class="product-img" src="img/r2.jpg" alt="Product 1">
+                <div class="info">
+                    <div class="tag">No White Cast</div>
+                    <div class="title">Swiss Beauty Protect Maxx Sunscreen Air Mist</div>
+                    <div class="rating">⭐ 4.07 | 30 Reviews</div>
+                    <!--<div class="price">₹399</div> -->
+                    <button class="btn">View Product</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="badge badge-new">New</div>
+                <img class="product-img" src="img/r3.jpg" alt="Product 1">
+                <div class="info">
+                    <div class="tag">Blendable</div>
+                    <div class="title">Cheek-A-Boo 3-In-1 Face Palette With Blusher,</div>
+                    <div class="rating">⭐ 4.9 | 148 Reviews</div>
+                    <button class="btn">View Product</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="badge badge-new">New</div>
+                <img class="product-img" src="img/r4.jpg" alt="Product 1">
+                <div class="info">
+                    <div class="tag">Blendable</div>
+                    <div class="title">Cheek-A-Boo 3-In-1 Face Palette With Blusher,</div>
+                    <div class="rating">⭐ 4.9 | 148 Reviews</div>
+                    <button class="btn">View Product</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section1">
+                    <h3 id="sec1">GET IN TOUCH</h3>
+                    <p>No. 180, 1st Main Road, Mahalakshmi Layout Extension, Bengaluru - 560 086</p>
+                    <p>corporate@examplegroup.com</p>
+                    <p>multiplex@examplegroup.com</p>
+                    <p>080 22497464</p>
+                    <p>080 23494706 / 23497960</p>
+                </div>
+                <div class="footer-section2">
+                    <h3 id="sec1">Quick Links</h3>
+                    <p>Gallery</p>
+                    <p>Success Stories</p>
+                    <p>Blog Articles</p>
+                    <p>News & Media</p>
+                    <p>Digital Payment</p>
+                </div>
+                <div class="footer-section2">
+                    <h3 id="sec1">PRODUCTS</h3>
+                    <p>Gallery</p>
+                    <p>Success Stories</p>
+                    <p>Blog Articles</p>
+                    <p>News & Media</p>
+                    <p>Digital Payment</p>
+                </div>
+                <div class="footer-section4">
+                    <h3 id="sec1">FOLLOW</h3>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-threads"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="newsletter">
+                        <h3>SIGN UP TO OUR NEWSLETTER</h3>
+                        <form>
+                            <input type="email" placeholder="Enter email address here">
+                            <button type="submit">SUBSCRIBE</button>
+                        </form>
+                        <p>You agree to our updated <a href="#">Terms & Conditions</a>, <a href="#">Privacy</a> & <a
+                                href="#">Cookie Policies</a>.</p>
+                    </div>
+                    <div class="img-logo">
+                        <img src="img/logo2.jpeg" alt="Logo">
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-line">
+
+            <p class="copyright">
+                Copyright © 2025 Ultraceutics Pvt Lmt. All Rights Reserved.
+            </p>
+        </footer>
 </body>
+
 </html>
