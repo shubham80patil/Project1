@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact-us.css"/>
+    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js"></script>
+
+<script type="module" src="script.js"></script>
+</head>
+<body>
+    <div class="card">
+        <h2>Contact Us</h2>
+        <form id="contact-form" onsubmit="submitForm(event)">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contact">Contact</label>
+                <input type="text" id="contact" name="contact" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+
+            <div class="form-group">
+                <h3>Who are you</h3>
+                <label>
+                    <input type="radio" name="role" value="doctor" onclick="toggleForm('doctor')" required> Doctor
+                </label>
+                <label>
+                    <input type="radio" name="role" value="patient" onclick="toggleForm('patient')" required> Patient
+                </label>
+            </div>
+
+            <div class="form-group" id="clinic-address-group" style="display: none;">
+                <label for="clinic-address">Clinic Address</label>
+                <input type="text" id="clinic-address" name="clinic_address">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+    <!-- <script type="module" src="script.js"></script> -->
+</body>
+</html>

@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Enhanced Map</title>
   <link rel="stylesheet" href="about-us.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"> <!-- AOS Library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">  <!-- AOS Library -->
   
 </head>
 <body>
@@ -14,11 +15,17 @@
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="./about-us.html">About Us</a></li>
-      <li><a href="#">Manufacturer</a></li>
       <li><a href="#">Product</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a href="contact-us.html">Contact Us</a></li>
     </ul>
   </nav>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+
+  <div class="blurred-section">
+    <img class="blurred-image" src="./assets/bgabout.webp" alt="Blurred Background">
+    <div class="overlay-text">About Us</div>
+  </div>
 
   <!-- Content Sections -->
   <div id="home" class="section">
@@ -30,7 +37,7 @@
       <p>Name: Dr. Harshal Redkar, MBBS<br>
         Specialization: General Medicine<br>
         Years of Experience: 15 years<br>
-        Location: Kudal, Maharashtra, India</p>
+        Location: Ganesh clinic bandra</p>
     </div>
   </div>
 
@@ -43,9 +50,8 @@
       <p>Name: Dr. Nikhil Shukla, DBMS<br>
         Specialization: General Medicine<br>
         Years of Experience: 8 years<br>
-        Location: Bandra, Maharashtra, India</p>
+        Location: UK</p>
     </div>
-    <!-- Add Enhanced Map Below Section -->
     
   </div>
 
@@ -58,69 +64,49 @@
       <p>Name: Dr. Shubham Patil, SMS<br>
         Specialization: General Medicine<br>
         Years of Experience: 2 years<br>
-        Location: Indore, Madhya Pradesh, India</p>
+        Location: Near La Flore Boodhoo, Mauritius</p>
     </div>
   </div>
 
-  <div id="map">
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV4cQWaXdUY37vxSXPrE5XgsFzaU9EcJ8&callback=initMap" async defer></script>
-  <script>
-    // Initialize and add the map
-    function initMap() {
-      // Map options
-      var mapOptions = {
-        center: { lat: 20.5937, lng: 78.9629 }, 
-        zoom: 2, 
-        minZoom: 1, 
-        maxZoom: 6, 
-        mapTypeId: 'terrain',
-        
-        styles: [
-          {
-            "elementType": "geometry",
-            "stylers": [{ "color": "#fefefe" }] // Lighten map background
-          },
-          {
-            "elementType": "labels.text.stroke",
-            "stylers": [{ "color": "#ffffff" }] // Highlight text strokes
-          },
-          {
-            "elementType": "labels.text.fill",
-            "stylers": [{ "color": "#616161" }] // Darker text
-          },
-          {
-            "featureType": "administrative",
-            "elementType": "geometry",
-            "stylers": [{ "visibility": "off" }] // Simplify borders
-          },
-          {
-            "featureType": "road",
-            "stylers": [{ "visibility": "off" }] // Hide roads for clarity
-          },
-          {
-            "featureType": "water",
-            "stylers": [{ "color": "#c9e7f4" }] // Light blue water
-          },
-        ]
-      };
 
-     
-      var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-
-      
-      var indiaCircle = new google.maps.Circle({
-        strokeColor: '#FFD700', 
-        strokeOpacity: 0.8,
-        strokeWeight: 2,
-        fillColor: '#FFFF00', 
-        fillOpacity: 0.5,
-        map: map,
-        center: { lat: 20.5937, lng: 78.9629 },
-        radius: 1500000, 
-      });
-    }
-  </script>
+  <div class="clinic-section">
+    <h2>Where we are</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Sr. No</th>
+          <th>Clinic Name</th>
+          <th>Clinic Address</th>
+          <th>Contact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Ganesh Clinic</td>
+          <td><a href="https://maps.google.com/?q=Bandra+near+Link+Square+Mall" target="_blank">Bandra, near Link Square Mall</a></td>
+          <td><a href="tel:+912345678901">+91 2345678901</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Life Inn Clinic</td>
+          <td><a href="https://maps.google.com/?q=Life+Inn+Clinic+UK" target="_blank">UK</a></td>
+          <td><a href="tel:+441234567890">+44 1234567890</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>City Clinic</td>
+          <td><a href="https://maps.google.com/?q=La+Flore+Boodhoo+Mauritius" target="_blank">Near La Flore Boodhoo, Mauritius</a></td>
+          <td><a href="tel:+23012345678">+230 12345678</a></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+  
+  
+  
+  <img src="./assets/Map2.png" alt="map" id="img1">
+  
 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
   <script>
@@ -130,5 +116,15 @@
       once: true,
     });
   </script>
+
+<script>
+  function toggleMenu() {
+    const navbar = document.querySelector('#navbar ul');
+    navbar.classList.toggle('show');
+  }
+</script>
+
+
+
 </body>
 </html>
