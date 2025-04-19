@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.vid{
+    width: auto;
+    height: 600px;
+    display: flex;
+    margin-top: 10px;
+}
+.vid1{
+    width: 600px;
+    height: 600px;
+    background-color: #fdf1e8;
+}
+.vid1 img{
+    width: 550px;
+    height: 600px;
+}
+.vid2{
+    width: 910px;
+    height: 600px;
+    margin-right: 0px;
+    background-color: #fdf1e8;
+}
+
+.trending{
+    width:auto;
+    height: 600px;
+    background-color:#242525;
+    margin-top: 0%;
+}

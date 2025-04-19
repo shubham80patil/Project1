@@ -5,32 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Enhanced Map</title>
-  <link rel="stylesheet" href="about-us.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./css/about-us.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">  <!-- AOS Library -->
+  <link rel="stylesheet" href="./css/header.css">
   
 </head>
 <body>
   <!-- Sticky Navbar -->
-  <nav id="navbar">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="./about-us.html">About Us</a></li>
-      <li><a href="#">Product</a></li>
-      <li><a href="contact-us.html">Contact Us</a></li>
-    </ul>
-  </nav>
+  <header> 
+    <nav class="navbar flex ">
+        <div class="logo">
+            <img src="./Imgs/img/Logo.jpeg" alt="Multiplex Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="./Main.html">Home</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./products.html">Product</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+
+        </ul>
+        <div class="search-and-enquiry">
+            <button class="enquiry-button">Quick Enquiry</button>
+        </div>
+    </nav>
+</header>
   <div class="hamburger" onclick="toggleMenu()">☰</div>
 
 
   <div class="blurred-section">
-    <img class="blurred-image" src="./assets/bgabout.webp" alt="Blurred Background">
+    <img class="blurred-image" src="./Imgs/assets/bgabout.webp" alt="Blurred Background">
     <div class="overlay-text">About Us</div>
   </div>
 
   <!-- Content Sections -->
   <div id="home" class="section">
     <div class="image-container" data-aos="fade-right" data-aos-duration="1000">
-      <img src="./assets/doc1.png" alt="Image 1">
+      <img src="./Imgs/assets/doc1.png" alt="Image 1">
     </div>
     <div class="content-container" data-aos="fade-left" data-aos-duration="1000">
       <h2>Harshal Redkar</h2>
@@ -43,7 +54,7 @@
 
   <div id="about" class="section">
     <div class="image-container" data-aos="fade-left" data-aos-duration="1000">
-      <img src="./assets/doc2.png" alt="Image 2">
+      <img src="./Imgs/assets/doc2.png" alt="Image 2">
     </div>
     <div class="content-container" data-aos="fade-right" data-aos-duration="1000">
       <h2>Nikhil Shukla</h2>
@@ -57,7 +68,7 @@
 
   <div id="manufacturer" class="section">
     <div class="image-container" data-aos="fade-right" data-aos-duration="1000">
-      <img src="./assets/doc3.png" alt="Image 3">
+      <img src="./Imgs/assets/doc3.png" alt="Image 3">
     </div>
     <div class="content-container" data-aos="fade-left" data-aos-duration="1000">
       <h2>Shubham Patil</h2>
@@ -105,7 +116,7 @@
   
   
   
-  <img src="./assets/Map2.png" alt="map" id="img1">
+  <img src="./Imgs/assets/Map2.png" alt="map" id="img1">
   
 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
