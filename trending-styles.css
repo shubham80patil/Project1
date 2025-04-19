@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+}
+.trending {
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    margin: 0;
+    padding: 0px;
+  }
+  .trending-h2 {
+    font-size:x-large;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+  .products {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+  .product-card {
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 352px;
+  height: 550px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+  .badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #7530f8;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 20px;
+    border-bottom-right-radius: 10px;
+  }
+  .badge-new {
+    background: #76b947;
+  }
+  .product-img {
+  width: 100%;
+  height: 440px; /* Increased */
+  object-fit: contain;
+  background-color: #f9f9f9;
+}
+  .info {
+    padding: 10px 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .tag {
+    font-size: 12px;
+    font-weight: 600;
+    background: #ffeaa7;
+    padding: 2px 8px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+  .title {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .rating {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .price {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .btn {
+    background: #e1c476;
+    color: black;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+  }
+  .btn:hover {
+    background: #e02475;
+  }
