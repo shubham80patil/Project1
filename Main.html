@@ -14,26 +14,42 @@
 </head>
 
 <body>
-    <header>
-        <div class="top-bar">
-            <p>Welcome to Ultraceutics</p>
-        </div>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="./Imgs/img/Logo.jpeg" alt="Multiplex Logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="./about-us.html">About Us</a></li>
-                <li><a href="./products.html">Product</a></li>
-                <li><a href="./contact-us.html">Contact Us</a></li>
+    <header> 
 
-            </ul>
-            <div class="search-and-enquiry">
-                <button class="enquiry-button">Quick Enquiry</button>
-            </div>
+        <div class="top-bar">
+            <h1>Welcome to Ultracetius</h1>
+
+        </div>
+        <nav class="navbar flex">
+          <!-- Hamburger Icon (SVG) -->
+          <svg class="hamburger" onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 100 80" fill="#000">
+            <rect width="100" height="10"></rect>
+            <rect y="30" width="100" height="10"></rect>
+            <rect y="60" width="100" height="10"></rect>
+          </svg>
+      
+          <!-- Logo -->
+          <div class="logo">
+            <img src="./Imgs/img/Logo.jpeg" alt="Multiplex Logo">
+          </div>
+      
+          <!-- Sidebar Menu -->
+          <ul class="nav-links">
+            <!-- Close Button -->
+            <span class="close-icon" onclick="closeMenu()">&#10005;</span>
+            
+            <li><a href="./Main.html">Home</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./products.html">Product</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+          </ul>
+      
+          <!-- Quick Enquiry Button -->
+          <div class="search-and-enquiry">
+            <button class="enquiry-button">Quick Enquiry</button>
+          </div>
         </nav>
-    </header>
+      </header>
     <div class="slider">
         <div class="slider-container">
             <div class="slide">
@@ -195,6 +211,18 @@
                 Copyright © 2025 Ultraceutics Pvt Lmt. All Rights Reserved.
             </p>
         </footer>
+
+        <script>
+            function toggleMenu() {
+              const navLinks = document.querySelector('.nav-links');
+              navLinks.classList.toggle('show');
+            }
+          
+            function closeMenu() {
+              const navLinks = document.querySelector('.nav-links');
+              navLinks.classList.remove('show');
+            }
+          </script>
 </body>
 
 </html>

@@ -1,888 +1,855 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="./css/products.css">
-  <title>JAY SHREE GANESHA</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAY SHREE GANESHA - Products</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+  <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/header.css">
 
-</head>
 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fdf1e8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    header {
+    width: 100%;
+}
+
+.top-bar {
+    background-color: #af7871;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 0 0 30px 30px;
+    margin-right: 25px;
+    margin-left: 25px;
+    letter-spacing: 3px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: #fff !important;
+}
+
+.logo img {
+    height: 120px;
+    width: 130px;
+    padding-right: 20px;
+    border-right: 2px solid #ddd;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    
+    background-color: #c96480; 
+}
+
+.search-and-enquiry {
+    display: flex;
+    align-items: center;
+    border-right: 2px solid #ddd;
+    height: 120px;
+}
+
+.search-and-enquiry input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.enquiry-button {
+    background-color: #af7871;
+    color: black;
+    border: none;
+    border-radius: 40px;
+    padding: 20px 40px;
+    cursor: pointer;
+    margin-right: 40px;
+    font-weight: bold;
+    font-size: medium;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.enquiry-button:hover {
+    background-color: #c96480;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .close-icon {
+    display: none; /* hidden by default */
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 913px) {
+    .hamburger {
+      display: block;
+      margin: 10px;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 220px;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.8); /* semi-transparent */
+      backdrop-filter: blur(10px); /* optional: glass effect */
+      padding: 30px 20px;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+      transition: left 0.3s ease;
+      z-index: 999;
+    }
+  
+    .nav-links.show {
+      left: 0;
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin-bottom: 20px;
+    }
+  
+    /* Close icon inside nav */
+    .close-icon {
+      display: block; /* only visible under 768px */
+      align-self: flex-end;
+      font-size: 28px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  }
+
+    
+    /* Hero Image */
+    .hero-image {
+      display: flex;
+      justify-content: flex-end;
+      padding: 2rem;
+    }
+
+    .hero-image img {
+      width: 300px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Shop Links */
+    .shop-links {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 2rem;
+      background-color: #fff;
+      margin: 1rem 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .shop-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    .shop-links a:hover {
+      color: #e91e63;
+    }
+
+    /* Product Category Dropdown */
+    .product-category {
+      padding: 1rem 2rem;
+    }
+
+    .product-category select {
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    /* Section Titles */
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin: 2rem 0;
+      color: #e91e63;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Product Grid */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-card-content {
+      padding: 1.5rem;
+    }
+
+    .product-card-content h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .product-card-content h4 {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+      color: #e91e63;
+    }
+
+    .product-card-content ul {
+      list-style: none;
+      margin-bottom: 1rem;
+    }
+
+    .product-card-content ul li {
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+    }
+
+    .know-more-btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #e91e63;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .know-more-btn:hover {
+      background-color: #c2185b;
+    }
+
+    /* Bestsellers Section */
+    .bestsellers {
+      background-color: #fff;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* IV Drips Section */
+    .iv-drips {
+      background-color: #fff;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-image img {
+        width: 100%;
+        height: auto;
+      }
+
+      .shop-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
 <body>
-  <header>
-    <nav class="navbar">
+  <header> 
+
+    
+    <nav class="navbar flex">
+      <!-- Hamburger Icon (SVG) -->
+      <svg class="hamburger" onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 100 80" fill="#000">
+        <rect width="100" height="10"></rect>
+        <rect y="30" width="100" height="10"></rect>
+        <rect y="60" width="100" height="10"></rect>
+      </svg>
+  
+      <!-- Logo -->
       <div class="logo">
         <img src="./Imgs/img/Logo.jpeg" alt="Multiplex Logo">
       </div>
+  
+      <!-- Sidebar Menu -->
       <ul class="nav-links">
+        <!-- Close Button -->
+        <span class="close-icon" onclick="closeMenu()">&#10005;</span>
+        
         <li><a href="./Main.html">Home</a></li>
         <li><a href="./about-us.html">About Us</a></li>
         <li><a href="./products.html">Product</a></li>
         <li><a href="./contact-us.html">Contact Us</a></li>
-
       </ul>
+  
+      <!-- Quick Enquiry Button -->
       <div class="search-and-enquiry">
         <button class="enquiry-button">Quick Enquiry</button>
       </div>
     </nav>
   </header>
-  <div class="overagepremiersoapdiv">
-    <img src="./Imgs/Model-img/pretty-face-beautiful-smiling-woman-posing-studio-isolated-white-wall.png" alt="OVERAGE GIRL"
-      class="injectionimg1">
+
+  <div class="hero-image">
+    <img src="./Imgs/Model-img/pretty-face-beautiful-smiling-woman-posing-studio-isolated-white-wall.png" alt="Model Image">
   </div>
-  <!-- SHOP ALL FUNCTION DONT HAVE A LINK -->
-  <div class="SHOPALL">
-    <a href="#shopall" id="SHOPALL">SHOP ALL </a>
+
+  <div class="shop-links">
+    <a href="#shopall">Shop All</a>
+    <a href="#bestsellers">Ultra's Bestsellers</a>
+    <a href="#shoplotion">Shop Lotion</a>
+    <a href="#shoptablet">Shop Tablet</a>
+    <a href="#iv-drips">Shop Drip</a>
   </div>
-  <!--  BESTSELLER SECTION WITH A LINK -->
-  <div class="bestsellerdiv">
-    <a href="#bestsellers" id="bestseller"> Ultra's Bestsellers</a>
-  </div>
-  <div class="insideshopall">
-    <div class="shoplotiondiv"> <a href="#shoplotion" id="shoplotion">Shop Lotion </a>
 
-    </div>
-    <br>
-    <!-- HERE EVER SECTION HAVE A LINK  -->
-
-    <div class="shoptabletdiv">
-      <a href="#shoptablet" id="shoptablet">Shop Tablet</a>
-    </div>
-    <!-- CREATING DIV INSIDE DIV FOR EVER LINK AND GIVING IT A ID  -->
-    <!-- LATER REMIND ME THAT I WANT`` A LINK THAT REDIRECT ON THE SAME PPAGE -->
-
-    <div class="shopdripdiv">
-
-      <a href="#iv-drips" id="shopdrip"> Shop Drip</a>
-
-    </div>
-
-  </div>
-  <section id="bestsellers">
-    <div id="ULTRASPECIAL">
-      ULTRA'S BESTSELLER
-    </div>
-    <div class="bestsellercontainer"> <!-- Added the missing closing tag -->
-
-      <div class="bestseller">
-
-
-        <img src="./Imgs/creative/ULTRAADVNCE.jpg " alt="ultra light advance tablet" id="ultralighttab">
-
-        <div id="bestseller1text">
-          <h3 class="MEDICINENAME1">ULTRALIGHT ADVANCE TABLET</h3>
-          <div id="bestsellerbenefits1">
-            <ul id="listofbestseller1">
-              <li>Provide antiaging benefit</li>
-              <li>Improve elasticity</li>
-              <li>Reduce wrinkle depth</li>
-            </ul>
-          </div>
-          <a href="#bestsellerdetails" class="know-more-btn">Know More</a>
-        </div>
-      </div>
-      <div class="bestseller">
-        <img src="./Imgs/creative/ultralight600injection2.jpg" alt="ultra light iv drip" id="ultralightivdrip">
-        <h3 class="medicinename2">ULTRALIGHT 600 INJECTION</h3>
-        <a href="typesofdrip.html" id="typesofdrip"> see all 9 types of drip </a>
-        <ul id="listofbestseller2">
-          <li>Faster absorption </li>
-          <li>Higher bioavailability</li> <!-- Fixed typo "bioavailabili" -->
-          <li>Hydration</li> <!-- Fixed typo "Hydrati" -->
-        </ul>
-        <a href="#ivdrip.html" class="know-more-btn">know more</a>
-      </div>
-      <div class="bestseller">
-        <img src="./Imgs/creative/ULTRABRIGHTLOTION.jpg" alt="ultralight lotion" id="ultralightlotion">
-        <h3 class="medicinename3">ULTRALIGHT BODYWHITENING LOTION AHA 17%</h3>
-        <ul id="listofbestseller3">
-          <li>Opulent Skin elixir</li>
-          <li>Exquisite complexion refinery</li>
-          <li>Plush cellular regeneration</li>
-        </ul>
-        <a href="#bestsellerdetails" class="know-more-btn">Know more</a>
-      </div>
-    </div> <!-- Closing the bestsellercontainer div -->
-  </section>
-
-  <!-- PRODUCT CATEGORY SELECT BUTTON -->
   <div class="product-category">
-    <label for="product-categories"> <b> Product Category: </b></label>
+    <label for="product-categories"><b>Product Category:</b></label>
     <select id="product-categories" onchange="location = this.value;">
       <option value="">--Select a Category--</option>
       <option value="#hair-products">Hair Products</option>
       <option value="#skin-care">Skin Care</option>
       <option value="#body-care">Body Care</option>
-      <option value="#iv-drips">./Imgs/IV-Drips</option>
+      <option value="#iv-drips">IV Drips</option>
     </select>
   </div>
 
-
-
-
-  <!-- <div id="ULTRASPECIAL1">
-      ULTRA'S BESTSELLER
-    </div>
-   
-   <div class="bestseller">
-
-    <img src="ULTRALIGHTADVTABLET.jpg" alt="ultra lightv advance tablet" id="ultralighttab">
-     <h3 class="MEDICINENAME1">ULTRALIGHT ADVANCE TABLET</h3>
-     <UL id="listofbestseller1" >
-      <li>Provide antiaging benefit</li>
-      <li>Improve elasticity</li>
-      <li>Reduce wrinkle depth</li>
-     </UL>
-     <a href="#bestsellerdetails" class="know-more-btn">know more</a>
-    </div>  
-
-  <div class="bestseller">
-    <img src="ivdrip.jpg" alt="ultra light iv droip" id="ultralightivdrip">
-    <h3 class="medicinename2">ULTRALIGHT 600 INJECTION</h3>
-    <h1>9 types of drip</h1>
-    <ul id="listofbestseller2">
-      <li>Faster absorption </li>
-      <li>Higher bioavailabili</li>
-      <li>Hydrati</li>
-    </ul>
-    <a href="#ivdrip.html" class="know-more-btn">know more</a>
-
-   </div>
-   <div class="bestseller">
-    <img src="ultralightlotion.jpg" alt="ultralight lotion" id="ultralightlotion">
-  <h3 class="medicinename3">ULTRALIGHT BODYWHITENING LOTION AHA 17%</h3>
-  <UL id="listofbestseller3">
-    <li>Opulent Skin elixir </li>
-    <li>Exquisite complexion refinery</li>
-    <li>Plush cellular regeneration</li>
-  </UL>
-  <a href="#bestsellerdetails" class="know-more-btn">Know more</a>
-    
-
-  </div>
-     -->
-
-
-  <h1 id="productname">HAIR GAIN ADVANCE </h1>
-  <hr id="productnamehr">
-
-  <div class="hairgainadvance-container">
-
-    <div id="hairgainadvance-image">
-      <img src="./Imgs/Product-img/hairgainadvancetablet-removebg.png" alt="hairgain advance " id="hairgainimage">
-    </div>
-
-    <div id="hairgainadvance-text">
-
-      <div id="hairgainadvancebenefits">
-
-
-        <h4>Benefits </h4>
-        <ul id="hairgainbenefitslist">
-          <li>Promotes Hair Growth</li>
-          <li>Strengthens Hair</li>
-          <li>Reduces Hair Thinning</li>
-          <li>Improves Scalp Health</li>
-          <li>Nourishesh Hair</li>
-
-        </ul>
-
+  <section class="bestsellers" id="bestsellers">
+    <h2 class="section-title">Ultra's Bestsellers</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="./Imgs/creative/ULTRAADVNCE.jpg" alt="Ultralight Advance Tablet">
+        <div class="product-card-content">
+          <h3>Ultralight Advance Tablet</h3>
+          <ul>
+            <li>Provide antiaging benefit</li>
+            <li>Improve elasticity</li>
+            <li>Reduce wrinkle depth</li>
+          </ul>
+          <a href="#bestsellerdetails" class="know-more-btn">Know More</a>
+        </div>
       </div>
-
-
-      <div id="hairgainadvancekey">
-        <h4>Key Ingredients </h4>
-        <ul id="hairgainadvancekeylist">
-          <li>Beta-Sitosterol: Helps block DHT</li>
-          <li>Pumpkin Seed Extract: Nourishes the scalp and
-            strengthens hair strands for thicker, healthier hair.
-          </li>
-          <li> Brewer’s Yeast: it improves hair shine,
-            volume, and strength. </li>
-          <li> Amino Acids: Strengthens and repairs hair ensuring smoother and shinier hair
-          </li>
-          <li>Mutivitamins: essential vitamins that enhance hydration, elasticity, and
-            overall hair vitality</li>
-          <li>Biotin: The "hair growth vitamin" that reduces breakage, and
-            ensures longer, healthier hair. </li>
-          <li>Trace Elements:Vital minerals like zinc,selenium,boost scalp
-            health,protect your hair damage.</li>
-        </ul>
-
+      <div class="product-card">
+        <img src="./Imgs/creative/ultralight600injection2.jpg" alt="Ultralight 600 Injection">
+        <div class="product-card-content">
+          <h3>Ultralight 600 Injection</h3>
+          <ul>
+            <li>Faster absorption</li>
+            <li>Higher bioavailability</li>
+            <li>Hydration</li>
+          </ul>
+          <a href="typesofdrip.html" class="know-more-btn">See All 9 Types of Drip</a>
+        </div>
       </div>
-
-
-
-
-    </div>
-
-
-
-
-  </div>
-
-
-
-
-
-
-
-
-  <h1 id="productname">ULTRABRIGHT BODY WHITENING LOTION </h1>
-  <hr id="productnamehr">
-
-  <div class="ultrabrightlotion-section">
-
-    <div id="ultrabrightlotion-img">
-      <img src="./Imgs/Product-img/lotion-removebg-preview (1).png" alt="ULTRABRIGHTLOTION" id="ultrabrightimage">
-
-    </div>
-
-
-    <div id="ultrabrightlotion-text">
-
-      <div id="ultralotionbenefits">
-        <h4>Benefits</h4>
-        <ul id="ultrabrightbenefitslist">
-          <li>Best for Underarm,knee,elbow</li>
-          <li>Gently exfoliates for smoother, brighter skin</li>
-          <li>Reduces pigmentaƟon, dark spots, and uneven skin tone.</li>
-          <li>Deeply hydrates and nourishes for a soŌ, supple feel.
-          </li>
-          <li>Promotes skin renewal and refines overall texture.
-          </li>
-        </ul>
+      <div class="product-card">
+        <img src="./Imgs/creative/ULTRABRIGHTLOTION.jpg" alt="Ultralight Body Whitening Lotion">
+        <div class="product-card-content">
+          <h3>Ultralight Body Whitening Lotion AHA 17%</h3>
+          <ul>
+            <li>Opulent Skin elixir</li>
+            <li>Exquisite complexion refinery</li>
+            <li>Plush cellular regeneration</li>
+          </ul>
+          <a href="#bestsellerdetails" class="know-more-btn">Know More</a>
+        </div>
       </div>
-
-      <div id="ultrabrightkey">
-        <h4> KEY INGREDIENTS</h4>
-        <UL id="ultrabrightingredientslist">
-          <li>10% LacƟc Acid: Exfoliates and hydrates to improve texture and tone.</li>
-          <li>7% Glycolic Acid: Promotes cell turnover for a brighter, more radiant complexion</li>
-          <li> 3% Licorice Extract: Reduces pigmentaƟon and brightens skin naturally</li>
-          <li>% Salicylic Acid: Clears pores, reduces blemishes, and smooths skin.
-          </li>
-          <li> Calendula Oil: Nourishes and calms skin, providing lasƟng hydraƟon</li>
-        </UL>
-      </div>
-
-
-
     </div>
+  </section>
 
+  <section id="hair-products">
+    <h2 class="section-title">Hair Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="./Imgs/Product-img/hairgainadvancetablet-removebg.png" alt="Hair Gain Advance">
+        <div class="product-card-content">
+          <h3>Hair Gain Advance</h3>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Promotes Hair Growth</li>
+            <li>Strengthens Hair</li>
+            <li>Reduces Hair Thinning</li>
+            <li>Improves Scalp Health</li>
+            <li>Nourishes Hair</li>
+          </ul>
+          <h4>Key Ingredients</h4>
+          <ul>
+            <li>Beta-Sitosterol: Helps block DHT</li>
+            <li>Pumpkin Seed Extract: Nourishes the scalp and strengthens hair strands</li>
+            <li>Brewer’s Yeast: Improves hair shine, volume, and strength</li>
+            <li>Amino Acids: Strengthens and repairs hair</li>
+            <li>Multivitamins: Enhances hydration, elasticity, and overall hair vitality</li>
+            <li>Biotin: Reduces breakage, ensures longer, healthier hair</li>
+            <li>Trace Elements: Boost scalp health, protect hair from damage</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="skin-care">
+    <h2 class="section-title">Skin Care</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="./Imgs/Product-img/ultraadvtab_prdct1.jpg" alt="Ultralight Advance Tablet">
+        <div class="product-card-content">
+          <h3>Ultralight Advance Tablet</h3>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Enhances skin radiance and promotes an even skin tone</li>
+            <li>Boosts hydration and supports skin elasticity</li>
+            <li>Reduces oxidative stress and helps protect against environmental damage</li>
+            <li>Supports collagen production for youthful, plump skin</li>
+            <li>Improves overall skin health and helps fight signs of aging</li>
+          </ul>
+          <h4>Ingredients</h4>
+          <ul>
+            <li>250mg Emothion: Protects skin cells from damage</li>
+            <li>50mg Nutroxsun: Derived from citrus and pomegranate</li>
+            <li>100mg Saberry: Reduces skin inflammation</li>
+            <li>Vitamin C: Brightens the skin and supports collagen production</li>
+            <li>Sodium Hyaluronate: Hydrates the skin, improving texture and elasticity</li>
+          </ul>
+          <h4>Collaboration</h4>
+          <ul>
+            <li>Gnosis Lesaffre [Emothion] Italy, Monteloedar Nutroxsun Spain</li>
+            <li>Sabina Group USA SABERRY</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./Imgs/Product-img/overagetomato_prdct2.jpg" alt="Frost White Tomato Pro">
+        <div class="product-card-content">
+          <h3>Frost White Tomato Pro</h3>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Lightens skin and promotes an even skin tone</li>
+            <li>Reduces dark spots and pigmentation</li>
+            <li>Protects skin from oxidative damage</li>
+            <li>Improves skin elasticity and supports collagen production</li>
+            <li>Promotes overall skin health with antioxidant-rich ingredients</li>
+          </ul>
+          <h4>Ingredients</h4>
+          <ul>
+            <li>800 mg Phytofloral: Brightens skin, reduces pigmentation</li>
+            <li>L-Cysteine: Detoxifies, strengthens skin</li>
+            <li>NAC: Combats inflammation, promotes radiant skin</li>
+            <li>CoQ10: Supports skin health, reduces aging signs</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./Imgs/Product-img/cleanser_prdct2.jpg" alt="Deep Purifying Cleanser">
+        <div class="product-card-content">
+          <h3>Deep Purifying Cleanser</h3>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Deeply cleanses and purifies skin</li>
+            <li>Exfoliates dead skin cells for smoother, brighter skin</li>
+            <li>Helps clear pores and prevent breakouts</li>
+            <li>Hydrates and nourishes, leaving skin soft and balanced</li>
+            <li>Promotes a clear, even skin tone</li>
+          </ul>
+          <h4>Ingredients</h4>
+          <ul>
+            <li>2% Glycolic Acid: Exfoliates and brightens</li>
+            <li>1% Salicylic Acid: Clears pores</li>
+            <li>1% Lactic Acid: Hydrates and improves texture</li>
+            <li>5% Betaine: Moisturizes and balances skin</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="body-care">
+    <h2 class="section-title">Body Care</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="./Imgs/Product-img/lotion-removebg-preview (1).png" alt="Ultrabright Body Whitening Lotion">
+        <div class="product-card-content">
+          <h3>Ultrabright Body Whitening Lotion</h3>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Best for underarm, knee, elbow</li>
+            <li>Gently exfoliates for smoother, brighter skin</li>
+            <li>Reduces pigmentation, dark spots, and uneven skin tone</li>
+            <li>Deeply hydrates and nourishes</li>
+            <li>Promotes skin renewal and refines texture</li>
+          </ul>
+          <h4>Key Ingredients</h4>
+          <ul>
+            <li>10% Lactic Acid: Exfoliates and hydrates</li>
+            <li>7% Glycolic Acid: Promotes cell turnover</li>
+            <li>3% Licorice Extract: Reduces pigmentation</li>
+            <li>1% Salicylic Acid: Clears pores</li>
+            <li>Calendula Oil: Nourishes and calms skin</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./Imgs/ecom/overagesoap_prdct2.jpg" alt="Be Bright Premium Soap">
+        <div class="product-card-content">
+          <h3>Be Bright Premium Soap</h3>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Cleanses and exfoliates dead skin cells</li>
+            <li>Protects with mulberry extract</li>
+            <li>Reduces pigmentation and brightens skin</li>
+          </ul>
+          <h4>Ingredients</h4>
+          <ul>
+            <li>Kumkumadi Oil</li>
+            <li>Arbutin</li>
+            <li>Papaya and Mulberry Extract</li>
+            <li>Kojic Acid</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="iv-drips" id="iv-drips">
+    <h2 class="section-title">IV Drips</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="./Imgs/Iv-drips/celestialdrip.png" alt="Celestial Drip">
+        <div class="product-card-content">
+          <h3>Celestial Drip</h3>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Antioxidant effects</li>
+            <li>Enhanced skin complexion and reduced oxidative stress</li>
+            <li>Lighten skin tone and improve skin quality</li>
+          </ul>
+          <h4>Ingredients</h4>
+          <ul>
+            <li>Normal Saline</li>
+            <li>Glutathione</li>
+            <li>Vitamin C</li>
+            <li>Vitamin B6</li>
+            <li>Zinc Chloride IP</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./Imgs/Iv-drips/eternaldrip.png" alt="Eternal Drip">
+        <div class="product-card-content">
+          <h3>Eternal Drip</h3>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Combat signs of aging</li>
+            <li>Improve skin appearance, reduce wrinkles</li>
+            <li>Enhanced skin health and hydration</li>
+          </ul>
+          <h4>Ingredients</h4>
+          <ul>
+            <li>Glutathione</li>
+            <li>Collagen</li>
+            <li>Normal Saline</li>
+            <li>Vitamin C, B1, B5, B6, B12</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./Imgs/Iv-drips/revitaglow.png" alt="Revita Glow">
+        <div class="product-card-content">
+          <h3>Revita Glow</h3>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Lighter and more radiant complexion</li>
+            <li>Enhance skin health and appearance</li>
+            <li>Support detoxification and immune function</li>
+          </ul>
+          <h4>Ingredients</h4>
+          <ul>
+            <li>Zinc Sulphate</li>
+            <li>Manganese (As Sulphate)</li>
+            <li>Vitamin C, B1, B5, B6, B12</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./Imgs/Iv-drips/tresaatonicdrip.png" alt="Tresa Tonic">
+        <div class="product-card-content">
+          <h3>Tresa Tonic</h3>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Promotes hair growth</li>
+            <li>Reduces hair thinning</li>
+            <li>Improves overall hair health</li>
+          </ul>
+          <h4>Ingredients</h4>
+          <ul>
+            <li>Selenium (As Selenious) NAD+</li>
+            <li>Chromium (As Chloride) USP</li>
+            <li>Copper (As Sulphate)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./Imgs/Iv-drips/nadboostdrip.png" alt="NAD+ Boost">
+        <div class="product-card-content">
+          <h3>NAD+ Boost</h3>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Reduce cravings, withdrawal symptoms</li>
+            <li>Boosts energy and cognitive function</li>
+            <li>Supports anti-aging and cellular repair</li>
+          </ul>
+          <h4>Ingredients</h4>
+          <ul>
+            <li>Normal Saline</li>
+            <li>Glutathione</li>
+            <li>NAD+</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./Imgs/Iv-drips/recoverydrip.png" alt="Recovery Rush">
+        <div class="product-card-content">
+          <h3>Recovery Rush</h3>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Relieve hangover symptoms</li>
+            <li>Protection of digestive system</li>
+            <li>Quick mitigation of hangover symptoms</li>
+          </ul>
+          <h4>Ingredients</h4>
+          <ul>
+            <li>Pantoprazole</li>
+            <li>Folic Acid</li>
+            <li>Niacinamide</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./Imgs/Iv-drips/gymfusiondrip.png" alt="Fit Fusion">
+        <div class="product-card-content">
+          <h3>Fit Fusion</h3>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Boosts Energy & Stamina</li>
+            <li>Speeds Muscle Recovery</li>
+            <li>Supports Muscle Growth</li>
+            <li>Prevents Injuries</li>
+            <li>Provides Antioxidant Protection</li>
+          </ul>
+          <h4>Ingredients</h4>
+          <ul>
+            <li>Glutathione</li>
+            <li>B Complex</li>
+            <li>BCCA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./Imgs/Iv-drips/recoverydrip.png" alt="Fortifty">
+        <div class="product-card-content">
+          <h3>Fortifty</h3>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Enhances immune function</li>
+            <li>Purifies the body</li>
+            <li>Helps defend against viral infections</li>
+          </ul>
+          <h4>Ingredients</h4>
+          <ul>
+            <li>Glutathione</li>
+            <li>Vitamin C</li>
+            <li>Magnesium</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="./Imgs/ecom/hairgain_prdct1.jpg" alt="Relax Fusion">
+        <div class="product-card-content">
+          <h3>Relax Fusion</h3>
+          <h4>Benefits</h4>
+          <ul>
+            <li>Reduces stress</li>
+            <li>Enhances sleep quality</li>
+            <li>Promotes overall rejuvenation</li>
+          </ul>
+          <h4>Ingredients</h4>
+          <ul>
+            <li>Magnesium</li>
+            <li>Glutathione</li>
+            <li>Folic Acid</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section1">
+            <h3 id="sec1">GET IN TOUCH</h3>
+            <p>No. 180, 1st Main Road, Mahalakshmi Layout Extension, Bengaluru - 560 086</p>
+            <p>corporate@examplegroup.com</p>
+            <p>multiplex@examplegroup.com</p>
+            <p>080 22497464</p>
+            <p>080 23494706 / 23497960</p>
+        </div>
+        <div class="footer-section2">
+            <h3 id="sec1">Quick Links</h3>
+            <p>Gallery</p>
+            <p>Success Stories</p>
+            <p>Blog Articles</p>
+            <p>News & Media</p>
+            <p>Digital Payment</p>
+        </div>
+        <div class="footer-section2">
+            <h3 id="sec1">PRODUCTS</h3>
+            <p>Gallery</p>
+            <p>Success Stories</p>
+            <p>Blog Articles</p>
+            <p>News & Media</p>
+            <p>Digital Payment</p>
+        </div>
+        <div class="footer-section4">
+            <h3 id="sec1">FOLLOW</h3>
+            <div class="social-icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-threads"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="newsletter">
+                <h3>SIGN UP TO OUR NEWSLETTER</h3>
+                <form>
+                    <input type="email" placeholder="Enter email address here">
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+                <p>You agree to our updated <a href="#">Terms & Conditions</a>, <a href="#">Privacy</a> & <a
+                        href="#">Cookie Policies</a>.</p>
+            </div>
+            <div class="img-logo">
+                <img src="./Imgs/img/logo2.jpeg" alt="Logo">
+            </div>
+        </div>
+    </div>
+    <hr class="footer-line">
 
-  </div>
+    <p class="copyright">
+        Copyright © 2025 Ultraceutics Pvt Lmt. All Rights Reserved.
+    </p>
+</footer>
 
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+  }
 
-  <!-- 
-<div class="ultrabrightlotion">
-  <div id="ultralightinjectionimagecontainer">
-  <img src="./Imgs/Product-img/product-box-mockup.jpg" alt="lotionimg" class="ultrabrightlotionimage">
-</div>
-<h1 class="ultrabrightlotionname">
-  ULTRABRIGHT BODY WHITENING LOTION AHA 17%
-</h1>
-<div id="ultrabrightinjectiondetails">
-<div class="ultrabrightbenefits">
-  <h4>Benefits</h4>
-  <ul id="ultrabrightbenefitlist">
-          <li> Best for Underarm,knee,elbow </li>
-          <li> Reduces pigmentaƟon, dark spots, and uneven skin tone</li>
-<li> Deeply hydrates and nourishes for a soŌ, supple feel.</li>
-<li> Promotes skin renewal and refines overall texture.</li>
-<li> Best for Underarm,knee,elbow </li>
-<li> Gently exfoliates for smoother, brighter skin.</li>
-<li>Soothes and calms irritated skin with natural oils and extracts.</li>
-  </ul>
-</div>
+  function closeMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.remove('show');
+  }
 
-<div class="ultrabrightlotioningredients">
-  <h4>Ingredients</h4>
-  <ul id="ultrabrightingredientslist">
-    <li>10% LacƟc Acid: Exfoliates and hydrates to improve texture and tone</li>
-    <li>7% Glycolic Acid: Promotes cell turnover for a brighter, more radiant complexion.</li>
-    <li> 3% Licorice Extract: Reduces pigmentaƟon and brightens skin naturally.
-     </li>
-    <li>1% Salicylic Acid: Clears pores, reduces blemishes, and smooths skin</li>
-    <li>Calendula Oil: Nourishes and calms skin, providing lasƟng hydraƟon</li>
-    <li> 1% Betaine: Locks in moisture for a soŌ, smooth, and balanced finish</li>
-  </ul>
-</div>
-</div>
-</div>
+  function toggleForm(role) {
+      const clinicAddressGroup = document.getElementById('clinic-address-group');
+      if (role === 'doctor') {
+          clinicAddressGroup.style.display = 'block';
+      } else {
+          clinicAddressGroup.style.display = 'none';
+      }
+  }
 
-
-
-</div> -->
-
-
-
-  <!--  CREATE THE COLUMN FOR EACH TYPE OF PROJECT FOR EGS SKIN PRODUCTS HAIR CARE BODY WASH LOTIONS DRIPS ETC IN A SINGLE PAGE -->
+ 
+  
+</script>
 </body>
-
 </html>
-<h1 id="productname">DEEP PURIFYING CLEANSER</h1>
-<hr id="productnamehr">
-
-<div class="overagecleanser-container">
-
-  <div id="cleanserimage-section">
-    <img src="./Imgs/Product-img/cleanser_prdct2.jpg" alt="cleanser photo" id="cleanserimg">
-  </div>
-
-  <div id="overagedetailstexts">
-
-    <div id="overagecleanserbenefits">
-
-      <h4 id="benefits">BENEFITS </h4>
-
-      <ul id="overagecleanserbenefitslist">
-        <li>Deeply cleanses and purifies skin, removing dirt, oil, and makeup</li>
-        <li> Exfoliates dead skin cells to reveal smoother, brighter skin. </li>
-        <li> Helps clear pores and prevent breakouts</li>
-        <li> Hydrates and nourishes, leaving skin soŌ and balanced</li>
-        <li>Promotes a clear, even skin tone and texture with regular use</li>
-      </ul>
-    </div>
-
-
-    <div id="overagecleanseringredients">
-      <h4 id="ingredientsname">INGREDIENTS </h4>
-
-      <ul id="overagecleanseringredientslist">
-        <li> 2% Glycolic Acid: AHA that exfoliates and helps brighten the complexion.
-        </li>
-        <li>1% Salicylic Acid: BHA that penetrates pores to clear them of excess oil and impuriƟes</li>
-        <li>1% LacƟc Acid: Gently exfoliates and hydrates, improving skin texture and radiance</li>
-        <li> 5% Betaine: Moisturizes and balances skin, prevenƟng dryness and irritaƟon from
-          exfoliaƟon.</li>
-      </ul>
-    </div>
-  </div>
-
-</div>
-
-
-
-<h1 id="productname"> ULTRALIGHT ADVANCE TABLET</h1>
-<hr id="productnamehr">
-
-<DIV class="ultralightadvance-container">
-
-
-
-  <div id="ultraadvanceimg-section">
-
-    <img src="./Imgs/Product-img/ultraadvtab_prdct1.jpg" alt=" Ultralight advance tablet" id="ultraadvanceimg">
-
-  </div>
-
-  <div id="ultralighttext">
-
-    <div id="ultralightbenefits">
-
-      <H4 id="BEniFITS"> BENEFITS</H4>
-
-      <ul id="ultralightbenefitslist">
-        <li>Enhances skin radiance and promotes an even skin tone.</li>
-        <li>Boosts hydra on and supports skin elas city. </li>
-        <li>Reduces oxida ve stress and helps protect against environmental damage.</li>
-        <li>Supports collagen produc on for youthful, plump skin</li>
-        <li>Improves overall skin health and helps fight signs of aging.</li>
-      </ul>
-    </div>
-
-    <div id="ultralightingredients">
-      <h4 id="ingredients">INGREDIENTS </h4>
-      <ul id="ultralightingredientslist">
-
-        <li>250mg Emothion: A unique an oxidant complex that helps protect skin cells from damage
-        </li>
-        <li>50mg Nutroxsun: A natural ingredient derived from citrus and pomegranate</li>
-        <li>100mg Saberry: A potent an oxidant that helps reduce skin inflamma </li>
-        <li>Vitamin C: A powerful an oxidant that brightens the skin and supports collagen produc on/li>
-        <li>Sodium Hyaluronate: A form of hyaluronic acid that hydrates the skin, improving texture and
-          elas city. </li>
-      </ul>
-      <FOOTER>
-        <DIV id="ultraadvancecollaboration">
-
-          <h4>COLLABORATION</h4>
-
-          <li> Gnosis lesaffre [emothion] itlay Monteloedar nutroxsun spain </li>
-          <li>Sabina group USA SABERRY</li>
-
-
-        </DIV>
-      </FOOTER>
-
-    </div>
-  </div>
-
-</DIV>
-
-
-
-<h1 id="productname">FROST WHITE TOMATO PRO </h1>
-<hr id="productnamehr">
-
-
-<div class="frostwhite-container">
-
-  <div id="frostwhite-imgcontainer">
-
-    <img src="./Imgs/Product-img/overagetomato_prdct2.jpg" alt="frostwhite tomato" id="frostwhiteimg">
-
-  </div>
-
-  <div id="frostwhitedetailstexts">
-
-    <div id="frostwhitebenefits">
-
-      <h4 id="benefits"> Benefits</h4>
-
-
-      <ul id="frostwhitebenefitslist">
-        <li>tens skin and promotes an even skin tone. </li>
-        <li>Reduces dark spots and pigmenta on for a clearer complexion. </li>
-        <li>Protects skin from oxida ve damage and environmental stress.</li>
-        <li>Improves skin elas city and supports healthy collagen produc on. </li>
-        <li>Promotes overall skin health with an oxidant-rich ingredients. </li>
-      </ul>
-    </div>
-
-    <div id="frostwhiteingredients">
-      <h4 id="ingredientsname"> Ingredients</h4>
-      <ul id="frostwhiteingredientslist">
-
-        <li>800 mg Phytofloral: Brightens skin, reduces pigmentation, and protects against UV damage.</li>
-        <li>L-Cysteine: Detoxifies, strengthens skin, and boosts collagen production for healthier skin.</li>
-        <li>NAC: Combats inflammation, shields against damage, and promotes radiant skin.</li>
-
-        <li>CoQ10: A vital antioxidant that supports skin health, reduces aging signs, and maintains a youthful glow.
-        </li>
-      </ul>
-
-    </div>
-
-  </div>
-
-</div>
-
-<h1 class="IVDRIPSHEADING"> Ultralight Ultrafusion ./Imgs/IV-Drips </h1>
-
-
-<section id="iv-drips">
-
-  <h1 id="ivdripproductname"> CELESTIAL DRIP</h1>
-  <hr id="ivdripproductnamehr">
-
-
-  <div class="celestialdrip-container">
-
-
-
-
-    <div id="celestialdripimg-container">
-      <img src="./Imgs/Iv-drips/celestialdrip.png" alt="celestial drip" id="celestialdripimg">
-    </div>
-
-    <div id="celestialdriptexts">
-
-      <h4 id="benefits"> Benefits</h4>
-      <div id="celestialdripbenefits">
-
-        <ul id="celestialdripbenefitslist">
-
-          <li> Antioxidant effects </li>
-          <li>Enhanced skin complexion and reduced oxida ve stress </li>
-          <li>Lighten skin tone and improve skin quality</li>
-
-        </ul>
-
-      </div>
-
-      <div id="celestialdripingredients">
-        <h4 id="ingredients"> Ingredients</h4>
-        <ul id="celestialdripingredientslist">
-          <li>Normal Saline</li>
-          <li>Glutathione</li>
-          <li> Vitamin C</li>
-          <li>Vitamin B6</li>
-          <li> Zinc Chloride IP</li>
-        </ul>
-      </div>
-
-    </div>
-
-  </div>
-
-  <h1 id="ivdripproductname"> ETERNAL DRIP</h1>
-  <hr id="ivdripproductnamehr">
-
-
-  <div class="eternaldrip-container">
-
-    <div id="eternaldripimg-container">
-      <img src="./Imgs/Iv-drips/eternaldrip.png" alt="eternal drip" id="eternaldripimg">
-    </div>
-
-    <div id="eternaldriptexts">
-      <div id="eternaldripbenefits">
-        <h4 id="benefits"> Benefits</h4>
-        <ul id="eternaldripbenefitslist">
-          <li> Combat signs of aging </li>
-          <li>Improve skin appearance, reduce wrinkles, youthful and rejuvenated look </li>
-          <li>Enhanced skin health and hydra on to support overall wellness </li>
-
-        </ul>
-      </div>
-
-      <div id="eternaldripingredients">
-        <h4 id="ingredients"> Ingredients</h4>
-        <ul id="eternaldripingredientslist">
-
-          <li> Glutathione</li>
-          <li>Collagen</li>
-          <li> Normal Saline</li>
-          <li> Vitamin C,B1,B5,B6,B12 </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-
-  <h1 id="ivdripproductname"> REVITA GLOW</h1>
-  <hr id="ivdripproductnamehr">
-
-
-  <div class="revitaglow-container">
-
-
-    <div id="revitaglowimg-container">
-      <img src="./Imgs/Iv-drips/revitaglow.png" alt="revitaglow" id="revitaglowimg">
-    </div>
-
-    <div id="revitaglowtexts">
-
-      <div id="revitaglowbenefits">
-
-        <h4 id="benefits">
-          Benefits
-        </h4>
-
-        <ul id="revitaglowbenefitslist">
-          <li>Lighter and more radiant complexion</li>
-          <li>Enhance skin health and appearance </li>
-          <li>Support detoxification and immune function </li>
-
-        </ul>
-      </div>
-
-
-      <div id="revitaglowingredients">
-
-        <h4 id="ingredients"> Ingredients</h4>
-        <ul id="revitaglowingredientslist">
-          <li> Zinc Sulphate</li>
-          <li> Manganese (As Sulphate)</li>
-          <li>Vitamin C,B1,B5,B6,B12</li>
-
-        </ul>
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <h1 id="ivdripproductname"> TRESA TONIC</h1>
-  <hr id="ivdripproductnamehr">
-
-  <div id="tresatonicdrip-container">
-    <div id="tresatonicdripimg-container">
-      <img src="./Imgs/Iv-drips/tresaatonicdrip.png" alt="tresa Tonic" id="tresatonicdripimg">
-    </div>
-
-    <div id="tresatonicdriptexts">
-
-      <div id="tresatonicdripbenefits">
-        <h4 id="benefits">Benefits</h4>
-        <ul id="tresatonicdripsbenefitslist">
-          <li>Promotes hair growth,</li>
-          <li>Reduces hair thinning, and improves overall hair health </li>
-          <li> Well-being, reduces hair thinning, and improves overall hair health</li>
-
-        </ul>
-      </div>
-
-      <div id="tresatonicdripingredients">
-        <h4 id="ingredients">Ingredients</h4>
-        <ul id="tresatonicingredientslist">
-          <li> Selenium (As Selenious) NAD+ </li>
-          <li>Chromium (As chloride) USP</li>
-          <li>Copper (As Sulphate)</li>
-
-        </ul>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <h1 id="ivdripproductname"> NAD+ BOOST</h1>
-  <hr id="ivdripproductnamehr">
-
-  <div id="nadboost-container">
-
-    <div id="nadboostimg-container">
-
-      <img src="./Imgs/Iv-drips/nadboostdrip.png" alt="Nad+ Boost Drip" id="nadboostimg">
-    </div>
-
-    <div id="nadboosttexts">
-      <div id="nadboostbenefits">
-        <h4 id="benefits">Benefits</h4>
-        <ul id="nadboostbenefitslist">
-          <li> Reduce cravings, reduce withdrawal symptoms, an-aging and longevity </li>
-          <li>Mul ple health benefits, from boos ng energy</li>
-          <li>cognitive function to supporting anti-aging and cellular repair </li>
-        </ul>
-      </div>
-
-
-      <div id="nadboostingredients">
-
-        <h4 id="ingredients">Ingredients</h4>
-        <ul id="nadboostingredientslist">
-          <li> Normal Saline</li>
-          <li> Glutathione</li>
-          <li> NAD+ </li>
-        </ul>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <h1 id="ivdripproductname"> RECOVERY RUSH</h1>
-  <hr id="ivdripproductnamehr">
-
-  <div id="recoverydrip-container">
-    <div id="recoverdripimg-container">
-      <img src="./Imgs/Iv-drips/recoverydrip.png" alt="Recovery Rush Drip" id="recoverdripimg">
-
-    </div>
-
-    <div id="recoverydriptexts">
-      <div id="recoverydripbenefits">
-        <h4 id="benefits"> Benefits</h4>
-
-        <ul id="recoverydripbenefitslist">
-
-          <li> Relieve hangover symptoms</li>
-          <li>protection of digestive system and symptom relief </li>
-          <li> Quick and effective way to mitigate hangover symptom</li>
-        </ul>
-
-      </div>
-
-      <div id="recoverydripingredients">
-        <h4 id="ingredients">
-          Ingredients
-        </h4>
-        <ul id="recoverydripingredientslist">
-          <li>Pantoprazole</li>
-          <li>Folic Acid</li>
-          <li>Niacinamide </li>
-        </ul>
-
-      </div>
-
-    </div>
-  </div>
-
-
-  <h1 id="ivdripproductname"> FIT FUSION </h1>
-  <hr id="ivdripproductnamehr">
-
-  <div id="gymfusiondrip-container">
-    <div id="gymfusiondripimg-container">
-      <img src="./Imgs/Iv-drips/gymfusiondrip.png" alt="gym fusion drip" id="gymfusiondripimg">
-    </div>
-
-    <div id="gymfusiontexts">
-      <div id="gymfusionbenefits">
-
-        <h4 id="benefits">
-          Benefits
-
-        </h4>
-
-        <ul id="gymfusionbenefitslist">
-          <li>Boosts Energy & Stamina</li>
-          <li>Speeds Muscle Recovery</li>
-          <li>Supports Muscle Growth</li>
-          <li>Prevents Injuries</li>
-          <li>Provides An oxidant Protec on </li>
-        </ul>
-      </div>
-
-      <div id="gymfusioningredients">
-
-        <h4 id="ingredients">Ingredients</h4>
-
-        <ul id="gymfusioningredientslist">
-          <li> Glutathione</li>
-          <li> B complex</li>
-          <li>BCCA</li>
-
-        </ul>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <h1 id="ivdripproductname"> FORTIFTY</h1>
-  <hr id="ivdripproductnamehr">
-
-  <div id="fortiftydrip-container">
-
-    <div id="fortiftydripimg-container">
-      <img src="./Imgs/Iv-drips/recoverydrip.png" alt="fortifty drip" id="fortiftydripimg">
-    </div>
-    <div id="fortiftydriptexts">
-
-      <div id="fortiftydripbenefits">
-        <h4 id="benefits">Benefits</h4>
-        <ul id="fortiftydripbenefitslist">
-          <li>Enhances immune functionm </li>
-          <li> purifies the body </li>
-          <li> Helps defend against viral infections</li>
-        </ul>
-      </div>
-
-
-      <div id="fortiftydripingredients">
-        <h4 id="ingredients">Ingredients</h4>
-        <ul id="fortiftydripingredientslist">
-
-          <li>glutathione</li>
-          <li>vitamin c </li>
-          <li>magnesium</li>
-        </ul>
-
-      </div>
-
-
-
-    </div>
-
-  </div>
-
-
-  <h1 id="ivdripproductname"> RELAX FUSION </h1>
-  <hr id="ivdripproductnamehr">
-
-  <div id="relaxfusiondrip-container">
-    <div id="relaxfusiondripimg-cotainer">
-      <img src="./Imgs/ecom/hairgain_prdct1.jpg" alt="relaxfusiondrip" id="relaxfusiondripimg">
-
-    </div>
-
-    <div id="relaxfusiondriptexts">
-      <div id="relaxfusiondripbenefits">
-        <h4 id="benefits">Benefits</h4>
-        <ul id="relaxfusiondripbenefitslist">
-          <li>Reduces stress</li>
-          <li>enhances sleep quality,</li>
-          <li> promoting
-            overall rejuvenation</li>
-        </ul>
-      </div>
-
-      <div id="relaxfusioningredients">
-        <h4 id="ingredients">
-          Ingredients
-        </h4>
-        <ul id="relaxfusioningredientslist">
-          <li>magnesium </li>
-          <li>glutathione </li>
-          <li>follic acid</li>
-
-        </ul>
-      </div>
-
-
-
-    </div>
-
-  </div>
-
-
-</section>
-
-
-<h1 id="productname">BE BRIGHT PREMIUM SOAP</h1>
-<hr id="productnamehr">
-
-<div class="overagesoap-container">
-
-
-  <div id="overagesoapimg-container">
-
-    <img src="./Imgs/ecom/overagesoap_prdct2.jpg" alt="Overage soap" id="overagesoapimg">
-
-  </div>
-
-
-  <div id="overagesoaptexts">
-    <div id="overagesoapbenefits">
-
-      <h4 id="benefits">
-        Benefits
-      </h4>
-      <ul id="overagesoapbenefitslist">
-        <li> Cleanses and exfoliates dead skin cells</li>
-        <li>protects mulberry </li>
-        <li>reduce pigmentation and brighten the skin</li>
-      </ul>
-
-    </div>
-
-    <div id="overagesoapingredients">
-
-      <h4 id="ingredients">Ingredients</h4>
-
-      <ul id="overagesoapingredientslist">
-
-        <li>Kumkumadi oil</li>
-        <li>Arbutin</li>
-        <li>Papaya and Mulberry extract</li>
-        <li>kojic Acid</li>
-
-      </ul>
-
-    </div>
-
-  </div>
-
-</div>

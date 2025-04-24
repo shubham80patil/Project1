@@ -16,89 +16,66 @@ body {
   background: linear-gradient(135deg, #fef6e4, #FDF0D9);
 }
 
-/* Navbar Styles */
-#navbar {
-  position: sticky;
-  top: 0;
-  background-color: rgb(175, 144, 151);
-  color: #faefc9;
-  padding: 15px 0;
-  z-index: 1000;
-  width: 100%;
-  text-align: right;
-  opacity: 0.6;
+/* Base Styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
 }
 
-#navbar ul {
-  list-style-type: none;
+.nav-links {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 30px;
+  gap: 1rem;
 }
 
-#navbar ul li {
-  margin: 0 15px;
+.close-icon {
+  display: none; /* hidden by default */
 }
 
-#navbar ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: 1em;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.2px;
-  position: relative;
-  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-#navbar ul li a::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #f4a261;
-  left: 0;
-  bottom: -10px;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-#navbar ul li a:hover {
-  color: #f4a261;
-  transform: scale(1.1);
-}
-
-#navbar ul li a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-/* Mobile Navbar */
-@media screen and (max-width: 768px) {
-  #navbar ul {
-    display: none;
-    flex-direction: column;
-    background-color: #fff;
-    position: absolute;
-    top: 50px;
-    right: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Responsive Styles */
+@media screen and (max-width: 913px) {
+  .hamburger {
+    display: block;
+    margin: 10px;
   }
 
-  #navbar ul.show {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 220px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent */
+    backdrop-filter: blur(10px); /* optional: glass effect */
+    padding: 30px 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    left: 0;
     display: flex;
   }
 
-  .hamburger {
-    display: block;
+  .nav-links li {
+    margin-bottom: 20px;
+  }
+
+  /* Close icon inside nav */
+  .close-icon {
+    display: block; /* only visible under 768px */
+    align-self: flex-end;
+    font-size: 28px;
     cursor: pointer;
-    font-size: 1.5em;
-    margin: 10px;
+    margin-bottom: 20px;
+    color: #333;
   }
 }
+
+
+
 
 /* Blurred Section */
 .blurred-section {
@@ -197,7 +174,7 @@ body {
 /* Additional Image */
 #img1 {
   width: 100%;
-  height: 600px;
+  height: 450px;
   margin-top: 360px;
   border: 2px solid #ccc;
   border-radius: 10px;
@@ -260,31 +237,6 @@ body {
   text-decoration: underline;
 }
 
-/* Responsive Table */
-@media screen and (max-width: 768px) {
-  .clinic-section table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-}
-
-/* Responsive Layout Adjustments */
-@media screen and (max-width: 768px) {
-  .section {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-  }
-
-  .image-container img {
-    max-width: 80%;
-    height: auto;
-  }
-
-  .content-container h2 {
-    font-size: 1.8em;
-  }
 
   .content-container p {
     font-size: 1em;
@@ -308,7 +260,49 @@ body {
   .clinic-section td {
     padding: 10px;
   }
+
+  /* Fix: Ensure sections are horizontal on wider screens */
+.section {
+  display: flex;
+  flex-direction: row; /* horizontal layout */
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  min-height: 80vh;
+  gap: 10px;
+  position: relative;
+  margin-bottom: 20px;
 }
+
+/* Responsive Fix: Stack vertically on smaller screens */
+@media screen and (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container,
+  .content-container {
+    flex: none;
+    width: 100%;
+  }
+
+  .image-container img {
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .content-container h2 {
+    font-size: 1.8em;
+  }
+
+  .content-container p {
+    font-size: 1em;
+  }
+}
+
+
 
 @media screen and (max-width: 1024px) {
   .section {
@@ -329,3 +323,5 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+

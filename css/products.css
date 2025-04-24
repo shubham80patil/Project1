@@ -11,12 +11,12 @@
     margin: 30px;
     padding: 30px;
     /* background-color: rgb(237, 172, 181) ; */
-    background-color: #f8e6e0;
+    background-color: #fdf1e8;
    
 
 }
 .overagepremiersoapdiv{
-    background-color: rgb(246, 212, 216) ;
+  background-color: #fdf1e8 ;
 display: flex;
 flex-direction: row;
 justify-content: flex-end;
@@ -36,15 +36,15 @@ position: absolute;
 font-size: 22px;
 top: 35%;
 left: 5%;
-background-color: rgb(246, 212, 216) ;
+background-color: #fdf1e8;
 display: flex;
 flex-direction: row;
 
 } 
 
 #SHOPALL{
-    background-color: rgb(246, 212, 216) ;
-    font-size: 30px;
+  background-color: #fdf1e8;
+      font-size: 30px;
     text-decoration: none;
     color: black;
     word-spacing:10px;
@@ -60,12 +60,12 @@ flex-direction: row;
   object-fit: cover;
   margin: 30px;
   padding: 30px;
-  background-color: #f8e6e0;
+  background-color: #fdf1e8;
 }
 
 .overagepremiersoapdiv {
-  background-color: rgb(246, 212, 216);
-  display: flex;
+  background-color: #fdf1e8;
+    display: flex;
   flex-direction: row;
   justify-content: flex-end;
   border-color: black;
@@ -80,14 +80,14 @@ flex-direction: row;
   font-size: 22px;
   top: 35%;
   left: 5%;
-  background-color: rgb(246, 212, 216);
-  display: flex;
+  background-color: #fdf1e8;
+    display: flex;
   flex-direction: row;
 }
 
 #SHOPALL {
-  background-color: rgb(246, 212, 216);
-  font-size: 30px;
+  background-color: #fdf1e8;
+    font-size: 30px;
   text-decoration: none;
   color: black;
   word-spacing: 10px;
@@ -102,15 +102,14 @@ flex-direction: row;
   word-spacing: 5px;
   display: flex;
   flex-direction: row;
-  background-color: rgb(246, 212, 216);
+ background-color: #fdf1e8; 
   clear: both;
 }
 
 #bestseller {
   color: black;
   font-size: 25px;
-  background-color: rgb(246, 212, 216);
-}
+ background-color: #fdf1e8;}
 
 /* Product Styles */
 
@@ -670,6 +669,8 @@ margin-top: 10px;
 
 
 }
+
+
 
 
 

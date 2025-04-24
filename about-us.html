@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Enhanced Map</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" href="./css/about-us.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">  <!-- AOS Library -->
-  <link rel="stylesheet" href="./css/header.css">
-  
-</head>
+  <head>
+    <!-- Your existing code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultracetius</title>
+    
+    <!-- Add this line to include the AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    
+    <link rel="stylesheet" href="./css/about-us.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">  </head>
 <body>
   <!-- Sticky Navbar -->
   <header> 
-    <nav class="navbar flex ">
-        <div class="logo">
-            <img src="./Imgs/img/Logo.jpeg" alt="Multiplex Logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="./Main.html">Home</a></li>
-            <li><a href="./about-us.html">About Us</a></li>
-            <li><a href="./products.html">Product</a></li>
-            <li><a href="./contact-us.html">Contact Us</a></li>
-
-        </ul>
-        <div class="search-and-enquiry">
-            <button class="enquiry-button">Quick Enquiry</button>
-        </div>
+    <nav class="navbar flex">
+      <!-- Hamburger Icon (SVG) -->
+      <svg class="hamburger" onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 100 80" fill="#000">
+        <rect width="100" height="10"></rect>
+        <rect y="30" width="100" height="10"></rect>
+        <rect y="60" width="100" height="10"></rect>
+      </svg>
+  
+      <!-- Logo -->
+      <div class="logo">
+        <img src="./Imgs/img/Logo.jpeg" alt="Multiplex Logo">
+      </div>
+  
+      <!-- Sidebar Menu -->
+      <ul class="nav-links">
+        <!-- Close Button -->
+        <span class="close-icon" onclick="closeMenu()">&#10005;</span>
+        
+        <li><a href="./Main.html">Home</a></li>
+        <li><a href="./about-us.html">About Us</a></li>
+        <li><a href="./products.html">Product</a></li>
+        <li><a href="./contact-us.html">Contact Us</a></li>
+      </ul>
+  
+      <!-- Quick Enquiry Button -->
+      <div class="search-and-enquiry">
+        <button class="enquiry-button">Quick Enquiry</button>
+      </div>
     </nav>
-</header>
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
-
+  </header>
+  
 
   <div class="blurred-section">
     <img class="blurred-image" src="./Imgs/assets/bgabout.webp" alt="Blurred Background">
@@ -113,29 +130,100 @@
       </tbody>
     </table>
   </div>
+
+ 
   
   
   
   <img src="./Imgs/assets/Map2.png" alt="map" id="img1">
   
 
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-  <script>
+  
+ 
+
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+  }
+
+  function closeMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.remove('show');
+  }
+</script>
+
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-section1">
+          <h3 id="sec1">GET IN TOUCH</h3>
+          <p>No. 180, 1st Main Road, Mahalakshmi Layout Extension, Bengaluru - 560 086</p>
+          <p>corporate@examplegroup.com</p>
+          <p>multiplex@examplegroup.com</p>
+          <p>080 22497464</p>
+          <p>080 23494706 / 23497960</p>
+      </div>
+      <div class="footer-section2">
+          <h3 id="sec1">Quick Links</h3>
+          <p>Gallery</p>
+          <p>Success Stories</p>
+          <p>Blog Articles</p>
+          <p>News & Media</p>
+          <p>Digital Payment</p>
+      </div>
+      <div class="footer-section2">
+          <h3 id="sec1">PRODUCTS</h3>
+          <p>Gallery</p>
+          <p>Success Stories</p>
+          <p>Blog Articles</p>
+          <p>News & Media</p>
+          <p>Digital Payment</p>
+      </div>
+      <div class="footer-section4">
+          <h3 id="sec1">FOLLOW</h3>
+          <div class="social-icons">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-tiktok"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-threads"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="newsletter">
+              <h3>SIGN UP TO OUR NEWSLETTER</h3>
+              <form>
+                  <input type="email" placeholder="Enter email address here">
+                  <button type="submit">SUBSCRIBE</button>
+              </form>
+              <p>You agree to our updated <a href="#">Terms & Conditions</a>, <a href="#">Privacy</a> & <a
+                      href="#">Cookie Policies</a>.</p>
+          </div>
+          <div class="img-logo">
+              <img src="./Imgs/img/logo2.jpeg" alt="Logo">
+          </div>
+      </div>
+  </div>
+  <hr class="footer-line">
+
+  <p class="copyright">
+      Copyright © 2025 Ultraceutics Pvt Lmt. All Rights Reserved.
+  </p>
+</footer>
+
+
+
+</body>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log('Initializing AOS');
     AOS.init({
       duration: 1000,
       easing: 'ease-in-out',
       once: true,
     });
-  </script>
-
-<script>
-  function toggleMenu() {
-    const navbar = document.querySelector('#navbar ul');
-    navbar.classList.toggle('show');
-  }
+    console.log('AOS initialized');
+  });
 </script>
-
-
-
-</body>
 </html>

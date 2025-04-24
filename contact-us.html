@@ -6,31 +6,251 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="./css/contact-us.css" />
-    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js"></script>
-    <script type="module" src="./js/script.js"></script>
-    <link rel="stylesheet" href="./css/header.css">
-
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">    
+    <!-- Load JavaScript modules -->
+    <script type="module" src="./js/db.js"></script>
+    <script type="module" src="./js/admin-excel.js"></script>
+    <style>
+        /* Hero section styles */
+        .hero-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 50px;
+            background-color: #f9f9f9;
+            margin-bottom: 30px;
+            margin-top: 0px;
+        }
+        
+        .hero-content {
+            flex: 1;
+            padding-right: 40px;
+        }
+        
+        .hero-image {
+            flex: 2;
+            text-align: right;
+        }
+        
+        .hero-image img {
+            width: 350px;
+            height: 400px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        
+        .hero-content h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .hero-content h1:after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #f0ad4e;
+            margin-top: 15px;
+        }
+        
+        .hero-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        /* Horizontal Contact Form Styles */
+        .card {
+            max-width: 1000px;
+            margin: 0 auto 50px;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.85);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            backdrop-filter: blur(5px);
+        }
+        
+        .card h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+            position: relative;
+        }
+        
+        .card h2:after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #f0ad4e;
+            margin: 10px auto;
+        }
+        
+        #contact-form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        
+        .form-group {
+            flex: 1 0 30%;
+            margin-bottom: 15px;
+        }
+        
+        .form-group.full-width {
+            flex: 1 0 100%;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #555;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .form-group h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #555;
+        }
+        
+        .radio-group {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+        
+        .radio-group input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        
+        .form-submit {
+            flex: 1 0 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        button[type="submit"] {
+            background-color: #f0ad4e;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #e09b3d;
+        }
+        
+        .admin-button-wrapper {
+            text-align: center;
+        }
+        
+        #admin-download {
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-section {
+                flex-direction: column-reverse;
+                padding: 30px 20px;
+            }
+            
+            .hero-content {
+                padding-right: 0;
+                padding-top: 30px;
+            }
+            
+            .form-group {
+                flex: 1 0 100%;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="./Imgs/img/Logo.jpeg" alt="Multiplex Logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="./about-us.html">About Us</a></li>
-                <li><a href="./products.html">Product</a></li>
-                <li><a href="./contact-us.html">Contact Us</a></li>
-
-            </ul>
-            <div class="search-and-enquiry">
-                <button class="enquiry-button">Quick Enquiry</button>
-            </div>
+    <header> 
+        <nav class="navbar flex">
+          <!-- Hamburger Icon (SVG) -->
+          <svg class="hamburger" onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 100 80" fill="#000">
+            <rect width="100" height="10"></rect>
+            <rect y="30" width="100" height="10"></rect>
+            <rect y="60" width="100" height="10"></rect>
+          </svg>
+      
+          <!-- Logo -->
+          <div class="logo">
+            <img src="./Imgs/img/Logo.jpeg" alt="Multiplex Logo">
+          </div>
+      
+          <!-- Sidebar Menu -->
+          <ul class="nav-links">
+            <!-- Close Button -->
+            <span class="close-icon" onclick="closeMenu()">&#10005;</span>
+            
+            <li><a href="./Main.html">Home</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./products.html">Product</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+          </ul>
+      
+          <!-- Quick Enquiry Button -->
+          <div class="search-and-enquiry">
+            <button class="enquiry-button">Quick Enquiry</button>
+          </div>
         </nav>
     </header>
+    
+    <!-- New Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>WELCOME TO DERMACEUTICS INDIA</h1>
+            <p>We are a leading Indian dermatological, cosmotological, tricological and nutraceutical company which is pioneer in
+                 glutathione supplement, came into existence when a group of committed, dedicated & experienced professionals with background 
+                 of marketing, sales and manufacturing from national & multinational companies, 
+                joined hands together with a motto to enhance beauty in a healthy way.</p>
+        </div>
+        <div class="hero-image">
+            <img src="./Imgs/img/products-showcase.png" alt="Dermaceutics Products">
+        </div>
+    </section>
+      
     <div class="card">
         <h2>Contact Us</h2>
         <form id="contact-form" onsubmit="submitForm(event)">
@@ -56,12 +276,14 @@
 
             <div class="form-group">
                 <h3>Who are you</h3>
-                <label>
-                    <input type="radio" name="role" value="doctor" onclick="toggleForm('doctor')" required> Doctor
-                </label>
-                <label>
-                    <input type="radio" name="role" value="patient" onclick="toggleForm('patient')" required> Patient
-                </label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="role" value="doctor" onclick="toggleForm('doctor')" required> Doctor
+                    </label>
+                    <label>
+                        <input type="radio" name="role" value="patient" onclick="toggleForm('patient')" required> Patient
+                    </label>
+                </div>
             </div>
 
             <div class="form-group" id="clinic-address-group" style="display: none;">
@@ -69,11 +291,101 @@
                 <input type="text" id="clinic-address" name="clinic_address">
             </div>
 
-            <button type="submit">Submit</button>
+            <div class="form-submit">
+                <button type="submit">Submit</button>
+            </div>
         </form>
+        <br/>
+
+        <!-- Admin Download Button -->
+        <div class="admin-button-wrapper">
+            <button id="admin-download" style="display: inline-block;">📥 Admin Download</button>
+        </div>
     </div>
 
-    <!-- <script type="module" src="script.js"></script> -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section1">
+                <h3 id="sec1">GET IN TOUCH</h3>
+                <p>No. 180, 1st Main Road, Mahalakshmi Layout Extension, Bengaluru - 560 086</p>
+                <p>corporate@examplegroup.com</p>
+                <p>multiplex@examplegroup.com</p>
+                <p>080 22497464</p>
+                <p>080 23494706 / 23497960</p>
+            </div>
+            <div class="footer-section2">
+                <h3 id="sec1">Quick Links</h3>
+                <p>Gallery</p>
+                <p>Success Stories</p>
+                <p>Blog Articles</p>
+                <p>News & Media</p>
+                <p>Digital Payment</p>
+            </div>
+            <div class="footer-section2">
+                <h3 id="sec1">PRODUCTS</h3>
+                <p>Gallery</p>
+                <p>Success Stories</p>
+                <p>Blog Articles</p>
+                <p>News & Media</p>
+                <p>Digital Payment</p>
+            </div>
+            <div class="footer-section4">
+                <h3 id="sec1">FOLLOW</h3>
+                <div class="social-icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-threads"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="newsletter">
+                    <h3>SIGN UP TO OUR NEWSLETTER</h3>
+                    <form>
+                        <input type="email" placeholder="Enter email address here">
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                    <p>You agree to our updated <a href="#">Terms & Conditions</a>, <a href="#">Privacy</a> & <a
+                            href="#">Cookie Policies</a>.</p>
+                </div>
+                <div class="img-logo">
+                    <img src="./Imgs/img/logo2.jpeg" alt="Logo">
+                </div>
+            </div>
+        </div>
+        <hr class="footer-line">
+
+        <p class="copyright">
+            Copyright © 2025 Ultraceutics Pvt Lmt. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+          const navLinks = document.querySelector('.nav-links');
+          navLinks.classList.toggle('show');
+        }
+      
+        function closeMenu() {
+          const navLinks = document.querySelector('.nav-links');
+          navLinks.classList.remove('show');
+        }
+
+        function toggleForm(role) {
+            const clinicAddressGroup = document.getElementById('clinic-address-group');
+            if (role === 'doctor') {
+                clinicAddressGroup.style.display = 'block';
+            } else {
+                clinicAddressGroup.style.display = 'none';
+            }
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+            // Your form submission logic here
+            alert('Form submitted successfully!');
+        }
+    </script>
 </body>
 
 </html>
