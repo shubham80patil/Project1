@@ -1,755 +1,906 @@
-/* *{
-    background-color: #f8e6e0;
-    
-} */
-.injectionimg1{
-    width: 500px;             /* Adjust the width to 300px */
-    height: 400px;            /* Adjust the height to 200px */
-    border: 3px  ;  /* Add a solid black border with 5px thickness */
-        /* Make the corners slightly rounded */
-    object-fit: cover; 
-    margin: 30px;
-    padding: 30px;
-    /* background-color: rgb(237, 172, 181) ; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
     background-color: #fdf1e8;
-   
-
-}
-.overagepremiersoapdiv{
-  background-color: #fdf1e8 ;
-display: flex;
-flex-direction: row;
-justify-content: flex-end;
-border-color: black;
-
-margin-top: 8%;
-
-
-   
-}
-
-
-
-.SHOPALL{
-    color: black;
-position: absolute;
-font-size: 22px;
-top: 35%;
-left: 5%;
-background-color: #fdf1e8;
-display: flex;
-flex-direction: row;
-
-} 
-
-#SHOPALL{
-  background-color: #fdf1e8;
-      font-size: 30px;
-    text-decoration: none;
-    color: black;
-    word-spacing:10px;
-    
-
-}
-
-.injectionimg1 {
-  width: 300px;
-  height: 200px;
-  border: 5px solid black;
-  border-radius: 10px;
-  object-fit: cover;
-  margin: 30px;
-  padding: 30px;
-  background-color: #fdf1e8;
-}
-
-.overagepremiersoapdiv {
-  background-color: #fdf1e8;
-    display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  border-color: black;
-  margin-top: 8%;
-}
-
-/* Navigation Styles */
-
-.SHOPALL {
-  color: black;
-  position: absolute;
-  font-size: 22px;
-  top: 35%;
-  left: 5%;
-  background-color: #fdf1e8;
-    display: flex;
-  flex-direction: row;
-}
-
-#SHOPALL {
-  background-color: #fdf1e8;
-    font-size: 30px;
-  text-decoration: none;
-  color: black;
-  word-spacing: 10px;
-}
-
-.bestsellerdiv {
-  color: black;
-  position: absolute;
-  font-size: 18px;
-  top: 50%;
-  left: 5%;
-  word-spacing: 5px;
-  display: flex;
-  flex-direction: row;
- background-color: #fdf1e8; 
-  clear: both;
-}
-
-#bestseller {
-  color: black;
-  font-size: 25px;
- background-color: #fdf1e8;}
-
-/* Product Styles */
-
-.product-category {
-  color: black;
-  font-size: 18px;
-  margin-left: 5%;
-  margin-top: 1%;
-}
-
-#product-categories {
-  color: black;
-  box-sizing: border-box;
-}
-.bestsellerdiv{
-    color: black;
-    position: absolute;
-    font-size: 18px;
-    top:50%;
-    left: 5%;
-    word-spacing:5px;
-    display: flex;
-flex-direction: row;
-    background-color: rgb(246, 212, 216) ;
-    clear: both;
-}  
-#bestseller{
-    color: black;
-    font-size: 25px;
-    background-color: rgb(246, 212, 216) ;
-
-}
-
-  .shoplotiondiv{
-    font-size: 18px;
-    position: absolute;
-    top:50%;
-   left: 20%;
-   color: black;
-   display: flex;
-flex-direction: row;
-   word-spacing:5px;
-   clear: both;
-
-
-  }
-  #shoplotion{
-
-    background-color: rgb(246, 212, 216) ;
-  color: black;
-  font-size: 25px;
+    color: #333;
+    line-height: 1.6;
   }
 
-  .shoptabletdiv{
+  /* Navbar */
+  header {
+  width: 100%;
+}
 
-    color: black;
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    word-spacing:5px;
-    font-size: 25px;
-    display: flex;
-flex-direction: row;
-clear: both;
-
-
-  }
-  #shoptablet{
-    font-size: 25px;
-   color: black;
-   background-color: rgb(246, 212, 216) ;
-
-  }
-  .shopdripdiv{
-    color: black;
-    position: absolute ;
-    top: 50%;
-    font-size: 25px;
-    left: 40%;
-    word-spacing:5px;
-    display: flex;
-flex-direction: row;
-clear: both;
-   
-  }
-  #shopdrip{
-    color: black;
-    background-color: rgb(246, 212, 216) ;
-
-  }
-  #ULTRASPECIAL{
-  font-family: Arial, Helvetica, sans-serif; 
-  margin-top: 40px;
-  text-transform: capitalize;
+.top-bar {
+  background-color: #af7871;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 14px;
   font-weight: bold;
-    text-align: center;
-    font-size: 30px;
-    letter-spacing: 1.5px;
-  }
-
-  .bestsellercontainer{
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  background-color: rgb(246, 212, 216) ;
-  }
-  .bestseller{
-    border: 5px solid  hsla(98, 80%, 2%, 0.842);
-    margin: 5px;
-    width: 30%;
-    text-align: center;
-
-    box-shadow: 0 4px 8px rgba(214, 208, 208, 0.1);
-    transition: transform 0.2s;
-  }
-
-  .bestseller:hover{
-    transform: scale(1.05);
-  }
-
-  #ultralighttab , #ultralightivdrip , #ultralightlotion
-  {  width: 33%;
-height: auto;
-border-radius: 8px;
-object-fit: cover;
-border: #0b030102; 
-padding: 5px;
-width: 150px;
-height: 200px;
-margin-top:30px;
-  }
-
-
-#bestseller1text{
-
-  border: 2px solid rgb(79, 6, 140);
-
-
-}
-
-#bestsellerbenefits1{
-
-  border: 2px solid rgb(53, 176, 23);
-  
-   text-align: center;
-
-}
- #listofbestseller1  {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  text-align: center;
-
- }
-
-
-  /* ul {
-    display: flex; 
-    flex-direction: column;
-    list-style: inside; 
-    padding: 0; 
-  
-    
-  }  */
-  
- 
-  .know-more-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px;
-    text-transform: capitalize;
-    color: black;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .know-more-btn:hover {
-    background-color: white;
-  }
-  h3{
-    font-weight: 400;
-    font-size: 20px;
-    /* font-family: monospace;  */
-  }
-  #typesofdrip{
-    font-size: 15px;
-    text-transform: capitalize;
-    color: black;
-
-  }
-  #typesofdrip:hover{
-    color: blue;
-
-  }
-
-  #productname{
-    margin-top: 5%;
-    text-align: center;
-    word-spacing: 4px;
-    letter-spacing: 3px;
-  }
-
-  #productnamehr{
-    width: 15%;
-    
-  }
-  
-.hairgainadvance-container{
-width: 100%;
-  display: flex;
-flex-direction: row;
-margin: 3%;
-
-}
-
-
-#hairgainadvance-image{
-  display: flex;
-  flex-direction: row;
-  
-  margin: 0%;
-width:40%;
-}
-
-
-#hairgainimage{
- width: 90%;
- height: auto;
- 
-}
-
-#hairgainadvance-text{
-  margin: 0%;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  
-}
-
-#hairgainadvancebenefits  , #hairgainadvancekey {
-
-  display: flex;
-  flex-direction: column;
-
-}
-
-#hairgainbenefitslist , #hairgainadvancekeylist {
-
-  display: flex;
-  flex-direction: column;
-  width: max-content;
-}
-
-
-
-.ultrabrightlotion-section{
-  width: 100%;
-display: flex;
-flex-direction: row;
-margin: 0%;
-
-
-}
-
-
-
-#ultrabrightlotion-img{
-  display: flex;
-  flex-direction: row;
-  width: 40%;
-
-}
-
-#ultrabrightimage{
-width: 90%;
-
-}
-
-
-#ultrabrightlotion-text{
-  display: flex;
-  flex-direction: column;
-  width: 60%;
- 
-}
-
-#ultralotionbenefits , #ultrabrightkey {
-  display: flex;
-  flex-direction: column;
-}
-
-#ultrabrightbenefitslist , #ultrabrightingredientslist {
-  display: flex;
-  flex-direction: column;
-  
-
-  
-}
-
-.overagecleanser-container{
-width: 100%;
-display: flex;
-flex-direction: row;
-}
-
-#cleanserimage-section{
-  width: 40%;
-
-}
-
-#cleanserimg{
-  width: 90%;
-}
-#overagedetailstexts {
-
-  width: 60%;
-}
-
-#overagecleanserbenefits , #overagecleanseringredients {
-
-  display: flex;
-    flex-direction: column;
-
-}
-
-
-#overagecleanseringredientslist , #overagecleanserbenefitslist {
-  display: flex;
-  flex-direction: column;
-}    
-
-
-
-
-.ultralightadvance-container{
-  width: 100%;
-display: flex;
-flex-direction: row;
-margin-bottom: 10%;
-}
-
-#ultraadvanceimg-section{
-width: 40%;
-
-}
-
-#ultraadvanceimg{
-  width: 90%;
-}
-
-#ultralighttext{
-
-  width: 60%;
-
-}
-
-#ultralightbenefits, #ultralightingredients {
-  display: flex;
-  flex-direction: column;
-}
-
-#ultralightbenefitslist , #ultralightingredientslist{
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.frostwhite-container{
-width: 100%;
-display: flex;
-flex-direction: row;
-
-
-
-}
-
-#frostwhite-imgcontainer{
-
-  width: 40%;
-border-radius: 10px;
-
- 
-}
-
-#frostwhiteimg{
-
-width: 90%;
-
-}
-
-#frostwhitedetailstexts{
-  width: 50%;
-
-  display: block;
-  
-}
-
-#frostwhitebenefits , #frostwhiteingredients{
-
-  display: flex;
-  flex-direction: column;
- 
-  white-space: nowrap;
-
-
-
-}
-
-#frostwhitebenefitslist , #frostwhiteingredientslist {
-                                                                                                                                
-  display: flex;
-  flex-direction: column;
-  width: 1%;
-                                           
-}
-  
-
-#ivdripproductname{
-  margin-top: 5%;
-  text-align: center;
-  word-spacing: 4px;
+  font-size: larger;
+  border-radius: 0 0 30px 30px;
+  margin-right: 25px;
+  margin-left: 25px;
   letter-spacing: 3px;
 }
 
-#ivdripproductnamehr{
-  width: 5%;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: #fff !important;
+}
+
+.logo img {
+  height: 120px;
+  width: 130px;
+  padding-right: 20px;
+  border-right: 2px solid #ddd;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
   
+  background-color: #c96480; 
+}
+
+.search-and-enquiry {
+  display: flex;
+  align-items: center;
+  border-right: 2px solid #ddd;
+  height: 120px;
+}
+
+.search-and-enquiry input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.enquiry-button {
+  background-color: #af7871;
+  color: black;
+  border: none;
+  border-radius: 40px;
+  padding: 20px 40px;
+  cursor: pointer;
+  margin-right: 40px;
+  font-weight: bold;
+  font-size: medium;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.enquiry-button:hover {
+  background-color: #c96480;
 }
 
 
-.IVDRIPSHEADING{
-  color: red;
-  text-align: center;                                         
-  word-spacing: 10px;                   
-  letter-spacing: 5px;                                   
-  display:block;
-}                     
-
-.celestialdrip-container{
-                         
-width: 100%                ;
-display: flex;
-flex-direction: row;
-border: 2px solid red;
+.hamburger {
+  display: none;
+  cursor: pointer;
 }
 
-#celestialdripimg-container{
-width: 40%;
-border: 2px solid black;
+.nav-links {
+  display: flex;
+  gap: 1rem;
 }
 
-#celestialdripimg{
-  border: 2px solid blue;
-  width: 90%;
+.close-icon {
+  display: none; /* hidden by default */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 913px) {
+  .hamburger {
+    display: block;
+    margin: 10px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 220px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent */
+    backdrop-filter: blur(10px); /* optional: glass effect */
+    padding: 30px 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    left: 0;
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-bottom: 20px;
+  }
+
+  /* Close icon inside nav */
+  .close-icon {
+    display: block; /* only visible under 768px */
+    align-self: flex-end;
+    font-size: 28px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: #333;
+  }
+}
+
   
+  /* Hero Image */
+  .hero-image {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+
+  }
+
+  .hero-image img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Shop Links */
+  .shop-links {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+    
+  }
+
+  .shop-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    margin-left: 3%;
+    font-weight: 900;
+    
+  }
+
+  .shop-links a:hover {
+    color: #e91e63;
+  }
+
+  /* Product Category Dropdown */
+  .product-category {
+    padding: 1rem 2rem;
+    margin-left: 2%;
+    font-size: 1.3rem;
+  }
+
+  .product-category select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+    font-size: 1.3rem;
+  }
+
+  /* Section Titles */
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: #e91e63;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  /* Product Grid */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* display: flex */
+    flex-direction: row;
+    /* border: 2px solid black; */
+    gap: 2rem;
+    
+    padding: 2rem;
+  }
+
+
+  .product-card2{
+   display: flex;
+   flex-direction: column;
+   /* border: 2px solid red;  */
+   border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(16, 0, 0, 0.1);
+   
+  }
+
+  .product-card2 img {
+height: 55%;
+object-fit: cover;
+border-radius: 25px 25px 0 0;
+  } 
+
+  #bestsellers .product-card-content {
+
+    display: flexbox;
+    width: 100%;
+    height: 45%;
+    
+    flex-direction: column;
+    /* border: 5px solid blue; */
+    margin-top: -8%;
+    margin-bottom: -25%;
+    
+  }
+
+
+  #bestsellers{
+
+    display: flex;
+    flex-direction: column;
+
+
+  }
+  
+ #body-care .product-grid1 {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* display: flex */
+    flex-direction: row;
+    /* border: 2px solid black; */
+    gap: 2rem;
+    
+    padding: 2rem;
+  }
+
+
+
+
+
+  #skin-care .product-grid1 {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding-top: 0%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* display: flex */
+    flex-direction: row;
+    /* border: 2px solid black; */
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  #skin-care .product-grid1 .product-card {
+   margin-top: 0%;
+  }
+
+
+  #skin-care .product-card-cleanser{
+
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* display: flex */
+    flex-direction: row;
+    /* border: 2px solid black; */
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+
+  }
+
+
+  .product-card-cleanser .product-img{
+
+    width: 100%;
+    height: 100%;
+    /* border: 5px solid blue;  */
+  }
+#deepcleanserimg{
+height: 90%;
+/* border: 2px solid red;  */
+
 }
 
 
-#celestialdriptexts{
-  display: flex;
-flex-direction: column;
-width: 50%;
-}
-
-#celestialdripbenefitslist , #celestialdripingredientslist{
-  display: flex;
-  flex-direction: column;
- 
-}
-
-.eternaldrip-container{
-
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-#eternaldripimg-container{
-width: 40%;
-
-}
-
-#eternaldripimg{
-width: 90%;
-
-}
-
-#eternaldriptexts{
-width: 50%;
-border: 2px solid black;
-}
-
-#eternaldripbenefitslist , #eternaldripingredientslist{
-display: flex;
-flex-direction: column;
-
-}
-
-.revitaglow-container{
-
-  width: 100%;
-display: flex;
-flex-direction: row;
-}
-
-#revitaglowimg-container{
-width: 40%;
-margin-top: 10px;
-
-}
-#revitaglowimg{
-width: 90%;
-
-}
-
-#revitaglowtexts{
-width: 50%;
-display: flex;
-flex-direction: column;
-border: 2px solid red;
 
 
 
-}
-#revitaglowbenefits , #revitaglowingredients {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
+  
+  .product-card {
+
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-direction: row; /* Align items horizontally */
+    align-items: center; /* Vertically center content */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    gap: 1rem; /* Add spacing between image and content */
+    padding: 1rem; /* Add padding for better spacing */
+    width: 100%; /* Ensure the card takes full width */
+    height: auto;
+    /* height: 100%; Set a fixed height for the container */
+    /* border: 2px solid black; */
+
+    
+  }
+
+
+
+  
+ /* .product-card img {
+    width: 50%; /* Maintain aspect ratio */
+    /* border: 2px solid red; */
+    /* height: 50%; Set height to 50% of the container */
+    /* object-fit: cover; Ensure the image fits well */
+    /* border-radius: 10px; Optional: Add rounded corners */
+    
+/* } */
+
+#ultralightadvancetabletimg, #frostwhitetomatoimg, #deepcleanserimg , #ultrabrightlotionimg 
+,#brightpremiersoapimg {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+   /* border: 2px solid blu e; */
+    object-fit: cover; Ensure the image fits well 
+ /* border-radius: 10px;  */
+   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 } 
 
-#revitaglowbenefitslist , #revitaglowingredientslist{
 
-  width: max-content;
+#celestialdripimg , #eternaldripimg , #revitaglowimg , 
+#tresatonicimg ,#nadboostimg , #recoveryrushimg{
+  width: 50%;
+  height: 100%;
+}
+
+
+
+/* Ultralight 600 Injection Section */
+#ultralight-600-injection {
+  padding: 2rem;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto; /* Center the section horizontally */
+  width: 90%; /* Ensure the section takes up most of the container */
+  max-width: 1200px; /* Limit the maximum width */
+  height: 100%;
+}
+
+/* Product Container */
+#ultralight-600-injection .product-container {
   display: flex;
-flex-direction: column;
+  justify-content: space-between; /* Distribute space between image and text */
+  align-items: center; /* Vertically center items */
+  gap: 2rem; /* Add space between image and text */
+  flex-wrap: wrap; /* Ensure responsiveness */
+  height: 100%;
+  width: 80%;
 }
 
-#tresatonicdrip-container , #nadboost-container , #recoverydrip-container , #gymfusiondrip-container , 
-#fortiftydrip-container , #fortiftydrip-container , #relaxfusiondrip-container {
-
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  border: 2px solid green;
-
-}
-
-
-
-#tresatonicdripimg-container , #nadboostimg-container , #recoverdripimg-container ,
-#gymfusiondripimg-container , #fortiftydripimg-container , #relaxfusiondripimg-cotainer
-
-{
-
-width: 40%;
-margin-top: 10px;
-
-
-}
-
-
-
-
-
-
-
-#tresatonicdripimg , #nadboostimg , #recoverdripimg , #gymfusiondripimg , 
-#fortiftydripimg , #relaxfusiondripimg {
+/* Product Image */
+#ultralight-600-injection .product-image {
+  flex: 1; /* Image takes up 50% of the container */
+  /* Limit the image width to 50% */
  
-width: 90%;
+  transition: transform 0.3s ease-in-out; /* Add hover effect */
 }
 
-
-
-#tresatonicdriptexts , #nadboosttexts , #recoverydriptexts , #gymfusiontexts 
- , #fortiftydriptexts  #relaxfusiondriptexts {
-
-
-  width: 50%;
-  display: flex;
-flex-direction: column;
-
-
-
-}
-
-
-
-#tresatonicdripsbenefitslist , #nadboostbenefitslist , #recoverydripbenefitslist  , 
-#gymfusionbenefitslist, #fortiftydripbenefitslist , #relaxfusiondripbenefitslist {
-
-display: flex;
-flex-direction: column;
-
-
-}
-
-
-#tresatonicingredientslist , #nadboostingredientslist , #recoverydripingredientslist ,
-#gymfusioningredientslist , #fortiftydripingredientslist , #relaxfusioningredientslist{
-
-
-  display: flex;
-  flex-direction: column;
-
-
-}
-
-
-.overagesoap-container{
-
+#ultralight-600-injection .product-image img {
   width: 100%;
+  height: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Details */
+#ultralight-600-injection .product-details {
+  flex: 1; /* Text takes up 50% of the container */
+  max-width: 50%; /* Limit the text width to 50% */
+  text-align: left; /* Align text to the left */
+}
+
+#ultralight-600-injection .product-details h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+#ultralight-600-injection .product-details h4 {
+  font-size: 1.5rem;
+  color: #e91e63;
+  margin-bottom: 0.5rem;
+}
+
+#ultralight-600-injection .product-details ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#ultralight-600-injection .product-details ul li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Hover Effect for Image */
+#ultralight-600-injection .product-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #ultralight-600-injection .product-container {
+      flex-direction: column; /* Stack image and text vertically */
+      text-align: center;
+  }
+
+  #ultralight-600-injection .product-image {
+      max-width: 100%; /* Full width for smaller screens */
+  }
+
+  #ultralight-600-injection .product-details {
+      max-width: 100%; /* Full width for smaller screens */
+      text-align: center;
+  }
+}
+
+/* -------------------- */
+/* IV Drips Section */
+
+.iv-drips {
+  padding: 2rem;
+  margin: 2rem 0;
+  /* Light background for contrast */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ /* border: 5px solid red;  */
+ height: 100%;
+  
+}
+
+/* Product Grid for IV Drips */
+.iv-drips .product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Responsive grid */
+  gap: 2rem; /* Spacing between cards */  
+  /* border: 5px solid blue; */
+  width: 100%;  
+  
+  /* height:auto ; */
+
+/* height: 100%; */
+/* background-color: #FFB38E; */
+}
+
+/* Product Card */
+.iv-drips .product-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
-  flex-direction: row;
-  border: 2px solid green;
-}
-
-#overagesoapimg-container {
-  width: 40%;
-  margin-top: 10px;
-
-}
-
-#overagesoapimg{
-
-   
-width: 90%;
-}
-
-
-#overagesoaptexts{
-
-  width: 50%;
-  display: flex;
-flex-direction: column;
+  flex-direction: column; /* Stack image and content vertically */
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background-color: #fdf1e8;
+  /* border: 5px solid black; */
+  width: 100%;
+  /* Limit max width for larger screens */
+ margin: 0 auto;
 
 }
 
-#overagesoapbenefitslist , #overagesoapingredientslist {
-
-  display: flex;
-flex-direction: column;
+.iv-drips .product-card:hover {
+  transform: translateY(-5px); /* Lift the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
 }
+
+/* Product Card Image */
+.iv-drips .product-card img {
+  width: 100%; /* Full width of the card */
+  height: 150px; /* Fixed height for images */
+  object-fit: contain; /* Ensure the image fits without distortion */
+  border-radius: 10px 10px 0 0; /* Rounded corners for the top */
+  /* border: 2px solid yellow;   */
+  width: 100%;
+
+}
+
+
+/* Product Card Content */
+.iv-drips .product-card-content {
+  padding: 0.8rem;
+  width: 100%;
+  /* border: 5px solid green;  */
+  text-transform: capitalize;
+  font-weight: bold;
+ 
+  
+}
+
+.product-card-content ul{
+  /* border: 5px solid rgb(11, 148, 211); */
+  list-style-position: inside;
+  padding-left: 0; /* Remove default padding */
+  margin-left: 0; /* Remove default margin */
+margin-left: 5%;
+  text-align: left;
+
+}
+
+.product-card-content ul li {
+  margin: 0.5rem 0; /* Space between list items */
+  font-size: 0.9rem; /* Font size for list items */
+  color: #666; /* Color for list items */
+list-style-type: disc;
+font-weight: bolder;
+}
+
+.iv-drips .product-card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.iv-drips .product-card-content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.iv-drips .know-more-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #e91e63;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.iv-drips .know-more-btn:hover {
+  background-color: #c2185b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .iv-drips .product-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .iv-drips .product-grid {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+}
+/* ------------------- */
+
+
+.product-img{
+   /* border: 2px solid red;  */
+   display: flex;
+   justify-content: center;
+    align-items: center;
+   /* flex-direction: column; */
+   width: 50%;
+   height: 80%;
+    /* height: 80% !important; */
+
+
+}
+/* .product-card img{ */
+  /* width: auto; Maintain the aspect ratio */
+  /* height: 100%; Ensure the image takes the full height of the container */
+  /* object-fit: contain; Ensure the image fits within the container without cropping */
+  /* border-radius: 10px; */
+  /* border: 2px solid blue; */
+/* ] */
+
+
+
+
+.product-card-content { */
+    flex: 1;  /*  Allow content to take the remaining space */
+    width: 50%;
+    height: 100%;
+    /* padding: 1rem; Add padding for spacing */
+    display: flex;
+  /* height: 100%; Set height to 100% of the container */
+    flex-direction: column;
+    justify-content: center; Center content vertically
+    /* text-align: left; Align text to the left */
+    /* border: 2px solid green;  */
+ } 
+  
+
+
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+  }
+
+  .product-card-content {
+    padding: 1.5rem;
+  }
+
+  .product-card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  .product-card-content h4 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #e91e63;
+  }
+
+  .product-card-content ul {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+
+  .product-card-content ul li {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+
+  .know-more-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #e91e63;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .know-more-btn:hover {
+    background-color: #c2185b;
+  }
+
+  /* Bestsellers Section */
+  .bestsellers {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* IV Drips Section */
+  .iv-drips {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .shop-links {
+      flex-direction: column;
+      align-items: center;
+        color: red;
+    }
+
+    
+
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* === Custom Styling for Hair Gain Advance Card ONLY === */
+.hair-gain-advance-card {
+display: flex;
+gap: 2rem;
+padding: 2rem;
+align-items: flex-start;
+background-color: #fff;
+border-radius: 15px;
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+margin-bottom: 2rem;
+}
+
+.hair-gain-advance-card img {
+width: 800px;
+height: 700px;
+object-fit: contain;
+border-radius: 10px;
+border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#haigainadvimg{
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.hair-gain-advance-card .product-card-content {
+flex: 1;
+}
+
+.hair-gain-advance-card .product-card-content h3 {
+font-size: 2rem;
+color: #333;
+margin-bottom: 1rem;
+}
+
+.hair-gain-advance-card .product-card-content h4 {
+font-size: 1.3rem;
+color: #e91e63;
+margin-top: 1.5rem;
+margin-bottom: 0.5rem;
+}
+
+.hair-gain-advance-card .product-card-content ul {
+padding-left: 1.2rem;
+}
+
+.hair-gain-advance-card .product-card-content ul li {
+margin-bottom: 0.5rem;
+line-height: 1.6;
+font-size: 1rem;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+.hair-gain-advance-card {
+  flex-direction: column;
+  text-align: center;
+}
+
+.hair-gain-advance-card img {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.hair-gain-advance-card .product-card-content {
+  text-align: left;
+}
+}
+
+/* === Beauty Hero Section === */
+.beauty-hero {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #fff0e9;
+padding: 4rem 6%;
+gap: 2rem;
+flex-wrap: wrap;
+}
+
+.beauty-text {
+flex: 1;
+max-width: 600px;
+}
+
+.beauty-text h1 {
+font-size: 2.5rem;
+font-weight: 700;
+color: #a0522d;
+margin-bottom: 1rem;
+}
+
+.beauty-text p {
+font-size: 1.2rem;
+color: #444;
+margin-bottom: 2rem;
+line-height: 1.6;
+}
+
+.shop-now-btn {
+padding: 0.8rem 2rem;
+background-color: #a0522d;
+color: white;
+border-radius: 30px;
+text-decoration: none;
+font-weight: 600;
+transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+background-color: #7a3c1e;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+.beauty-hero {
+  flex-direction: column;
+  text-align: center;
+}
+
+.beauty-text {
+  max-width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 350px;
+}
+}
+
+
