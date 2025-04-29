@@ -5,59 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultraceutics</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/slider-styles.css">
-    <link rel="stylesheet" href="./css/trending-styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slider-styles.css">
+    <link rel="stylesheet" href="trending-styles.css">
+    <link rel="stylesheet" href="section2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
-    <header> 
-
+    <header>
         <div class="top-bar">
-            <p>Welcome to Ultracetius</p>
-
+            <p>Welcome to Ultraceutics</p>
         </div>
-        <nav class="navbar flex">
-          <!-- Hamburger Icon (SVG) -->
-          <svg class="hamburger" onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 100 80" fill="#000">
-            <rect width="100" height="10"></rect>
-            <rect y="30" width="100" height="10"></rect>
-            <rect y="60" width="100" height="10"></rect>
-          </svg>
-      
-          <!-- Logo -->
-          <div class="logo">
-            <img src="./Imgs/img/Logo.jpeg" alt="Multiplex Logo">
-          </div>
-      
-          <!-- Sidebar Menu -->
-          <ul class="nav-links">
-            <!-- Close Button -->
-            <span class="close-icon" onclick="closeMenu()">&#10005;</span>
-            
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about-us.html">About Us</a></li>
-            <li><a href="./products.html">Product</a></li>
-            <li><a href="./contact-us.html">Contact Us</a></li>
-          </ul>
-      
-          <!-- Quick Enquiry Button -->
-          <div class="search-and-enquiry">
-            <button class="enquiry-button">Quick Enquiry</button>
-          </div>
+        
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo3.jpeg" alt="Multiplex Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Manufacturer</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact us</a></li>
+
+            </ul>
+            <div class="search-and-enquiry">
+                <button class="enquiry-button">Quick Enquiry</button>
+            </div>
         </nav>
-      </header>
-      <div class="slider">
+    </header>
+    <div class="slider">
         <div class="slider-container">
             <div class="slide">
-                <img src="Imgs/img/k1.png" alt="Slide Image" id="k1">
+                <img src="img/k1.png" alt="Slide Image" id="k1">
     
             </div>
             <div class="slide">
-                <img src="Imgs/img/P4.png" alt="Slide Image" id="k2">
+                <img src="img/P4.png" alt="Slide Image" id="k2">
                 <div class="slide-content">
                     <h2>ULTRALIGHT ULTRAFUSION</h2>
                     <p>Revolutionary IV infusion therapy delivering superior nutrients and hydration directly into your
@@ -66,7 +52,7 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="Imgs/img/P2x.jpg" alt="Slide Image">
+                <img src="img/P2x.jpg" alt="Slide Image">
                 <div class="slide-content">
                     <h2>ULTRALIGHT ADVANCE TABLET</h2>
                     <p>Experience melanin synthesis inhibition 8 times faster</p>
@@ -74,7 +60,7 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="Imgs/img/P3x.jpg" alt="Slide Image">
+                <img src="img/P3x.jpg" alt="Slide Image">
                 <div class="slide-content">
                     <h2>A LUXURIOUS SOAP</h2>
                     <p>Crafted with a blend of natural and scientifically -proven ingredients designed to nourish,
@@ -88,72 +74,122 @@
             <button>&#10095;</button>
         </div>
         </div>
-
     <script src="javascript.js"></script>
     <div class="vid">
         <div class="vid1">
-            <img src="./Imgs/img/M2.png" alt="">
+          <img src="img/M2.png" alt="">
         </div>
         <div class="vid2">
-            <video autoplay muted loop controls width="100%" height="100%">
-                <source src="./Imgs/vid/V1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+          <video autoplay muted loop width="100%" height="100%">
+            <source src="vid/V1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
-    </div>
+      </div>
     <div class="trending">
         <h2 class="trending-h2">TRENDING</h2>
-
-        <div class="products">
+      
+        <div class="container">
+          <div class="products">
             <!-- Product 1 -->
             <div class="product-card">
-                <div class="badge">Trending</div>
-                <img class="product-img" src="./Imgs/img/r1.jpg" alt="Product 1">
-                <div class="info">
-                    <div class="tag">Cleanser</div>
-                    <div class="title">Deep Purifying Cleanser - Glycolic + Salicylic + Lactic</div>
-                    <div class="rating">⭐ 4.07 | 30 Reviews</div>
-                    <!--<div class="price">₹399</div> -->
-                    <button class="btn">View Product</button>
-                </div>
+              <div class="badge">Trending</div>
+              <img class="product-img" src="img/r1.jpg" alt="Product 1">
+              <div class="info">
+                <div class="tag">Cleanser</div>
+                <div class="title">Deep Purifying Cleanser - Glycolic + Salicylic + Lactic</div>
+                <div class="rating">⭐ 4.07 | 30 Reviews</div>
+                <button class="btn">View Product</button>
+              </div>
             </div>
-
+      
             <!-- Product 2 -->
             <div class="product-card">
-                <div class="badge">Trending</div>
-                <img class="product-img" src="./Imgs/img/r2.jpg" alt="Product 1">
-                <div class="info">
-                    <div class="tag">Injections</div>
-                    <div class="title">Ultralight 600 Injection - Japanese Grade Glutathione Injections</div>
-                    <div class="rating">⭐ 4.07 | 30 Reviews</div>
-                    <button class="btn">View Product</button>
-                </div>
+              <div class="badge">Trending</div>
+              <img class="product-img" src="img/r2.jpg" alt="Product 2">
+              <div class="info">
+                <div class="tag">Injections</div>
+                <div class="title">Ultralight 600 Injection - Japanese Grade Glutathione Injections</div>
+                <div class="rating">⭐ 4.07 | 30 Reviews</div>
+                <button class="btn">View Product</button>
+              </div>
             </div>
-
+      
             <!-- Product 3 -->
             <div class="product-card">
-                <div class="badge badge-new">New</div>
-                <img class="product-img" src="Imgs/img/r3.jpg" alt="Product 1">
-                <div class="info">
-                    <div class="tag">Capsules </div>
-                    <div class="title">Hairgain Advance with DHT Blocker and Biotin</div>
-                    <div class="rating">⭐ 4.9 | 148 Reviews</div>
-                    <button class="btn">View Product</button>
-                </div>
+              <div class="badge badge-new">New</div>
+              <img class="product-img" src="img/r3.jpg" alt="Product 3">
+              <div class="info">
+                <div class="tag">Capsules</div>
+                <div class="title">Hairgain Advance with DHT Blocker and Biotin</div>
+                <div class="rating">⭐ 4.9 | 148 Reviews</div>
+                <button class="btn">View Product</button>
+              </div>
             </div>
-
+      
             <!-- Product 4 -->
             <div class="product-card">
-                <div class="badge badge-new">New</div>
-                <img class="product-img" src="./Imgs/img/r4.jpg" alt="Product 1">
-                <div class="info">
-                    <div class="tag">Tablet</div>
-                    <div class="title">Ultralight Advance Tablet - Form of Glutathione</div>
-                    <div class="rating">⭐ 4.9 | 148 Reviews</div>
-                    <button class="btn">View Product</button>
-                </div>
+              <div class="badge badge-new">New</div>
+              <img class="product-img" src="img/r4.jpg" alt="Product 4">
+              <div class="info">
+                <div class="tag">Tablet</div>
+                <div class="title">Ultralight Advance Tablet - Form of Glutathione</div>
+                <div class="rating">⭐ 4.9 | 148 Reviews</div>
+                <button class="btn">View Product</button>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="productSec">
+        <section class="container3">
+            <div class="section-heading">
+              <h2>Our Products</h2>
+            </div>
+            <p class="description">
+                At Ultraceutics PVT LTD, we combine cutting-edge science with high-quality ingredients to deliver trusted solutions for skin, hair, and holistic wellness. Our diverse range includes advanced skincare, haircare, body brightening lotions, nutritional supplements, and innovative IV drips — all formulated with clinically proven actives and backed by international collaborations.
+            </p>
+        
+            <div class="card-grid">
+              <div class="card">
+                <img src="img/s2.jpg" alt="Skin Care">
+                <h2>SKIN CARE</h2>
+                <p>
+                    Elevate your skin with science-backed care. Our advanced skincare range targets dullness, pigmentation, and aging — delivering visible results with clinically proven ingredients.
+                </p>
+                <button>View Products</button>
+              </div>
+        
+              <div class="card">
+                <img src="img/s4.jpg" alt="Hair Care">
+                <h2>HAIR CARE</h2>
+                <p>
+                    Stronger roots, fuller growth. Our hair care solutions are clinically formulated to combat hair fall, nourish the scalp, and revive healthy, vibrant hair from within.
+                </p>
+                <button>View Products</button>
+              </div>
+        
+              <div class="card">
+                <img src="img/s5.jpg" alt="Essential Mineral">
+                <h2>BODY CARE</h2>
+                <p>
+                    Smooth. Bright. Confident. Our body care products gently exfoliate, hydrate, and brighten uneven skin tone for a visibly radiant and even-textured glow.
+                </p>
+                <button>View Products</button>
+              </div>
+              <div class="card wide-card">
+                <img src="imG/s6.png" alt="Essential Mineral">
+                <div class="wide-card-content">
+                  <h2>IV Drips</h2>
+                  <p>
+                    Our IV drips are scientifically formulated to boost energy, enhance skin glow, support immunity, and promote total body rejuvenation — all with fast, targeted absorption.
+                  </p>
+                  <button>View Products</button>
+                </div>
+              </div>
+            </div>
+          </section>
+      </div>
         <footer class="footer">
             <div class="footer-container">
                 <div class="footer-section1">
@@ -165,7 +201,7 @@
                 </div>
                 <div class="footer-section2">
                     <h3 id="sec1">Quick Links</h3>
-                    <p>Contact US</p>
+                    <p>Contact Us</p>
                     <p>Products</p>
                     <p>About Us</p>
                     <p>Macnufacturing</p>
@@ -191,15 +227,15 @@
                     </div>
                     <div class="newsletter">
                         <h3>SIGN UP TO OUR NEWSLETTER</h3>
-                        <form id="newsletter-form">
-                            <input type="email" id="email-input" placeholder="Enter email address here" required>
+                        <form>
+                            <input type="email" placeholder="Enter email address here">
                             <button type="submit">SUBSCRIBE</button>
                         </form>
                         <p>You agree to our updated <a href="#">Terms & Conditions</a>, <a href="#">Privacy</a> & <a
                                 href="#">Cookie Policies</a>.</p>
                     </div>
                     <div class="img-logo">
-                        <img src="./Imgs/img/logo2.jpeg" alt="Logo">
+                        <img src="img/logo2.jpeg" alt="Logo">
                     </div>
                 </div>
             </div>
@@ -209,31 +245,5 @@
                 Copyright © 2025 Ultraceutics Pvt Lmt. All Rights Reserved.
             </p>
         </footer>
-
-
-        <script>
-            function toggleMenu() {
-              const navLinks = document.querySelector('.nav-links');
-              navLinks.classList.toggle('show');
-            }
-          
-            function closeMenu() {
-              const navLinks = document.querySelector('.nav-links');
-              navLinks.classList.remove('show');
-            }
-          </script>
-          <script>
-            document.getElementById("newsletter-form").addEventListener("submit", function(e) {
-                e.preventDefault(); // Prevent form from submitting normally
-        
-                const email = document.getElementById("email-input").value;
-                const encodedEmail = encodeURIComponent(email); // for safe URL usage
-        
-                // Redirect to contact.html with email as a query parameter
-                window.location.href = `contact-us.html?email=${encodedEmail}`;
-            });
-        </script>
-        
 </body>
-
 </html>
