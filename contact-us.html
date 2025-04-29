@@ -7,200 +7,307 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="./css/contact-us.css" />
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/header.css">    
+    <link rel="stylesheet" href="./css/header.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
     <!-- Load JavaScript modules -->
     <script type="module" src="./js/db.js"></script>
     <script type="module" src="./js/admin-excel.js"></script>
+    <script type="module" src="./js/validation.js"></script>
+
     <style>
-        /* Hero section styles */
-        .hero-section {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding-left: 50px;
-            background-color: #f9f9f9;
-            margin-bottom: 30px;
-            margin-top: 0px;
-        }
-        
-        .hero-content {
-            flex: 1;
-            padding-right: 40px;
-        }
-        
-        .hero-image {
-            flex: 2;
-            text-align: right;
-        }
-        
-        .hero-image img {
-            width: 350px;
-            height: 400px;
-            margin-top: 10px;
-            margin-bottom: 0px;
-        }
-        
-        .hero-content h1 {
-            font-size: 36px;
-            color: #333;
-            margin-bottom: 20px;
-            position: relative;
-        }
-        
-        .hero-content h1:after {
-            content: "";
-            display: block;
-            width: 60px;
-            height: 3px;
-            background-color: #f0ad4e;
-            margin-top: 15px;
-        }
-        
-        .hero-content p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        
-        /* Horizontal Contact Form Styles */
-        .card {
-            max-width: 1000px;
-            margin: 0 auto 50px;
-            padding: 30px;
-            border-radius: 10px;
-            background-color: rgba(255, 255, 255, 0.85);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            backdrop-filter: blur(5px);
-        }
-        
-        .card h2 {
-            text-align: center;
-            margin-bottom: 25px;
-            color: #333;
-            position: relative;
-        }
-        
-        .card h2:after {
-            content: "";
-            display: block;
-            width: 50px;
-            height: 3px;
-            background-color: #f0ad4e;
-            margin: 10px auto;
-        }
-        
-        #contact-form {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: space-between;
-        }
-        
-        .form-group {
-            flex: 1 0 30%;
-            margin-bottom: 15px;
-        }
-        
-        .form-group.full-width {
-            flex: 1 0 100%;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: 500;
-            color: #555;
-        }
-        
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        
-        .form-group h3 {
-            margin-top: 0;
-            margin-bottom: 10px;
-            font-size: 16px;
-            font-weight: 500;
-            color: #555;
-        }
-        
-        .radio-group {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .radio-group label {
-            display: flex;
-            align-items: center;
-            margin-bottom: 0;
-            cursor: pointer;
-        }
-        
-        .radio-group input[type="radio"] {
-            width: auto;
-            margin-right: 5px;
-        }
-        
-        .form-submit {
-            flex: 1 0 100%;
-            text-align: center;
-            margin-top: 10px;
-        }
-        
-        button[type="submit"] {
-            background-color: #f0ad4e;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        
-        button[type="submit"]:hover {
-            background-color: #e09b3d;
-        }
-        
-        .admin-button-wrapper {
-            text-align: center;
-        }
-        
-        #admin-download {
-            background-color: #6c757d;
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            font-size: 14px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .hero-section {
-                flex-direction: column-reverse;
-                padding: 30px 20px;
-            }
-            
-            .hero-content {
-                padding-right: 0;
-                padding-top: 30px;
-            }
-            
-            .form-group {
-                flex: 1 0 100%;
-            }
-            
-            .card {
-                padding: 20px;
-            }
-        }
+       /* Hero section styles */
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 50px;
+    background-color: #fdf1e8;
+    margin-bottom: 30px;
+    margin-top: 0px;
+
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-image {
+    flex: 2;
+    text-align: right;
+}
+
+.hero-image img {
+    width: 350px;
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-right: 60px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.hero-content h1:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fdf1e8;
+    margin-top: 15px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Contact Info Section */
+.contact-info-section {
+    padding: 30px 0;
+    background-color: #fdf1e8;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);}
+
+.contact-info-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    }
+
+
+
+.contact-info-box {
+    flex: 1;
+    padding: 20px;
+    margin: 0 10px;
+    text-align: left;
+    color: black;
+    border-radius: 5px;
+}
+
+.contact-info-box h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.contact-info-box p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.contact-info-box a {
+    color: black;
+    text-decoration: underline;
+}
+
+.contact-message {
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.contact-message h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-message p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Contact Card and Form - CLEAN MODERN */
+.card {
+    max-width: 500px; /* Decreased width */
+    max-height: 700px; /* Decreased height */
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #fffdfd, #fae3d1e0); /* Added gradient effect */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+    position: relative;
+}
+
+.card h2:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #e8ded7;
+    margin: 10px auto;
+}
+
+/* Form Layout */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px; /* space between form groups */
+}
+.form-container {
+  background-color: #4e3e26 !important;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group label {
+  font-size: 15px;
+  margin-bottom: 5px; /* little space between label and input */
+  font-weight: 600;
+  color: #000000;
+}
+
+/* Clean Input Styling - CHANGED: solid bottom border instead of dotted */
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    background: transparent;
+    border: 1px solid;
+    /* border-bottom: 2px solid #000000;  */
+    padding: 8px 5px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: #000000;
+    outline: none;
+    /* transition: all 0.5s ease; */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus {
+    border: 1px solid black; /* Full border on all sides */
+    border-radius: 10px; /* Slightly rounded corners */
+    padding: 8px 10px; /* Add a little extra padding for clean look */
+    background-color: transparent; /* Optional: light background */
+}
+
+/* Radio Group Styling */
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.radio-group input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Submit Button - CHANGED: added gradient background */
+.form-submit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-submit button {
+    padding: 12px 30px;
+    font-size: 18px;
+    background: linear-gradient(to right, #4e0707ec, #a37c80); /* Added gradient effect */
+    color: whitesmoke;
+    font-weight: 600;
+    border-color: #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* REMOVED the hover background color change effect */
+.form-submit button:hover {
+    /* Removed background-color change */
+    transform: translateY(-2px); /* Optional: small lift effect instead */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Optional: enhanced shadow on hover */
+}
+
+/* Admin Download Button */
+.admin-button-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+#admin-download {
+    background: linear-gradient(to right, #c9735b, #e7c0c0); /* Added gradient effect */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+#admin-download:hover {
+    transform: translateY(-2px); /* Optional: small lift effect instead */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        padding: 30px 20px;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        padding-top: 30px;
+    }
+
+    .contact-info-container {
+        flex-direction: column;
+    }
+
+    .contact-info-box {
+        margin: 10px 0;
+    }
+
+    #contact-form {
+        gap: 15px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
     </style>
 </head>
 
@@ -224,7 +331,7 @@
             <!-- Close Button -->
             <span class="close-icon" onclick="closeMenu()">&#10005;</span>
             
-            <li><a href="./Main.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./about-us.html">About Us</a></li>
             <li><a href="./products.html">Product</a></li>
             <li><a href="./contact-us.html">Contact Us</a></li>
@@ -236,72 +343,118 @@
           </div>
         </nav>
     </header>
+
+    <div style="height: 30px;"></div>
+
+    
     
     <!-- New Hero Section -->
     <section class="hero-section">
         <div class="hero-content">
-            <h1>WELCOME TO DERMACEUTICS INDIA</h1>
+            <h1>WELCOME TO ULTRACEUTICS INDIA</h1>
             <p>We are a leading Indian dermatological, cosmotological, tricological and nutraceutical company which is pioneer in
                  glutathione supplement, came into existence when a group of committed, dedicated & experienced professionals with background 
                  of marketing, sales and manufacturing from national & multinational companies, 
                 joined hands together with a motto to enhance beauty in a healthy way.</p>
         </div>
         <div class="hero-image">
-            <img src="./Imgs/img/products-showcase.png" alt="Dermaceutics Products">
+            <img src="./Imgs/Model-img/young-adult-woman-with-beautiful-face-isolated-white-skin-care-concept.png" alt="Dermaceutics Products">
         </div>
     </section>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <section class="contact-info-section">
+        <div class="contact-info-container">
+            <div class="contact-info-box">
+                <h3>CORPORATE OFFICE</h3>
+                <p>13B EKTA BHOOMI GARDEN 2 </p>
+                <p>Dattapada Road</p>
+                <p>Boravali East, Mumbai - 400066</p>
+            </div>
+            <div class="contact-info-box">
+                <h3>GENERAL INFORMATION</h3>
+                <p>For more information about Ultraceutics India Pvt</p>
+                <p>Ltd, kindly write to us at:</p>
+                <p><a href="mailto:contact@ultraceuticsindia.com">contact@ultraceuticsindia.com</a></p>
+            </div>
+            <div class="contact-info-box">
+                <h3>PRODUCT INFORMATION</h3>
+                <p>For product related information about Ultraceutics</p>
+                <p>India Pvt ltd, kindly write to us at:</p>
+                <p><a href="mailto:info@dermaceuticsindia.com">info@dermaceuticsindia.com</a></p>
+            </div>
+        </div>
+        <div class="contact-message">
+            <h2>WHETHER YOU'RE A CUSTOMER, HEALTH-PROFESSIONAL OR AN INVESTOR, FEEL FREE TO CONTACT US</h2>
+            <p>Customer Care: +91 85912 85747</p>
+        </div>
+    </section>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
       
     <div class="card">
         <h2>Contact Us</h2>
         <form id="contact-form" onsubmit="submitForm(event)">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+          
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Name should contain only letters and spaces.">
+          </div>
+          
+          <div class="form-group">
+            <label for="contact">Contact</label>
+            <input type="text" id="contact" name="contact" required pattern="{1}[0-9]{9}" title="Contact must be a 10-digit number starting with 6-9.">
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+          </div>
+          
+          <div class="form-group">
+            <label>Who are you?</label>
+            <div class="radio-group">
+              <label>
+                <input type="radio" name="role" value="doctor" onclick="toggleForm('doctor')" required> Doctor
+              </label>
+              <label>
+                <input type="radio" name="role" value="patient" onclick="toggleForm('patient')" required> Patient
+              </label>
             </div>
-
-            <div class="form-group">
-                <label for="contact">Contact</label>
-                <input type="text" id="contact" name="contact" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email ID</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="city">City</label>
-                <input type="text" id="city" name="city" required>
-            </div>
-
-            <div class="form-group">
-                <h3>Who are you</h3>
-                <div class="radio-group">
-                    <label>
-                        <input type="radio" name="role" value="doctor" onclick="toggleForm('doctor')" required> Doctor
-                    </label>
-                    <label>
-                        <input type="radio" name="role" value="patient" onclick="toggleForm('patient')" required> Patient
-                    </label>
-                </div>
-            </div>
-
-            <div class="form-group" id="clinic-address-group" style="display: none;">
-                <label for="clinic-address">Clinic Address</label>
-                <input type="text" id="clinic-address" name="clinic_address">
-            </div>
-
-            <div class="form-submit">
-                <button type="submit">Submit</button>
-            </div>
+          </div>
+          
+          <div class="form-group" id="clinic-address-group" style="display: none;">
+            <label for="clinic-address">Clinic Address</label>
+            <input type="text" id="clinic-address" name="clinic_address">
+          </div>
+          
+          <div class="form-submit">
+            <button type="submit">Submit</button>
+          </div>
+          
         </form>
-        <br/>
-
-        <!-- Admin Download Button -->
+        
         <div class="admin-button-wrapper">
-            <button id="admin-download" style="display: inline-block;">📥 Admin Download</button>
+          <button id="admin-download">Admin Download</button>
         </div>
-    </div>
+      </div>
+      
+
+      <br/>
+      <br/>
+      
+    
 
     <footer class="footer">
         <div class="footer-container">
@@ -386,6 +539,21 @@
             alert('Form submitted successfully!');
         }
     </script>
+
+<script>
+    // Get email from URL
+    const params = new URLSearchParams(window.location.search);
+    const userEmail = params.get("email");
+    console.log("User's Email:", userEmail);
+  
+    // Optional: auto-fill email field if it exists
+    if (userEmail) {
+      const emailInput = document.getElementById('email');
+      if (emailInput) {
+        emailInput.value = userEmail;
+      }
+    }
+  </script>
 </body>
 
 </html>

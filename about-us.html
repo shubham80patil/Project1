@@ -11,10 +11,14 @@
     
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-    
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
     <link rel="stylesheet" href="./css/about-us.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/header.css">  </head>
+    <link rel="stylesheet" href="./css/header.css">  
+  </head>
 <body>
   <!-- Sticky Navbar -->
   <header> 
@@ -36,7 +40,7 @@
         <!-- Close Button -->
         <span class="close-icon" onclick="closeMenu()">&#10005;</span>
         
-        <li><a href="./Main.html">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="./about-us.html">About Us</a></li>
         <li><a href="./products.html">Product</a></li>
         <li><a href="./contact-us.html">Contact Us</a></li>
@@ -56,45 +60,49 @@
   </div>
 
   <!-- Content Sections -->
-  <div id="home" class="section">
-    <div class="image-container" data-aos="fade-right" data-aos-duration="1000">
-      <img src="./Imgs/assets/doc1.png" alt="Image 1">
+ <!-- 1st Card (move from right) -->
+<div class="card-wrapper right">
+  <div class="card">
+    <div class="image-container">
+      <img src="./Imgs/assets/doc1.png" alt="Dr. Vaiedhi Newaskar">
     </div>
-    <div class="content-container" data-aos="fade-left" data-aos-duration="1000">
-      <h2>Harshal Redkar</h2>
-      <p>Name: Dr. Harshal Redkar, MBBS<br>
-        Specialization: General Medicine<br>
-        Years of Experience: 15 years<br>
-        Location: Ganesh clinic bandra</p>
+    <div class="content-container">
+      <h2>Dr. Vaiedhi Newaskar</h2>
+      <p><strong>Specialization:</strong> Krasa Aesthetic</p>
+      <p>MBBS</p>
     </div>
   </div>
+</div>
 
-  <div id="about" class="section">
-    <div class="image-container" data-aos="fade-left" data-aos-duration="1000">
-      <img src="./Imgs/assets/doc2.png" alt="Image 2">
+<!-- 2nd Card (move from left) -->
+<div class="card-wrapper left">
+  <div class="card">
+    <div class="image-container">
+      <img src="./Imgs/assets/doc2.png" alt="Dr. Jasleen Tuli">
     </div>
-    <div class="content-container" data-aos="fade-right" data-aos-duration="1000">
-      <h2>Nikhil Shukla</h2>
-      <p>Name: Dr. Nikhil Shukla, DBMS<br>
-        Specialization: General Medicine<br>
-        Years of Experience: 8 years<br>
-        Location: UK</p>
+    <div class="content-container">
+      <h2>Dr. Jasleen Tuli</h2>
+      <p><strong>Specialization:</strong> Skinpod Dermalogica</p>
+      <p>MBBS</p>
     </div>
-    
   </div>
+</div>
 
-  <div id="manufacturer" class="section">
-    <div class="image-container" data-aos="fade-right" data-aos-duration="1000">
-      <img src="./Imgs/assets/doc3.png" alt="Image 3">
+<!-- 3rd Card (move from right) -->
+<div class="card-wrapper right">
+  <div class="card">
+    <div class="image-container">
+      <img src="./Imgs/assets/doc3.png" alt="Dr. Aasawari Jachak">
     </div>
-    <div class="content-container" data-aos="fade-left" data-aos-duration="1000">
-      <h2>Shubham Patil</h2>
-      <p>Name: Dr. Shubham Patil, SMS<br>
-        Specialization: General Medicine<br>
-        Years of Experience: 2 years<br>
-        Location: Near La Flore Boodhoo, Mauritius</p>
+    <div class="content-container">
+      <h2>Dr. Aasawari Jachak</h2>
+      <p><strong>Specialization:</strong> Rejuvaderm Clinic</p>
+      <p>MBBS, DVD</p>
     </div>
   </div>
+</div>
+
+
 
 
   <div class="clinic-section">
@@ -111,21 +119,21 @@
       <tbody>
         <tr>
           <td>1</td>
-          <td>Ganesh Clinic</td>
-          <td><a href="https://maps.google.com/?q=Bandra+near+Link+Square+Mall" target="_blank">Bandra, near Link Square Mall</a></td>
-          <td><a href="tel:+912345678901">+91 2345678901</a></td>
+          <td>Krasa Skin & Hair Clinic</td>
+          <td><a href="https://maps.app.goo.gl/kgCKjiZRdu3CQHVt9" target="_blank">Bandra west,Mumbai </a></td>
+          <td><a href="tel:8080806877">8080806877</a></td>
         </tr>
         <tr>
           <td>2</td>
-          <td>Life Inn Clinic</td>
-          <td><a href="https://maps.google.com/?q=Life+Inn+Clinic+UK" target="_blank">UK</a></td>
-          <td><a href="tel:+441234567890">+44 1234567890</a></td>
+          <td>Dr. Parag Telang</td>
+          <td><a href="https://maps.app.goo.gl/U4LJHPMeRdWcCLDz6" target="_blank">Andheri west,Mumbai</a></td>
+          <td><a href="tel:9137375103">9137375103</a></td>
         </tr>
         <tr>
           <td>3</td>
-          <td>City Clinic</td>
-          <td><a href="https://maps.google.com/?q=La+Flore+Boodhoo+Mauritius" target="_blank">Near La Flore Boodhoo, Mauritius</a></td>
-          <td><a href="tel:+23012345678">+230 12345678</a></td>
+          <td>Fab Aesthetics</td>
+          <td><a href="https://maps.app.goo.gl/UHtuneBzQLzVFtA2A" target="_blank">Andheri west,Mumbai</a></td>
+          <td><a href="tel:8433966645">8433966645</a></td>
         </tr>
       </tbody>
     </table>
@@ -135,7 +143,25 @@
   
   
   
-  <img src="./Imgs/assets/Map2.png" alt="map" id="img1">
+  <!-- <img src="./Imgs/assets/Map2.png" alt="map" id="img1"> -->
+
+  <section id="locations">
+    <h2>Our Locations</h2>
+    <div class="map-overlay-container">
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1iD_gm3UKNYzIQhmhXZYsy-qc9zHgzTQ&ehbc=2E312F&noprof=1&z=2.5" width="640" height="480"></iframe>
+      </div>
+      <div class="map-overlay"></div>
+    </div>
+  </section>
+
+  <script>
+    document.querySelector('.map-overlay').addEventListener('click', function () {
+      const iframe = document.querySelector('.map-container iframe');
+      iframe.style.pointerEvents = 'auto'; // Enable interaction
+      this.style.display = 'none'; // Hide overlay after first interaction
+    });
+  </script>
   
 
   
@@ -210,9 +236,38 @@
   </p>
 </footer>
 
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const cardWrapper = entry.target;
+  
+      if (entry.isIntersecting) {
+        if (cardWrapper.classList.contains('right')) {
+          cardWrapper.classList.add('animate-right');
+        } else if (cardWrapper.classList.contains('left')) {
+          cardWrapper.classList.add('animate-left');
+        }
+      } else {
+        // Reset if scroll out
+        cardWrapper.classList.remove('animate-right', 'animate-left');
+      }
+    });
+  }, {
+    threshold: 0.2 // Trigger when 20% visible
+  });
+  
+  // Apply observer to all card wrappers
+  document.querySelectorAll('.card-wrapper').forEach(card => {
+    observer.observe(card);
+  });
+  </script>
+  
+  
+
 
 
 </body>
+
 
 
 <script>

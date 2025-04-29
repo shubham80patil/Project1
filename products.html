@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JAY SHREE GANESHA - Products</title>
+  <title>ultracetius</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/header.css">
@@ -42,7 +44,7 @@
     letter-spacing: 3px;
 }
 
-.navbar {
+.navbar-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -344,13 +346,140 @@
         grid-template-columns: 1fr;
       }
     }
+
+    /* === Custom Styling for Hair Gain Advance Card ONLY === */
+.hair-gain-advance-card {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.hair-gain-advance-card img {
+  width: 800px;
+  height: 700px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.hair-gain-advance-card .product-card-content {
+  flex: 1;
+}
+
+.hair-gain-advance-card .product-card-content h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.hair-gain-advance-card .product-card-content h4 {
+  font-size: 1.3rem;
+  color: #e91e63;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hair-gain-advance-card .product-card-content ul {
+  padding-left: 1.2rem;
+}
+
+.hair-gain-advance-card .product-card-content ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+  .hair-gain-advance-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hair-gain-advance-card img {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .hair-gain-advance-card .product-card-content {
+    text-align: left;
+  }
+}
+
+/* === Beauty Hero Section === */
+.beauty-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff0e9;
+  padding: 4rem 6%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.beauty-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.beauty-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #a0522d;
+  margin-bottom: 1rem;
+}
+
+.beauty-text p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.shop-now-btn {
+  padding: 0.8rem 2rem;
+  background-color: #a0522d;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background-color: #7a3c1e;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .beauty-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .beauty-text {
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+
   </style>
 </head>
 <body>
   <header> 
 
     
-    <nav class="navbar flex">
+    <nav class="navbar-flex">
       <!-- Hamburger Icon (SVG) -->
       <svg class="hamburger" onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 100 80" fill="#000">
         <rect width="100" height="10"></rect>
@@ -368,7 +497,7 @@
         <!-- Close Button -->
         <span class="close-icon" onclick="closeMenu()">&#10005;</span>
         
-        <li><a href="./Main.html">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="./about-us.html">About Us</a></li>
         <li><a href="./products.html">Product</a></li>
         <li><a href="./contact-us.html">Contact Us</a></li>
@@ -381,9 +510,16 @@
     </nav>
   </header>
 
-  <div class="hero-image">
-    <img src="./Imgs/Model-img/pretty-face-beautiful-smiling-woman-posing-studio-isolated-white-wall.png" alt="Model Image">
-  </div>
+  <section class="beauty-hero">
+    <div class="beauty-text">
+      <h1>Unveil Your Natural Glow</h1>
+      <p>Where skincare meets science. Feel confident, radiant, and beautifully you — every day.</p>
+      <a href="#bestsellers" class="shop-now-btn">Explore Products</a>
+    </div>
+    <div class="hero-image">
+      <img src="./Imgs/Model-img/pretty-face-beautiful-smiling-woman-posing-studio-isolated-white-wall.png" alt="Model Image">
+    </div>
+  </section>
 
   <div class="shop-links">
     <a href="#shopall">Shop All</a>
@@ -449,7 +585,7 @@
   <section id="hair-products">
     <h2 class="section-title">Hair Products</h2>
     <div class="product-grid">
-      <div class="product-card">
+      <div class="product-card hair-gain-advance-card">
         <img src="./Imgs/Product-img/hairgainadvancetablet-removebg.png" alt="Hair Gain Advance">
         <div class="product-card-content">
           <h3>Hair Gain Advance</h3>
@@ -475,6 +611,7 @@
       </div>
     </div>
   </section>
+  
 
   <section id="skin-care">
     <h2 class="section-title">Skin Care</h2>
@@ -775,27 +912,26 @@
     <div class="footer-container">
         <div class="footer-section1">
             <h3 id="sec1">GET IN TOUCH</h3>
-            <p>No. 180, 1st Main Road, Mahalakshmi Layout Extension, Bengaluru - 560 086</p>
-            <p>corporate@examplegroup.com</p>
-            <p>multiplex@examplegroup.com</p>
+            <p>13B Ekta Bhoomi Gardan 2 Dattapada Road Borivali East, Mumbai - 400066</p>
+            <p>contact@ultraceuticsindia.com</p>
             <p>080 22497464</p>
             <p>080 23494706 / 23497960</p>
         </div>
         <div class="footer-section2">
             <h3 id="sec1">Quick Links</h3>
-            <p>Gallery</p>
-            <p>Success Stories</p>
-            <p>Blog Articles</p>
-            <p>News & Media</p>
+            <p>Contact US</p>
+            <p>Products</p>
+            <p>About Us</p>
+            <p>Macnufacturing</p>
             <p>Digital Payment</p>
         </div>
         <div class="footer-section2">
             <h3 id="sec1">PRODUCTS</h3>
-            <p>Gallery</p>
-            <p>Success Stories</p>
-            <p>Blog Articles</p>
-            <p>News & Media</p>
-            <p>Digital Payment</p>
+            <p>Skin Care</p>
+            <p>Hair Care</p>
+            <p>Injections</p>
+            <p>IV Drips</p>
+            <p>Tablets</p>
         </div>
         <div class="footer-section4">
             <h3 id="sec1">FOLLOW</h3>
@@ -809,8 +945,8 @@
             </div>
             <div class="newsletter">
                 <h3>SIGN UP TO OUR NEWSLETTER</h3>
-                <form>
-                    <input type="email" placeholder="Enter email address here">
+                <form id="newsletter-form">
+                    <input type="email" id="email-input" placeholder="Enter email address here" required>
                     <button type="submit">SUBSCRIBE</button>
                 </form>
                 <p>You agree to our updated <a href="#">Terms & Conditions</a>, <a href="#">Privacy</a> & <a
@@ -848,8 +984,6 @@
       }
   }
 
- 
-  
 </script>
 </body>
 </html>

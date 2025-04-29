@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 html, body {
@@ -9,12 +10,42 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
+  background-color: #fff;
+}
+
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow-y: auto; /* Still allow scrolling, just hide the scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 body {
   font-family: 'Times New Roman', Times, serif;
-  background: linear-gradient(135deg, #fef6e4, #FDF0D9);
+  background-color: #fff;
 }
+
+/* .card {
+  background: #f4e2de;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  width: 400px;
+  margin: 100px auto;
+} */
 
 /* Base Styles */
 .hamburger {
@@ -121,6 +152,15 @@ body {
   z-index: 2;
 }
 
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: #fff !important;
+}
+
 /* Section */
 .section {
   display: flex;
@@ -186,7 +226,7 @@ body {
 /* Clinic Section Table */
 .clinic-section {
   padding: 50px 20px;
-  background: linear-gradient(135deg, #fef6e4, #FDF0D9);
+  background-color: #fff;
   max-width: 95%;
   margin: 0 auto;
 }
@@ -323,5 +363,173 @@ img {
   max-width: 100%;
   height: auto;
 }
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.card-wrapper {
+  display: flex;
+  width: 100%;
+  margin: 30px 0;
+  opacity: 0; /* Hide initially */
+  transition: all 0.8s ease;
+}
 
+/* Start position */
+.card-wrapper.right {
+  justify-content: flex-end;
+  transform: translateX(200px); /* Start off right side */
+}
+
+.card-wrapper.left {
+  justify-content: flex-start;
+  transform: translateX(-200px); /* Start off left side */
+}
+
+/* Animate when visible */
+.card-wrapper.animate-right {
+  transform: translateX(0); /* Move to center */
+  opacity: 1;
+}
+
+.card-wrapper.animate-left {
+  transform: translateX(0); /* Move to center */
+  opacity: 1;
+}
+
+/* Card Styles */
+.card {
+  background-color: #fdf1e8;
+  border-radius: 40px;
+  padding: 40px;
+  height: 400px;
+  width: 1000px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  margin: 0 40px;
+  gap: 100px;
+  transition: transform 0.8s ease, box-shadow 0.8s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.content-container h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.content-container p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Enhanced styling for locations section */
+
+#locations {
+  font-family: 'Arial', sans-serif;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 0 0 0; /* Remove bottom padding */
+  margin-bottom: 0 !important; /* Force no bottom margin */
+}
+
+#locations h2 {
+  color: #333;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+#locations h2:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #0078d4;
+  margin: 15px auto 0;
+}
+
+/* Map wrapper with overlay */
+.map-overlay-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+/* Map container */
+.map-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 28.125%; /* Maintain aspect ratio */
+  width: 100% !important;
+  margin-bottom: 0 !important;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: -67px; /* Hide the top bar with attribution */
+  left: 0;
+  width: 100%;
+  height: calc(100% + 60px);
+  border: none;
+  pointer-events: none; /* Disable map interaction initially */
+}
+
+/* Overlay that enables map on click */
+.map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+  background-color: transparent; /* Optional: add rgba(255,255,255,0.1) to give it a touch of overlay */
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .map-container {
+    width: 90% !important;
+    padding-top: 50.625%; /* Adjust aspect ratio for mobile */
+  }
+}
+
+/* Responsive card styling (if used elsewhere) */
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+    justify-content: center;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+  }
+
+  .image-container img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .content-container h2 {
+    font-size: 1.5em;
+  }
+}

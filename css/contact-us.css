@@ -1,10 +1,31 @@
 body {
     font-family: Arial, sans-serif;
-    background:
-    linear-gradient(135deg, #fef6e4, #fdebcf);
+    background-color: #fdf1e8;
+
     margin: 0;
     height: 100vh;
 }
+
+html {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  html::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    overflow-y: auto; /* Still allow scrolling, just hide the scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
 
 .card {
     background: #f4e2de;
@@ -63,6 +84,11 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+body {
+    margin: 0;
+}
+
 
 .animation {
     position: absolute;

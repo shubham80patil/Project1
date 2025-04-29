@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultraceutics</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/slider-styles.css">
+    <link rel="stylesheet" href="./css/trending-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">
+</head>
+
+<body>
+    <header> 
+
+        <div class="top-bar">
+            <p>Welcome to Ultracetius</p>
+
+        </div>
+        <nav class="navbar flex">
+          <!-- Hamburger Icon (SVG) -->
+          <svg class="hamburger" onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 100 80" fill="#000">
+            <rect width="100" height="10"></rect>
+            <rect y="30" width="100" height="10"></rect>
+            <rect y="60" width="100" height="10"></rect>
+          </svg>
+      
+          <!-- Logo -->
+          <div class="logo">
+            <img src="./Imgs/img/Logo.jpeg" alt="Multiplex Logo">
+          </div>
+      
+          <!-- Sidebar Menu -->
+          <ul class="nav-links">
+            <!-- Close Button -->
+            <span class="close-icon" onclick="closeMenu()">&#10005;</span>
+            
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./products.html">Product</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+          </ul>
+      
+          <!-- Quick Enquiry Button -->
+          <div class="search-and-enquiry">
+            <button class="enquiry-button">Quick Enquiry</button>
+          </div>
+        </nav>
+      </header>
+      <div class="slider">
+        <div class="slider-container">
+            <div class="slide">
+                <img src="Imgs/img/k1.png" alt="Slide Image" id="k1">
+    
+            </div>
+            <div class="slide">
+                <img src="Imgs/img/P4.png" alt="Slide Image" id="k2">
+                <div class="slide-content">
+                    <h2>ULTRALIGHT ULTRAFUSION</h2>
+                    <p>Revolutionary IV infusion therapy delivering superior nutrients and hydration directly into your
+                        bloodstream for immediate and lasting benefits</p>
+                    <button onclick="alert('Learn More clicked!')">Learn More</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="Imgs/img/P2x.jpg" alt="Slide Image">
+                <div class="slide-content">
+                    <h2>ULTRALIGHT ADVANCE TABLET</h2>
+                    <p>Experience melanin synthesis inhibition 8 times faster</p>
+                    <button onclick="alert('Learn More clicked!')">Learn More</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="Imgs/img/P3x.jpg" alt="Slide Image">
+                <div class="slide-content">
+                    <h2>A LUXURIOUS SOAP</h2>
+                    <p>Crafted with a blend of natural and scientifically -proven ingredients designed to nourish,
+                        brighten, and rejuvenate the skin.</p>
+                    <button onclick="alert('Learn More clicked!')">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <button>&#10094;</button>
+            <button>&#10095;</button>
+        </div>
+        </div>
+
+    <script src="javascript.js"></script>
+    <div class="vid">
+        <div class="vid1">
+            <img src="./Imgs/img/M2.png" alt="">
+        </div>
+        <div class="vid2">
+            <video autoplay muted loop controls width="100%" height="100%">
+                <source src="./Imgs/vid/V1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="trending">
+        <h2 class="trending-h2">TRENDING</h2>
+
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="badge">Trending</div>
+                <img class="product-img" src="./Imgs/img/r1.jpg" alt="Product 1">
+                <div class="info">
+                    <div class="tag">Cleanser</div>
+                    <div class="title">Deep Purifying Cleanser - Glycolic + Salicylic + Lactic</div>
+                    <div class="rating">⭐ 4.07 | 30 Reviews</div>
+                    <!--<div class="price">₹399</div> -->
+                    <button class="btn">View Product</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="badge">Trending</div>
+                <img class="product-img" src="./Imgs/img/r2.jpg" alt="Product 1">
+                <div class="info">
+                    <div class="tag">Injections</div>
+                    <div class="title">Ultralight 600 Injection - Japanese Grade Glutathione Injections</div>
+                    <div class="rating">⭐ 4.07 | 30 Reviews</div>
+                    <button class="btn">View Product</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="badge badge-new">New</div>
+                <img class="product-img" src="Imgs/img/r3.jpg" alt="Product 1">
+                <div class="info">
+                    <div class="tag">Capsules </div>
+                    <div class="title">Hairgain Advance with DHT Blocker and Biotin</div>
+                    <div class="rating">⭐ 4.9 | 148 Reviews</div>
+                    <button class="btn">View Product</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="badge badge-new">New</div>
+                <img class="product-img" src="./Imgs/img/r4.jpg" alt="Product 1">
+                <div class="info">
+                    <div class="tag">Tablet</div>
+                    <div class="title">Ultralight Advance Tablet - Form of Glutathione</div>
+                    <div class="rating">⭐ 4.9 | 148 Reviews</div>
+                    <button class="btn">View Product</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section1">
+                    <h3 id="sec1">GET IN TOUCH</h3>
+                    <p>13B Ekta Bhoomi Gardan 2 Dattapada Road Borivali East, Mumbai - 400066</p>
+                    <p>contact@ultraceuticsindia.com</p>
+                    <p>080 22497464</p>
+                    <p>080 23494706 / 23497960</p>
+                </div>
+                <div class="footer-section2">
+                    <h3 id="sec1">Quick Links</h3>
+                    <p>Contact US</p>
+                    <p>Products</p>
+                    <p>About Us</p>
+                    <p>Macnufacturing</p>
+                    <p>Digital Payment</p>
+                </div>
+                <div class="footer-section2">
+                    <h3 id="sec1">PRODUCTS</h3>
+                    <p>Skin Care</p>
+                    <p>Hair Care</p>
+                    <p>Injections</p>
+                    <p>IV Drips</p>
+                    <p>Tablets</p>
+                </div>
+                <div class="footer-section4">
+                    <h3 id="sec1">FOLLOW</h3>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-threads"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="newsletter">
+                        <h3>SIGN UP TO OUR NEWSLETTER</h3>
+                        <form id="newsletter-form">
+                            <input type="email" id="email-input" placeholder="Enter email address here" required>
+                            <button type="submit">SUBSCRIBE</button>
+                        </form>
+                        <p>You agree to our updated <a href="#">Terms & Conditions</a>, <a href="#">Privacy</a> & <a
+                                href="#">Cookie Policies</a>.</p>
+                    </div>
+                    <div class="img-logo">
+                        <img src="./Imgs/img/logo2.jpeg" alt="Logo">
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-line">
+
+            <p class="copyright">
+                Copyright © 2025 Ultraceutics Pvt Lmt. All Rights Reserved.
+            </p>
+        </footer>
+
+
+        <script>
+            function toggleMenu() {
+              const navLinks = document.querySelector('.nav-links');
+              navLinks.classList.toggle('show');
+            }
+          
+            function closeMenu() {
+              const navLinks = document.querySelector('.nav-links');
+              navLinks.classList.remove('show');
+            }
+          </script>
+          <script>
+            document.getElementById("newsletter-form").addEventListener("submit", function(e) {
+                e.preventDefault(); // Prevent form from submitting normally
+        
+                const email = document.getElementById("email-input").value;
+                const encodedEmail = encodeURIComponent(email); // for safe URL usage
+        
+                // Redirect to contact.html with email as a query parameter
+                window.location.href = `contact-us.html?email=${encodedEmail}`;
+            });
+        </script>
+        
+</body>
+
+</html>
