@@ -2,12 +2,13 @@ body {
     margin: 0;
 }
 .footer {
-  font-family: 'Segoe UI', sans-serif;
-  width: 100%;
-  background-color: rgba(30, 30, 30, 255);
-  color: white;
-  padding-top: 50px;
-}
+    font-family: 'Segoe UI', sans-serif;
+    width: 100%;
+    background-color: rgba(30, 30, 30, 255);
+    color: white;
+    height: 550px;
+    padding-top: 50px;
+  }
   .footer-container {
     display: flex;
     flex-wrap: wrap;
