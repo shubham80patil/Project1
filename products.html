@@ -3,483 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ultracetius</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <title>JAY SHREE GANESHA - Products</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/header.css">
 
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-      background-color: #fdf1e8;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    /* Navbar */
-    header {
-    width: 100%;
-}
-
-.top-bar {
-    background-color: #af7871;
-    color: black;
-    text-align: center;
-    padding: 5px 0;
-    font-size: 14px;
-    font-weight: bold;
-    font-size: larger;
-    border-radius: 0 0 30px 30px;
-    margin-right: 25px;
-    margin-left: 25px;
-    letter-spacing: 3px;
-}
-
-.navbar-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background: #fff !important;
-}
-
-.logo img {
-    height: 120px;
-    width: 130px;
-    padding-right: 20px;
-    border-right: 2px solid #ddd;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-weight: bold;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    font-size: 16px;
-    color: #333;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.nav-links a:hover {
-    
-    background-color: #c96480; 
-}
-
-.search-and-enquiry {
-    display: flex;
-    align-items: center;
-    border-right: 2px solid #ddd;
-    height: 120px;
-}
-
-.search-and-enquiry input {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    margin-right: 10px;
-}
-
-.enquiry-button {
-    background-color: #af7871;
-    color: black;
-    border: none;
-    border-radius: 40px;
-    padding: 20px 40px;
-    cursor: pointer;
-    margin-right: 40px;
-    font-weight: bold;
-    font-size: medium;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.enquiry-button:hover {
-    background-color: #c96480;
-}
-
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-  }
+<link rel="stylesheet" href="products1.css">
   
-  .nav-links {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .close-icon {
-    display: none; /* hidden by default */
-  }
-  
-  /* Responsive Styles */
-  @media screen and (max-width: 913px) {
-    .hamburger {
-      display: block;
-      margin: 10px;
-    }
-  
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      position: fixed;
-      top: 0;
-      left: -250px;
-      width: 220px;
-      height: 100vh;
-      background-color: rgba(255, 255, 255, 0.8); /* semi-transparent */
-      backdrop-filter: blur(10px); /* optional: glass effect */
-      padding: 30px 20px;
-      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
-      transition: left 0.3s ease;
-      z-index: 999;
-    }
-  
-    .nav-links.show {
-      left: 0;
-      display: flex;
-    }
-  
-    .nav-links li {
-      margin-bottom: 20px;
-    }
-  
-    /* Close icon inside nav */
-    .close-icon {
-      display: block; /* only visible under 768px */
-      align-self: flex-end;
-      font-size: 28px;
-      cursor: pointer;
-      margin-bottom: 20px;
-      color: #333;
-    }
-  }
-
-    
-    /* Hero Image */
-    .hero-image {
-      display: flex;
-      justify-content: flex-end;
-      padding: 2rem;
-    }
-
-    .hero-image img {
-      width: 300px;
-      height: 400px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Shop Links */
-    .shop-links {
-      display: flex;
-      gap: 1rem;
-      padding: 1rem 2rem;
-      background-color: #fff;
-      margin: 1rem 0;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .shop-links a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      font-size: 1.1rem;
-      transition: color 0.3s;
-    }
-
-    .shop-links a:hover {
-      color: #e91e63;
-    }
-
-    /* Product Category Dropdown */
-    .product-category {
-      padding: 1rem 2rem;
-    }
-
-    .product-category select {
-      padding: 0.5rem;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-
-    /* Section Titles */
-    .section-title {
-      text-align: center;
-      font-size: 2rem;
-      margin: 2rem 0;
-      color: #e91e63;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    /* Product Grid */
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-    }
-
-    .product-card {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: transform 0.3s;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .product-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .product-card-content {
-      padding: 1.5rem;
-    }
-
-    .product-card-content h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      color: #333;
-    }
-
-    .product-card-content h4 {
-      font-size: 1.2rem;
-      margin: 0.5rem 0;
-      color: #e91e63;
-    }
-
-    .product-card-content ul {
-      list-style: none;
-      margin-bottom: 1rem;
-    }
-
-    .product-card-content ul li {
-      margin: 0.5rem 0;
-      font-size: 0.9rem;
-    }
-
-    .know-more-btn {
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      background-color: #e91e63;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    .know-more-btn:hover {
-      background-color: #c2185b;
-    }
-
-    /* Bestsellers Section */
-    .bestsellers {
-      background-color: #fff;
-      padding: 2rem;
-      margin: 2rem 0;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    /* IV Drips Section */
-    .iv-drips {
-      background-color: #fff;
-      padding: 2rem;
-      margin: 2rem 0;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-      .nav-links {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .hero-image img {
-        width: 100%;
-        height: auto;
-      }
-
-      .shop-links {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .product-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* === Custom Styling for Hair Gain Advance Card ONLY === */
-.hair-gain-advance-card {
-  display: flex;
-  gap: 2rem;
-  padding: 2rem;
-  align-items: flex-start;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
-}
-
-.hair-gain-advance-card img {
-  width: 800px;
-  height: 700px;
-  object-fit: contain;
-  border-radius: 10px;
-}
-
-.hair-gain-advance-card .product-card-content {
-  flex: 1;
-}
-
-.hair-gain-advance-card .product-card-content h3 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.hair-gain-advance-card .product-card-content h4 {
-  font-size: 1.3rem;
-  color: #e91e63;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.hair-gain-advance-card .product-card-content ul {
-  padding-left: 1.2rem;
-}
-
-.hair-gain-advance-card .product-card-content ul li {
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
-  font-size: 1rem;
-}
-
-/* Responsive layout for mobile */
-@media (max-width: 768px) {
-  .hair-gain-advance-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hair-gain-advance-card img {
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto;
-  }
-
-  .hair-gain-advance-card .product-card-content {
-    text-align: left;
-  }
-}
-
-/* === Beauty Hero Section === */
-.beauty-hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #fff0e9;
-  padding: 4rem 6%;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.beauty-text {
-  flex: 1;
-  max-width: 600px;
-}
-
-.beauty-text h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #a0522d;
-  margin-bottom: 1rem;
-}
-
-.beauty-text p {
-  font-size: 1.2rem;
-  color: #444;
-  margin-bottom: 2rem;
-  line-height: 1.6;
-}
-
-.shop-now-btn {
-  padding: 0.8rem 2rem;
-  background-color: #a0522d;
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.shop-now-btn:hover {
-  background-color: #7a3c1e;
-}
-
-/* Make it responsive */
-@media (max-width: 768px) {
-  .beauty-hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .beauty-text {
-    max-width: 100%;
-  }
-
-  .hero-image img {
-    width: 100%;
-    max-width: 350px;
-  }
-}
-
-
-  </style>
+   
 </head>
 <body>
   <header> 
 
     
-    <nav class="navbar-flex">
+    <nav class="navbar flex">
       <!-- Hamburger Icon (SVG) -->
       <svg class="hamburger" onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 100 80" fill="#000">
         <rect width="100" height="10"></rect>
@@ -497,7 +34,7 @@
         <!-- Close Button -->
         <span class="close-icon" onclick="closeMenu()">&#10005;</span>
         
-        <li><a href="./index.html">Home</a></li>
+        <li><a href="./Main.html">Home</a></li>
         <li><a href="./about-us.html">About Us</a></li>
         <li><a href="./products.html">Product</a></li>
         <li><a href="./contact-us.html">Contact Us</a></li>
@@ -517,7 +54,7 @@
       <a href="#bestsellers" class="shop-now-btn">Explore Products</a>
     </div>
     <div class="hero-image">
-      <img src="./Imgs/Model-img/pretty-face-beautiful-smiling-woman-posing-studio-isolated-white-wall.png" alt="Model Image">
+      <img src="Model images/pretty-face-beautiful-smiling-woman-posing-studio-isolated-white-wall.png" alt="Model Image">
     </div>
   </section>
 
@@ -543,8 +80,8 @@
   <section class="bestsellers" id="bestsellers">
     <h2 class="section-title">Ultra's Bestsellers</h2>
     <div class="product-grid">
-      <div class="product-card">
-        <img src="./Imgs/creative/ULTRAADVNCE.jpg" alt="Ultralight Advance Tablet">
+      <div class="product-card2">
+        <img src="creative/ultraadvtablet.jpg" alt="Ultralight Advance Tablet" >
         <div class="product-card-content">
           <h3>Ultralight Advance Tablet</h3>
           <ul>
@@ -552,11 +89,13 @@
             <li>Improve elasticity</li>
             <li>Reduce wrinkle depth</li>
           </ul>
-          <a href="#bestsellerdetails" class="know-more-btn">Know More</a>
+          <a href="#shoptablet" class="know-more-btn" >Know More</a>
         </div>
       </div>
-      <div class="product-card">
-        <img src="./Imgs/creative/ultralight600injection2.jpg" alt="Ultralight 600 Injection">
+
+
+      <div class="product-card2">
+        <img src="creative/ultralight600inj.jpg" alt="Ultralight 600 Injection">
         <div class="product-card-content">
           <h3>Ultralight 600 Injection</h3>
           <ul>
@@ -564,11 +103,11 @@
             <li>Higher bioavailability</li>
             <li>Hydration</li>
           </ul>
-          <a href="typesofdrip.html" class="know-more-btn">See All 9 Types of Drip</a>
+          <a href="#bestseller2" class="know-more-btn">See All 9 Types of Drip</a>
         </div>
       </div>
-      <div class="product-card">
-        <img src="./Imgs/creative/ULTRABRIGHTLOTION.jpg" alt="Ultralight Body Whitening Lotion">
+      <div class="product-card2">
+        <img src="creative/ultrabrightlotion.jpg" alt="Ultralight Body Whitening Lotion">
         <div class="product-card-content">
           <h3>Ultralight Body Whitening Lotion AHA 17%</h3>
           <ul>
@@ -576,7 +115,7 @@
             <li>Exquisite complexion refinery</li>
             <li>Plush cellular regeneration</li>
           </ul>
-          <a href="#bestsellerdetails" class="know-more-btn">Know More</a>
+          <a href="#shoplotion" class="know-more-btn">Know More</a>
         </div>
       </div>
     </div>
@@ -585,8 +124,8 @@
   <section id="hair-products">
     <h2 class="section-title">Hair Products</h2>
     <div class="product-grid">
-      <div class="product-card hair-gain-advance-card">
-        <img src="./Imgs/Product-img/hairgainadvancetablet-removebg.png" alt="Hair Gain Advance">
+      <div class="product-card hair-gain-advance-card" id="shoptablet">
+        <img src="creative/hairgainadv2.jpg" alt="Hair Gain Advance" id="hairgainadvimg">
         <div class="product-card-content">
           <h3>Hair Gain Advance</h3>
           <h4>Benefits</h4>
@@ -615,9 +154,11 @@
 
   <section id="skin-care">
     <h2 class="section-title">Skin Care</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="./Imgs/Product-img/ultraadvtab_prdct1.jpg" alt="Ultralight Advance Tablet">
+    <div class="product-grid1" >
+      <div class="product-card" id="shoptablet"  >
+        <div class="product-img"> 
+        <img src="creative/ultralightadvtablet.jpg" alt="Ultralight Advance Tablet" id="ultralightadvancetabletimg">
+        </div>
         <div class="product-card-content">
           <h3>Ultralight Advance Tablet</h3>
           <h4>Benefits</h4>
@@ -626,7 +167,7 @@
             <li>Boosts hydration and supports skin elasticity</li>
             <li>Reduces oxidative stress and helps protect against environmental damage</li>
             <li>Supports collagen production for youthful, plump skin</li>
-            <li>Improves overall skin health and helps fight signs of aging</li>
+            <!-- <li>Improves overall skin health and helps fight signs of aging</li> -->
           </ul>
           <h4>Ingredients</h4>
           <ul>
@@ -634,17 +175,20 @@
             <li>50mg Nutroxsun: Derived from citrus and pomegranate</li>
             <li>100mg Saberry: Reduces skin inflammation</li>
             <li>Vitamin C: Brightens the skin and supports collagen production</li>
-            <li>Sodium Hyaluronate: Hydrates the skin, improving texture and elasticity</li>
+            <!-- <li>Sodium Hyaluronate: Hydrates the skin, improving texture and elasticity</li> -->
           </ul>
-          <h4>Collaboration</h4>
+          <!-- <h4>Collaboration</h4>
           <ul>
             <li>Gnosis Lesaffre [Emothion] Italy, Monteloedar Nutroxsun Spain</li>
             <li>Sabina Group USA SABERRY</li>
-          </ul>
+          </ul> -->
         </div>
       </div>
+
       <div class="product-card">
-        <img src="./Imgs/Product-img/overagetomato_prdct2.jpg" alt="Frost White Tomato Pro">
+        <div class="product-img">
+           <img src="creative/frostwhite.jpg" alt="Frost White Tomato Pro" id="frostwhitetomatoimg">
+      </div>
         <div class="product-card-content">
           <h3>Frost White Tomato Pro</h3>
           <h4>Benefits</h4>
@@ -664,8 +208,12 @@
           </ul>
         </div>
       </div>
-      <div class="product-card">
-        <img src="./Imgs/Product-img/cleanser_prdct2.jpg" alt="Deep Purifying Cleanser">
+    </div>
+
+      <div class="product-card-cleanser">
+        <div class="product-img"> 
+        <img src="creative/cleanser.jpg" alt="Deep Purifying Cleanser" id="deepcleanserimg">
+      </div>
         <div class="product-card-content">
           <h3>Deep Purifying Cleanser</h3>
           <h4>Benefits</h4>
@@ -684,15 +232,17 @@
             <li>5% Betaine: Moisturizes and balances skin</li>
           </ul>
         </div>
-      </div>
     </div>
   </section>
 
-  <section id="body-care">
+  <section id="body-care" >
     <h2 class="section-title">Body Care</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="./Imgs/Product-img/lotion-removebg-preview (1).png" alt="Ultrabright Body Whitening Lotion">
+    
+    <div class="product-grid1">
+      <div class="product-card" id="shoplotion">
+        <div class="product-img"> 
+        <img src="creative/ultrabrightlotion.jpg" alt="Ultrabright Body Whitening Lotion" id="ultrabrightlotionimg">
+        </div>
         <div class="product-card-content">
           <h3>Ultrabright Body Whitening Lotion</h3>
           <h4>Benefits</h4>
@@ -714,7 +264,9 @@
         </div>
       </div>
       <div class="product-card">
-        <img src="./Imgs/ecom/overagesoap_prdct2.jpg" alt="Be Bright Premium Soap">
+        <div class="product-img"> 
+        <img src="creative/overagesoap2.jpg" alt="Be Bright Premium Soap" id="brightpremiersoapimg">
+        </div>
         <div class="product-card-content">
           <h3>Be Bright Premium Soap</h3>
           <h4>Benefits</h4>
@@ -735,11 +287,131 @@
     </div>
   </section>
 
+  <section id="ultralight-600-injection" class="product-section">
+    <div class="product-container"  id="bestseller2">
+        <!-- Image Section -->
+        <div class="product-image">
+            <img src="creative/ultralightinj2.jpg" alt="Ultralight 600 Injection">
+        </div>
+        <!-- Text Section -->
+        <div class="product-details">
+            <h2>Ultralight 600 Injection</h2>
+            <h4>Benefits</h4>
+            <ul>
+                <li>Boosts skin radiance</li>
+                <li>Improves hydration</li>
+                <li>Supports detoxification</li>
+            </ul>
+            <h4>Ingredients</h4>
+            <ul>
+                <li>600mg Glutathione</li>
+                <li>Vitamin C</li>
+                <li>Alpha Lipoic Acid</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+ 
   <section class="iv-drips" id="iv-drips">
-    <h2 class="section-title">IV Drips</h2>
+    <h2 class="section-title">Ultralight Ultrafusion IV Drips</h2>
     <div class="product-grid">
-      <div class="product-card">
-        <img src="./Imgs/Iv-drips/celestialdrip.png" alt="Celestial Drip">
+        <!-- Card 1 -->
+        <div class="product-card">
+            <img src="Iv drips/celestialdrip.png" alt="Celestial Drip" id="celestialdripimg">
+            <div class="product-card-content">
+                <h3>Celestial Drip</h3>
+                <p> <ul>
+                  <li>Antioxidant effects</li>
+                <li>enhanced skin complexion</li>
+                <li>reduced oxidative stress</li>
+              </ul>
+              </p>
+                <!-- <a href="#" class="know-more-btn">Know More</a> -->
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="product-card">
+            <img src="Iv drips/eternaldrip.png" alt="Eternal Drip" id="eternaldripimg">
+            <div class="product-card-content">
+                <h3>Eternal Drip</h3>
+                <p> <ul>
+                  <li>Combat signs of aging</li>
+                  <li>improve skin appearance</li>
+                  <li>Reduce wrinkles</li>
+                </ul>
+                </p>
+                <!-- <a href="#" class="know-more-btn">Know More</a> -->
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="product-card">
+            <img src="Iv drips/revitaglow.png" alt="Revita Glow" id="revitaglowimg">
+            <div class="product-card-content">
+                <h3>Revita Glow</h3>
+                <p> <ul>
+                  <li>Lighter and more radiant complexion</li>
+                  <li> Removes detoxification</li>
+                  <li> Increase immune support</li>
+                </ul> </p>
+                <!-- <a href="#" class="know-more-btn">Know More</a> -->
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="product-card">
+            <img src="Iv drips/tresstoic.png" alt="Tresa Tonic" id="tresatonicimg">
+            <div class="product-card-content">
+                <h3>Tresa Tonic</h3>
+                <p> <ul>
+                  <li>Promotes hair growth</li>
+                  <li>Reduces hair thinning</li>
+                  <li>Improves overall hair health</li>
+                </ul>
+                </p>
+                <!-- <a href="#" class="know-more-btn">Know More</a> -->
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="product-card">
+            <img src="Iv drips/nadboostdrip.png" alt="NAD+ Boost" id="nadboostimg">
+            <div class="product-card-content">
+                <h3>NAD+ Boost</h3>
+                <p> <ul>
+                  <li>Boosts energy</li>
+                  <li>Supports anti-aging,</li>
+                  <li>Enhances cognitive function</li>
+                </ul>
+                  </p>
+                <!-- <a href="#" class="know-more-btn">Know More</a> -->
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="product-card">
+            <img src="Iv drips/recoeryrush.png" alt="Recovery Rush" id="recoveryrushimg">
+            <div class="product-card-content">
+                <h3>Recovery Rush</h3>
+                <p>
+                  <ul>
+                  <li>Relieves hangover symptoms</li>
+                  <li>Protects the digestive system</li>
+                  <li> Boosts hydration</li>
+                </ul>
+                </p>
+                <!-- <a href="#" class="know-more-btn">Know More</a> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- <section class="iv-drips" id="iv-drips">
+    <h2 class="section-title">IV Drips</h2>
+    <div class="product-grid1">
+      <div class="product-card2">
+        <div class="product-img"> 
+        <img src="Iv drips/celestialdrip.png" alt="Celestial Drip" id="celestialdripimg">
+        </div>
         <div class="product-card-content">
           <h3>Celestial Drip</h3>
           <h4>Benefits</h4>
@@ -758,8 +430,10 @@
           </ul>
         </div>
       </div>
-      <div class="product-card">
-        <img src="./Imgs/Iv-drips/eternaldrip.png" alt="Eternal Drip">
+      <div class="product-card2">
+        <div class="product-img"> 
+        <img src="Iv drips/eternaldrip.png" alt="Eternal Drip" id="eternaldripimg">
+        </div>
         <div class="product-card-content">
           <h3>Eternal Drip</h3>
           <h4>Benefits</h4>
@@ -777,8 +451,10 @@
           </ul>
         </div>
       </div>
-      <div class="product-card">
-        <img src="./Imgs/Iv-drips/revitaglow.png" alt="Revita Glow">
+      <div class="product-card2">
+        <div class="product-img"> 
+        <img src="Iv drips/revitaglow.png" alt="Revita Glow" id="revitaglowimg">
+        </div>
         <div class="product-card-content">
           <h3>Revita Glow</h3>
           <h4>Benefits</h4>
@@ -795,8 +471,10 @@
           </ul>
         </div>
       </div>
-      <div class="product-card">
-        <img src="./Imgs/Iv-drips/tresaatonicdrip.png" alt="Tresa Tonic">
+      <div class="product-card2">
+        <div class="product-img"> 
+        <img src="Iv drips/tresstoic.png" alt="Tresa Tonic" id="tresatonicimg">
+        </div>
         <div class="product-card-content">
           <h3>Tresa Tonic</h3>
           <h4>Benefits</h4>
@@ -813,8 +491,10 @@
           </ul>
         </div>
       </div>
-      <div class="product-card">
-        <img src="./Imgs/Iv-drips/nadboostdrip.png" alt="NAD+ Boost">
+      <div class="product-card2">
+        <div class="product-img"> 
+        <img src="Iv drips/nadboostdrip.png" alt="NAD+ Boost" id="nadboostimg">
+        </div>
         <div class="product-card-content">
           <h3>NAD+ Boost</h3>
           <h4>Benefits</h4>
@@ -831,8 +511,10 @@
           </ul>
         </div>
       </div>
-      <div class="product-card">
-        <img src="./Imgs/Iv-drips/recoverydrip.png" alt="Recovery Rush">
+      <div class="product-card2">
+        <div class="product-img"> 
+        <img src="Iv drips/recoeryrush.png" alt="Recovery Rush" id="recoveryrushimg">
+        </div>
         <div class="product-card-content">
           <h3>Recovery Rush</h3>
           <h4>Benefits</h4>
@@ -849,8 +531,12 @@
           </ul>
         </div>
       </div>
-      <div class="product-card">
-        <img src="./Imgs/Iv-drips/gymfusiondrip.png" alt="Fit Fusion">
+    </section>  -->
+
+      <!-- <div class="product-card">
+        <div class="product-img"> 
+        <img src="Iv drips/fitfussiondrip.png" alt="Fit Fusion">
+        </div>
         <div class="product-card-content">
           <h3>Fit Fusion</h3>
           <h4>Benefits</h4>
@@ -870,7 +556,9 @@
         </div>
       </div>
       <div class="product-card">
-        <img src="./Imgs/Iv-drips/recoverydrip.png" alt="Fortifty">
+        <div class="product-img"> 
+        <img src="" alt="Fortifty">
+        </div>
         <div class="product-card-content">
           <h3>Fortifty</h3>
           <h4>Benefits</h4>
@@ -888,7 +576,9 @@
         </div>
       </div>
       <div class="product-card">
+        <div class="product-img"> 
         <img src="./Imgs/ecom/hairgain_prdct1.jpg" alt="Relax Fusion">
+        </div>
         <div class="product-card-content">
           <h3>Relax Fusion</h3>
           <h4>Benefits</h4>
@@ -906,32 +596,33 @@
         </div>
       </div>
     </div>
-  </section>
+ -->
 
   <footer class="footer">
     <div class="footer-container">
         <div class="footer-section1">
             <h3 id="sec1">GET IN TOUCH</h3>
-            <p>13B Ekta Bhoomi Gardan 2 Dattapada Road Borivali East, Mumbai - 400066</p>
-            <p>contact@ultraceuticsindia.com</p>
+            <p>No. 180, 1st Main Road, Mahalakshmi Layout Extension, Bengaluru - 560 086</p>
+            <p>corporate@examplegroup.com</p>
+            <p>multiplex@examplegroup.com</p>
             <p>080 22497464</p>
             <p>080 23494706 / 23497960</p>
         </div>
         <div class="footer-section2">
             <h3 id="sec1">Quick Links</h3>
-            <p>Contact US</p>
-            <p>Products</p>
-            <p>About Us</p>
-            <p>Macnufacturing</p>
+            <p>Gallery</p>
+            <p>Success Stories</p>
+            <p>Blog Articles</p>
+            <p>News & Media</p>
             <p>Digital Payment</p>
         </div>
         <div class="footer-section2">
             <h3 id="sec1">PRODUCTS</h3>
-            <p>Skin Care</p>
-            <p>Hair Care</p>
-            <p>Injections</p>
-            <p>IV Drips</p>
-            <p>Tablets</p>
+            <p>Gallery</p>
+            <p>Success Stories</p>
+            <p>Blog Articles</p>
+            <p>News & Media</p>
+            <p>Digital Payment</p>
         </div>
         <div class="footer-section4">
             <h3 id="sec1">FOLLOW</h3>
@@ -945,8 +636,8 @@
             </div>
             <div class="newsletter">
                 <h3>SIGN UP TO OUR NEWSLETTER</h3>
-                <form id="newsletter-form">
-                    <input type="email" id="email-input" placeholder="Enter email address here" required>
+                <form>
+                    <input type="email" placeholder="Enter email address here">
                     <button type="submit">SUBSCRIBE</button>
                 </form>
                 <p>You agree to our updated <a href="#">Terms & Conditions</a>, <a href="#">Privacy</a> & <a
@@ -984,6 +675,8 @@
       }
   }
 
+ 
+  
 </script>
 </body>
 </html>
